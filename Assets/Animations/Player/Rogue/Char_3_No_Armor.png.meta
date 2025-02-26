@@ -1,0 +1,2330 @@
+fileFormatVersion: 2
+guid: 0bdb351edaf85a84e9af9e505dd7b5a5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8878564194902763792
+    second: Char_3_No_Armor_0
+  - first:
+      213: -941159730175473793
+    second: Char_3_No_Armor_1
+  - first:
+      213: 8732489727318608397
+    second: Char_3_No_Armor_2
+  - first:
+      213: 30951607596291695
+    second: Char_3_No_Armor_3
+  - first:
+      213: 5282805218079453667
+    second: Char_3_No_Armor_4
+  - first:
+      213: 5693248849516602400
+    second: Char_3_No_Armor_5
+  - first:
+      213: -6198954206105079911
+    second: Char_3_No_Armor_6
+  - first:
+      213: -569145191808645401
+    second: Char_3_No_Armor_7
+  - first:
+      213: 2755899185464948217
+    second: Char_3_No_Armor_8
+  - first:
+      213: 1224599838283248168
+    second: Char_3_No_Armor_9
+  - first:
+      213: -3649658438674115687
+    second: Char_3_No_Armor_10
+  - first:
+      213: 8766694146769995783
+    second: Char_3_No_Armor_11
+  - first:
+      213: 4762618042552318845
+    second: Char_3_No_Armor_12
+  - first:
+      213: 3495658394005675425
+    second: Char_3_No_Armor_13
+  - first:
+      213: 4808759561420924369
+    second: Char_3_No_Armor_14
+  - first:
+      213: -8715094315752687322
+    second: Char_3_No_Armor_15
+  - first:
+      213: 2432326796890488746
+    second: Char_3_No_Armor_16
+  - first:
+      213: -1414341731922508991
+    second: Char_3_No_Armor_17
+  - first:
+      213: -8047079891206974430
+    second: Char_3_No_Armor_18
+  - first:
+      213: 6738413971084282382
+    second: Char_3_No_Armor_19
+  - first:
+      213: -5169933289044167431
+    second: Char_3_No_Armor_20
+  - first:
+      213: 8705733478988624640
+    second: Char_3_No_Armor_21
+  - first:
+      213: 6400687153391182516
+    second: Char_3_No_Armor_22
+  - first:
+      213: -952922960656903374
+    second: Char_3_No_Armor_23
+  - first:
+      213: -6626252627249538440
+    second: Char_3_No_Armor_24
+  - first:
+      213: -1849515638042418610
+    second: Char_3_No_Armor_25
+  - first:
+      213: -5781525354516938022
+    second: Char_3_No_Armor_26
+  - first:
+      213: -6401578739156394734
+    second: Char_3_No_Armor_27
+  - first:
+      213: 5729815085358859384
+    second: Char_3_No_Armor_28
+  - first:
+      213: -78896051123749728
+    second: Char_3_No_Armor_29
+  - first:
+      213: 7314837808095465726
+    second: Char_3_No_Armor_30
+  - first:
+      213: -5040493710527909435
+    second: Char_3_No_Armor_31
+  - first:
+      213: -9208744025713856935
+    second: Char_3_No_Armor_32
+  - first:
+      213: 187842741972541513
+    second: Char_3_No_Armor_33
+  - first:
+      213: -6768329871792357083
+    second: Char_3_No_Armor_34
+  - first:
+      213: -4566165433548852642
+    second: Char_3_No_Armor_35
+  - first:
+      213: -3734444278259921288
+    second: Char_3_No_Armor_36
+  - first:
+      213: 7012997854057357381
+    second: Char_3_No_Armor_37
+  - first:
+      213: 4309079878439574367
+    second: Char_3_No_Armor_38
+  - first:
+      213: -77115902327422966
+    second: Char_3_No_Armor_39
+  - first:
+      213: -3456004500555724899
+    second: Char_3_No_Armor_40
+  - first:
+      213: -8168414333212699995
+    second: Char_3_No_Armor_41
+  - first:
+      213: -1214379557454395986
+    second: Char_3_No_Armor_42
+  - first:
+      213: -147656652432679182
+    second: Char_3_No_Armor_43
+  - first:
+      213: 2133422106544279239
+    second: Char_3_No_Armor_44
+  - first:
+      213: 5760456739788144668
+    second: Char_3_No_Armor_45
+  - first:
+      213: -5864382097535434517
+    second: Char_3_No_Armor_46
+  - first:
+      213: -1333661440067069246
+    second: Char_3_No_Armor_47
+  - first:
+      213: -562951536041285720
+    second: Char_3_No_Armor_48
+  - first:
+      213: 5491062928160416679
+    second: Char_3_No_Armor_49
+  - first:
+      213: -6440778415301091750
+    second: Char_3_No_Armor_50
+  - first:
+      213: 9207479763232145175
+    second: Char_3_No_Armor_51
+  - first:
+      213: -4730717531088695760
+    second: Char_3_No_Armor_52
+  - first:
+      213: 5935895205610701995
+    second: Char_3_No_Armor_53
+  - first:
+      213: 5848730560113542878
+    second: Char_3_No_Armor_54
+  - first:
+      213: -1191376220580108382
+    second: Char_3_No_Armor_55
+  - first:
+      213: 2005327463865579148
+    second: Char_3_No_Armor_56
+  - first:
+      213: -5525266782693783454
+    second: Char_3_No_Armor_57
+  - first:
+      213: -3317099007021650291
+    second: Char_3_No_Armor_58
+  - first:
+      213: 2623044516388212434
+    second: Char_3_No_Armor_59
+  - first:
+      213: -3914171699845322373
+    second: Char_3_No_Armor_60
+  - first:
+      213: -8843940808441212133
+    second: Char_3_No_Armor_61
+  - first:
+      213: -447322180189629061
+    second: Char_3_No_Armor_62
+  - first:
+      213: 1334917591229534249
+    second: Char_3_No_Armor_63
+  - first:
+      213: 4728338913612211546
+    second: Char_3_No_Armor_64
+  - first:
+      213: -5663971886508671542
+    second: Char_3_No_Armor_65
+  - first:
+      213: -6599438221908891935
+    second: Char_3_No_Armor_66
+  - first:
+      213: 5830893578783974712
+    second: Char_3_No_Armor_67
+  - first:
+      213: -8177193509136791810
+    second: Char_3_No_Armor_68
+  - first:
+      213: 8499445238458579448
+    second: Char_3_No_Armor_69
+  - first:
+      213: -5035218746467548056
+    second: Char_3_No_Armor_70
+  - first:
+      213: 7479447935764695460
+    second: Char_3_No_Armor_71
+  - first:
+      213: 1059675992882041207
+    second: Char_3_No_Armor_72
+  - first:
+      213: -5771715412269219764
+    second: Char_3_No_Armor_73
+  - first:
+      213: 7314772215571669804
+    second: Char_3_No_Armor_74
+  - first:
+      213: -8847327018228022936
+    second: Char_3_No_Armor_75
+  - first:
+      213: 5018648452001806794
+    second: Char_3_No_Armor_76
+  - first:
+      213: 7758753952252995659
+    second: Char_3_No_Armor_77
+  - first:
+      213: -1167821638673785017
+    second: Char_3_No_Armor_78
+  - first:
+      213: 5350018435810063764
+    second: Char_3_No_Armor_79
+  - first:
+      213: -3517032359116249811
+    second: Char_3_No_Armor_80
+  - first:
+      213: 7910822310091728768
+    second: Char_3_No_Armor_81
+  - first:
+      213: 8472898063630294167
+    second: Char_3_No_Armor_82
+  - first:
+      213: 1872187710143594572
+    second: Char_3_No_Armor_83
+  - first:
+      213: 3079422714635034202
+    second: Char_3_No_Armor_84
+  - first:
+      213: 4007474949783047228
+    second: Char_3_No_Armor_85
+  - first:
+      213: 7483391223205434751
+    second: Char_3_No_Armor_86
+  - first:
+      213: 6982995089043957461
+    second: Char_3_No_Armor_87
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Char_3_No_Armor_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 969
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0196ea8381ff63b70800000000000000
+      internalID: 8878564194902763792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 969
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f770dfd363450f2f0800000000000000
+      internalID: -941159730175473793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 970
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ac299e329003970800000000000000
+      internalID: 8732489727318608397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 969
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f661108b256fd6000800000000000000
+      internalID: 30951607596291695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 969
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1b4393b5b405940800000000000000
+      internalID: 5282805218079453667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 969
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024a65d1aab720f40800000000000000
+      internalID: 5693248849516602400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 966
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f61363ef3e8f9a0800000000000000
+      internalID: -6198954206105079911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_7
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 966
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6cf98a67df918f0800000000000000
+      internalID: -569145191808645401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_8
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 969
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f53d6235bbee3620800000000000000
+      internalID: 2755899185464948217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_9
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 970
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 822bfd09017aef010800000000000000
+      internalID: 1224599838283248168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_10
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 970
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993925b9cfec95dc0800000000000000
+      internalID: -3649658438674115687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_11
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 968
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708c8b8e0ed89a970800000000000000
+      internalID: 8766694146769995783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_12
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 969
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b723350e7381240800000000000000
+      internalID: 4762618042552318845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_13
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 970
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad12ded9c2138030800000000000000
+      internalID: 3495658394005675425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_14
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 969
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5e1ccd7552cb240800000000000000
+      internalID: 4808759561420924369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_15
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 968
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629f885f4e3cd0780800000000000000
+      internalID: -8715094315752687322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_16
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 970
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf3252b55c51c120800000000000000
+      internalID: 2432326796890488746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_17
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 969
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1438fb530bf3f5ce0800000000000000
+      internalID: -1414341731922508991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 906
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2245b656977035090800000000000000
+      internalID: -8047079891206974430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 906
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a02081ec7a38d50800000000000000
+      internalID: 6738413971084282382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_20
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 915
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f43e0aa015b048b0800000000000000
+      internalID: -5169933289044167431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_21
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 906
+        width: 18
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003b754697af0d870800000000000000
+      internalID: 8705733478988624640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_22
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 906
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2a940cd0fc3d850800000000000000
+      internalID: 6400687153391182516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_23
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 906
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2335bb7bd9986c2f0800000000000000
+      internalID: -952922960656903374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_24
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 906
+        width: 18
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87adac8c752da04a0800000000000000
+      internalID: -6626252627249538440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_25
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 906
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e42a3fb83533556e0800000000000000
+      internalID: -1849515638042418610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_26
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 906
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad28a186255e3cfa0800000000000000
+      internalID: -5781525354516938022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_27
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 840
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21dd3e2cd060927a0800000000000000
+      internalID: -6401578739156394734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_28
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 840
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8744d775674648f40800000000000000
+      internalID: 5729815085358859384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_29
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 840
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac7692a574b7eef0800000000000000
+      internalID: -78896051123749728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_30
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 840
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef090251b36838560800000000000000
+      internalID: 7314837808095465726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_31
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 841
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1b46b0da19c0ab0800000000000000
+      internalID: -5040493710527909435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_32
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 841
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e23df3918f33080800000000000000
+      internalID: -9208744025713856935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_33
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 842
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 940a8e48af95b9200800000000000000
+      internalID: 187842741972541513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_34
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 842
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 521c62d77df0212a0800000000000000
+      internalID: -6768329871792357083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_35
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 842
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5237a31bb8b1a0c0800000000000000
+      internalID: -4566165433548852642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_36
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 842
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ec3d007b69c2cc0800000000000000
+      internalID: -3734444278259921288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_37
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 842
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5406aad446c235160800000000000000
+      internalID: 7012997854057357381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_38
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 842
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b9c27a15deccb30800000000000000
+      internalID: 4309079878439574367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_39
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 845
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a008d33de770eeef0800000000000000
+      internalID: -77115902327422966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_40
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 845
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d97893aa73ec900d0800000000000000
+      internalID: -3456004500555724899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_41
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 842
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2d5aa2176f3ae80800000000000000
+      internalID: -8168414333212699995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_42
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 842
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea54f6ff938a52fe0800000000000000
+      internalID: -1214379557454395986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_43
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 850
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fed6039e0b63fdf0800000000000000
+      internalID: -147656652432679182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_44
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 777
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce89804a107b9d10800000000000000
+      internalID: 2133422106544279239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_45
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 778
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10c31772e041ff40800000000000000
+      internalID: 5760456739788144668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_46
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 777
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be08d399d878d9ea0800000000000000
+      internalID: -5864382097535434517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_47
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 777
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca9a2e7cf1ed7de0800000000000000
+      internalID: -1333661440067069246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_48
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 783
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7af748f8eff28f0800000000000000
+      internalID: -562951536041285720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_49
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 772
+        width: 55
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a36158e3ac243c40800000000000000
+      internalID: 5491062928160416679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_50
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 777
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e99fee722cd96a0800000000000000
+      internalID: -6440778415301091750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_51
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 777
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71fbc04bf0a87cf70800000000000000
+      internalID: 9207479763232145175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_52
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 778
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03eceba487d195eb0800000000000000
+      internalID: -4730717531088695760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_53
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 778
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4ce526d39806250800000000000000
+      internalID: 5935895205610701995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_54
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 712
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed60a8ed47dda2150800000000000000
+      internalID: 5848730560113542878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_55
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 712
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7a97ab3a1677fe0800000000000000
+      internalID: -1191376220580108382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_56
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 712
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c86fa0624ba54db10800000000000000
+      internalID: 2005327463865579148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_57
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 712
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2688540a22f4253b0800000000000000
+      internalID: -5525266782693783454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_58
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 712
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e6ca1270c47f1d0800000000000000
+      internalID: -3317099007021650291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_59
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 713
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de0b55171de66420800000000000000
+      internalID: 2623044516388212434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_60
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 713
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7925d0c3911ea9c0800000000000000
+      internalID: -3914171699845322373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_61
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 713
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b13d74221b2044580800000000000000
+      internalID: -8843940808441212133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_62
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 713
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75d4add8dacac9f0800000000000000
+      internalID: -447322180189629061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_63
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 713
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92018adf974968210800000000000000
+      internalID: 1334917591229534249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_64
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 713
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55238ba03f6e9140800000000000000
+      internalID: 4728338913612211546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_65
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 713
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acdf9d604978561b0800000000000000
+      internalID: -5663971886508671542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_66
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 649
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e62cf907e51a64a0800000000000000
+      internalID: -6599438221908891935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_67
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 593
+        width: 40
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 835668601de7be050800000000000000
+      internalID: 5830893578783974712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_68
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 649
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef6854cf3d5c48e80800000000000000
+      internalID: -8177193509136791810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_69
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 622
+        width: 34
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f97532996814f570800000000000000
+      internalID: 8499445238458579448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_70
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 655
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8640a625a3f4f1ab0800000000000000
+      internalID: -5035218746467548056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_71
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 655
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9884f05465cc760800000000000000
+      internalID: 7479447935764695460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_72
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 648
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7715ebc73b9b4be00800000000000000
+      internalID: 1059675992882041207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_73
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 649
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40cb03996fb6efa0800000000000000
+      internalID: -5771715412269219764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_74
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 650
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23eb02239a438560800000000000000
+      internalID: 7314772215571669804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_75
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 590
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8618dcab3faf73580800000000000000
+      internalID: -8847327018228022936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_76
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 605
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac9b12a5d22d5a540800000000000000
+      internalID: 5018648452001806794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_77
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 598
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b48a2b7ac91acab60800000000000000
+      internalID: 7758753952252995659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_78
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 604
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f95d138601bcfe0800000000000000
+      internalID: -1167821638673785017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_79
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 588
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495ff38fb651f3a40800000000000000
+      internalID: 5350018435810063764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_80
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 596
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25625314bdf03fc0800000000000000
+      internalID: -3517032359116249811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_81
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 596
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087a04a4af2e8cd60800000000000000
+      internalID: 7910822310091728768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_82
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 593
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c57c4c5e7c59570800000000000000
+      internalID: 8472898063630294167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_83
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 597
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4006f79dc85bf910800000000000000
+      internalID: 1872187710143594572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_84
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 587
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e171bb4ae4cba20800000000000000
+      internalID: 3079422714635034202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_85
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 586
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c481cfb396d9730800000000000000
+      internalID: 4007474949783047228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_86
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 588
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f759f663ba85ad760800000000000000
+      internalID: 7483391223205434751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_3_No_Armor_87
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 584
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d623c6390598e060800000000000000
+      internalID: 6982995089043957461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
