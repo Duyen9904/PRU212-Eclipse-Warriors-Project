@@ -1,0 +1,52 @@
+{
+    "PixelsPerUnit": 16,
+    "CustomLevelPrefab": {
+        "instanceID": 0
+    },
+    "IntGridValueColorsVisible": false,
+    "UseCompositeCollider": true,
+    "GeometryType": 0,
+    "CreateBackgroundColor": true,
+    "CreateLevelBoundsTrigger": false,
+    "UseParallax": true,
+    "IntGridValues": [
+        {
+            "_key": "Collisions_1",
+            "_asset": {
+                "instanceID": 0
+            }
+        }
+    ],
+    "Entities": [
+        {
+            "_key": "Player",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Item",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Door",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Button",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "SecretWall",
+            "_asset": {
+                "instanceID": 0
+            }
+        }
+    ]
+}
