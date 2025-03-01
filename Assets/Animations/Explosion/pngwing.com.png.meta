@@ -247,6 +247,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1297,7 +1310,54 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pngwing.com_0: 8832167503239892954
+      pngwing.com_1: -4853055123583119345
+      pngwing.com_10: 1601607523953437113
+      pngwing.com_11: -3904339871707083991
+      pngwing.com_12: 6769296415379653404
+      pngwing.com_13: 1350794326467996276
+      pngwing.com_14: 7268735396180752259
+      pngwing.com_15: 856210291696287465
+      pngwing.com_16: 5585558840886206792
+      pngwing.com_17: 7623301405226226319
+      pngwing.com_18: 1943824870319576334
+      pngwing.com_19: 2938201689779734227
+      pngwing.com_2: -8761483511772326392
+      pngwing.com_20: -5794280630382045305
+      pngwing.com_21: -3172869925008137835
+      pngwing.com_22: -5396054939552091396
+      pngwing.com_23: 4172441249443656624
+      pngwing.com_24: -7596010084555355991
+      pngwing.com_25: 3925026289321942597
+      pngwing.com_26: 875946876819185120
+      pngwing.com_27: -7517256858135843231
+      pngwing.com_28: 7894500020784764785
+      pngwing.com_29: 5242452449797463154
+      pngwing.com_3: -2217898423111697461
+      pngwing.com_30: 5351708609430724204
+      pngwing.com_31: -3087880778217750092
+      pngwing.com_32: -973056043298080511
+      pngwing.com_33: 5619730187777660764
+      pngwing.com_34: -3150131467861657401
+      pngwing.com_35: 880428291760153985
+      pngwing.com_36: -7390066592427920868
+      pngwing.com_37: -5553783169889767483
+      pngwing.com_38: -7574414845989649530
+      pngwing.com_39: 6323204239880532371
+      pngwing.com_4: -9017237249179667717
+      pngwing.com_40: 4249382970959690881
+      pngwing.com_41: -3678313285092525311
+      pngwing.com_42: 1980740879560390139
+      pngwing.com_43: -9072972012384533964
+      pngwing.com_44: -5422976349051264599
+      pngwing.com_45: 3737719012458692120
+      pngwing.com_46: 834322870381944738
+      pngwing.com_5: -8148006739367046648
+      pngwing.com_6: -8857251832463710051
+      pngwing.com_7: 6494218633340668182
+      pngwing.com_8: -1166568221208786990
+      pngwing.com_9: 2203682779147241771
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

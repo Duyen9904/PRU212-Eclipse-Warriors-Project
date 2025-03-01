@@ -370,6 +370,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2322,7 +2335,95 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Char_3_No_Armor_0: 8878564194902763792
+      Char_3_No_Armor_1: -941159730175473793
+      Char_3_No_Armor_10: -3649658438674115687
+      Char_3_No_Armor_11: 8766694146769995783
+      Char_3_No_Armor_12: 4762618042552318845
+      Char_3_No_Armor_13: 3495658394005675425
+      Char_3_No_Armor_14: 4808759561420924369
+      Char_3_No_Armor_15: -8715094315752687322
+      Char_3_No_Armor_16: 2432326796890488746
+      Char_3_No_Armor_17: -1414341731922508991
+      Char_3_No_Armor_18: -8047079891206974430
+      Char_3_No_Armor_19: 6738413971084282382
+      Char_3_No_Armor_2: 8732489727318608397
+      Char_3_No_Armor_20: -5169933289044167431
+      Char_3_No_Armor_21: 8705733478988624640
+      Char_3_No_Armor_22: 6400687153391182516
+      Char_3_No_Armor_23: -952922960656903374
+      Char_3_No_Armor_24: -6626252627249538440
+      Char_3_No_Armor_25: -1849515638042418610
+      Char_3_No_Armor_26: -5781525354516938022
+      Char_3_No_Armor_27: -6401578739156394734
+      Char_3_No_Armor_28: 5729815085358859384
+      Char_3_No_Armor_29: -78896051123749728
+      Char_3_No_Armor_3: 30951607596291695
+      Char_3_No_Armor_30: 7314837808095465726
+      Char_3_No_Armor_31: -5040493710527909435
+      Char_3_No_Armor_32: -9208744025713856935
+      Char_3_No_Armor_33: 187842741972541513
+      Char_3_No_Armor_34: -6768329871792357083
+      Char_3_No_Armor_35: -4566165433548852642
+      Char_3_No_Armor_36: -3734444278259921288
+      Char_3_No_Armor_37: 7012997854057357381
+      Char_3_No_Armor_38: 4309079878439574367
+      Char_3_No_Armor_39: -77115902327422966
+      Char_3_No_Armor_4: 5282805218079453667
+      Char_3_No_Armor_40: -3456004500555724899
+      Char_3_No_Armor_41: -8168414333212699995
+      Char_3_No_Armor_42: -1214379557454395986
+      Char_3_No_Armor_43: -147656652432679182
+      Char_3_No_Armor_44: 2133422106544279239
+      Char_3_No_Armor_45: 5760456739788144668
+      Char_3_No_Armor_46: -5864382097535434517
+      Char_3_No_Armor_47: -1333661440067069246
+      Char_3_No_Armor_48: -562951536041285720
+      Char_3_No_Armor_49: 5491062928160416679
+      Char_3_No_Armor_5: 5693248849516602400
+      Char_3_No_Armor_50: -6440778415301091750
+      Char_3_No_Armor_51: 9207479763232145175
+      Char_3_No_Armor_52: -4730717531088695760
+      Char_3_No_Armor_53: 5935895205610701995
+      Char_3_No_Armor_54: 5848730560113542878
+      Char_3_No_Armor_55: -1191376220580108382
+      Char_3_No_Armor_56: 2005327463865579148
+      Char_3_No_Armor_57: -5525266782693783454
+      Char_3_No_Armor_58: -3317099007021650291
+      Char_3_No_Armor_59: 2623044516388212434
+      Char_3_No_Armor_6: -6198954206105079911
+      Char_3_No_Armor_60: -3914171699845322373
+      Char_3_No_Armor_61: -8843940808441212133
+      Char_3_No_Armor_62: -447322180189629061
+      Char_3_No_Armor_63: 1334917591229534249
+      Char_3_No_Armor_64: 4728338913612211546
+      Char_3_No_Armor_65: -5663971886508671542
+      Char_3_No_Armor_66: -6599438221908891935
+      Char_3_No_Armor_67: 5830893578783974712
+      Char_3_No_Armor_68: -8177193509136791810
+      Char_3_No_Armor_69: 8499445238458579448
+      Char_3_No_Armor_7: -569145191808645401
+      Char_3_No_Armor_70: -5035218746467548056
+      Char_3_No_Armor_71: 7479447935764695460
+      Char_3_No_Armor_72: 1059675992882041207
+      Char_3_No_Armor_73: -5771715412269219764
+      Char_3_No_Armor_74: 7314772215571669804
+      Char_3_No_Armor_75: -8847327018228022936
+      Char_3_No_Armor_76: 5018648452001806794
+      Char_3_No_Armor_77: 7758753952252995659
+      Char_3_No_Armor_78: -1167821638673785017
+      Char_3_No_Armor_79: 5350018435810063764
+      Char_3_No_Armor_8: 2755899185464948217
+      Char_3_No_Armor_80: -3517032359116249811
+      Char_3_No_Armor_81: 7910822310091728768
+      Char_3_No_Armor_82: 8472898063630294167
+      Char_3_No_Armor_83: 1872187710143594572
+      Char_3_No_Armor_84: 3079422714635034202
+      Char_3_No_Armor_85: 4007474949783047228
+      Char_3_No_Armor_86: 7483391223205434751
+      Char_3_No_Armor_87: 6982995089043957461
+      Char_3_No_Armor_9: 1224599838283248168
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

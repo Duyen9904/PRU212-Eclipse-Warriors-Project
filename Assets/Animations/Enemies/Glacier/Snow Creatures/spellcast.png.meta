@@ -190,6 +190,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -822,7 +835,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spellcast_0: 5807125210076102400
+      spellcast_1: -3286529404008807512
+      spellcast_10: 5894144742965938634
+      spellcast_11: -5130845419819639515
+      spellcast_12: -2857955713124209819
+      spellcast_13: 4910005905319963032
+      spellcast_14: 9107608138016119202
+      spellcast_15: -7446464195490487524
+      spellcast_16: -5531025340587695674
+      spellcast_17: 548732641713645888
+      spellcast_18: -7353558545725913605
+      spellcast_19: -3366656298103379094
+      spellcast_2: -7089004269969660582
+      spellcast_20: 4860100076872561787
+      spellcast_21: -9216687709183860496
+      spellcast_22: 5365937541179512453
+      spellcast_23: -7196338051484444824
+      spellcast_24: -1142120023519077481
+      spellcast_25: -6199654407713946016
+      spellcast_26: 4070391422725484234
+      spellcast_27: 4647979899385413402
+      spellcast_3: -3493187042504057909
+      spellcast_4: 1259685234195277828
+      spellcast_5: 6953092085122916617
+      spellcast_6: -7082872806229666545
+      spellcast_7: -1774754750907557111
+      spellcast_8: -6020276060499972284
+      spellcast_9: 3732506813703068223
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
