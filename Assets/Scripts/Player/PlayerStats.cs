@@ -83,8 +83,7 @@ public class PlayerStats : MonoBehaviour
 
         // Disable player controls
         playerController.enabled = false;
-        GetComponent<PlayerCombat>().enabled = false;
-
+      
         // Disable physics
         GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         GetComponent<Collider2D>().enabled = false;

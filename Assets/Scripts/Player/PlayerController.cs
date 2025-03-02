@@ -1,129 +1,297 @@
-// PlayerController.cs - Main script for top-down player movement
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Top-down RPG player controller with LTDK Level Manager integration
+/// </summary>
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement Settings")]
-    public float moveSpeed = 5f;
-    public float dashSpeed = 10f;
-    public float dashDuration = 0.2f;
-    public float dashCooldown = 1f;
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float sprintMultiplier = 1.5f;
+    [SerializeField] private float diagonalMovementModifier = 0.7071f; // Approximately 1/sqrt(2)
 
-    [Header("References")]
+    [Header("Animation")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+
+    [Header("Player Stats")]
+    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private int currentHealth = 100;
+
+    // Components
     private Rigidbody2D rb;
-    private Animator animator;
-    private SpriteRenderer spriteRenderer;
-    private PlayerStats playerStats;
+    private BoxCollider2D boxCollider;
 
-    [Header("State Tracking")]
-    private Vector2 moveDirection;
-    private Vector2 lastMoveDirection;
-    private bool isDashing;
-    private bool canDash = true;
+    // Movement
+    private Vector2 movementInput;
+    private bool isSprinting = false;
+
+    // Inventory
+    private List<string> inventory = new List<string>();
+
+    // Animation parameter hashes (for performance)
+    private int moveXHash;
+    private int moveYHash;
+    private int isMovingHash;
+
+    // State
+    private bool canMove = true;
 
     private void Awake()
     {
+        // Get components
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        playerStats = GetComponent<PlayerStats>();
+        boxCollider = GetComponent<BoxCollider2D>();
+
+        // If animator reference is missing, try to get it
+        if (animator == null)
+            animator = GetComponent<Animator>();
+
+        if (spriteRenderer == null)
+            spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // Cache animation parameter hashes
+        if (animator != null)
+        {
+            moveXHash = Animator.StringToHash("MoveX");
+            moveYHash = Animator.StringToHash("MoveY");
+            isMovingHash = Animator.StringToHash("IsMoving");
+        }
+    }
+
+    private void Start()
+    {
+        // Register with level manager if it exists
+        //if (LTDKLevelManager.Instance != null)
+        //{
+        //    // Apply any existing player data
+        //    ApplyPlayerData(LTDKLevelManager.Instance.playerData);
+        //}
     }
 
     private void Update()
     {
-        // Get input for movement
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        if (!canMove) return;
 
-        // Calculate movement direction
-        moveDirection = new Vector2(moveX, moveY).normalized;
+        // Get input
+        movementInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        // Store last non-zero direction for attacks and dashing
-        if (moveDirection.magnitude > 0.1f)
+        // Normalize diagonal movement to prevent faster diagonal speed
+        if (movementInput.magnitude > 1)
         {
-            lastMoveDirection = moveDirection;
+            movementInput.Normalize();
         }
 
-        // Handle dash input
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && !isDashing && playerStats.HasEnoughStamina(20))
-        {
-            StartCoroutine(Dash());
-        }
+        // Sprint
+        isSprinting = Input.GetKey(KeyCode.LeftShift);
 
-        // Update animator
-        UpdateAnimator();
+        // Update animations
+        UpdateAnimation();
 
-        // Handle sprite flipping (only for horizontal movement)
-        if (moveX > 0)
+        // Interaction input
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            spriteRenderer.flipX = false;
-        }
-        else if (moveX < 0)
-        {
-            spriteRenderer.flipX = true;
+            Interact();
         }
     }
 
     private void FixedUpdate()
     {
+        if (!canMove) return;
+
+        // Calculate movement
+        float currentMoveSpeed = moveSpeed * (isSprinting ? sprintMultiplier : 1f);
+        Vector2 movement = movementInput * currentMoveSpeed;
+
         // Apply movement
-        if (!isDashing)
+        rb.linearVelocity = movement;
+    }
+
+    private void UpdateAnimation()
+    {
+        if (animator == null) return;
+
+        // Update movement animation parameters
+        bool isMoving = movementInput.magnitude > 0.1f;
+
+        animator.SetBool(isMovingHash, isMoving);
+
+        // Only update direction when actually moving
+        if (isMoving)
         {
-            rb.linearVelocity = moveDirection * moveSpeed;
+            animator.SetFloat(moveXHash, movementInput.x);
+            animator.SetFloat(moveYHash, movementInput.y);
+
+            // Flip sprite if needed (if your art faces right by default)
+            if (spriteRenderer != null)
+            {
+                if (movementInput.x < 0)
+                    spriteRenderer.flipX = true;
+                else if (movementInput.x > 0)
+                    spriteRenderer.flipX = false;
+            }
         }
     }
 
-    private System.Collections.IEnumerator Dash()
+    private void Interact()
     {
-        // Use stamina
-        playerStats.UseStamina(20);
+        // Cast a small box in front of the player to detect interactable objects
+        Vector2 facingDirection = new Vector2(
+            animator.GetFloat(moveXHash),
+            animator.GetFloat(moveYHash)
+        ).normalized;
 
-        // Set dash state
-        isDashing = true;
-        canDash = false;
+        if (facingDirection.magnitude < 0.1f)
+        {
+            // Default to facing down if no recent movement
+            facingDirection = Vector2.down;
+        }
 
-        // Play dash animation
-        animator.SetTrigger("Dash");
+        // Size and distance of interaction box
+        Vector2 interactSize = new Vector2(0.5f, 0.5f);
+        float interactDistance = 0.5f;
 
-        // Play sound
-        AudioManager.Instance.PlaySound("dash");
+        // Calculate position of interaction box
+        Vector2 interactPos = (Vector2)transform.position + (facingDirection * interactDistance);
 
-        // Apply dash velocity
-        rb.linearVelocity = lastMoveDirection * dashSpeed;
+        // Debug visualization of the interaction area
+        Debug.DrawLine(transform.position, (Vector2)transform.position + facingDirection * interactDistance, Color.red, 0.5f);
 
-        // Wait for dash duration
-        yield return new WaitForSeconds(dashDuration);
+        // Perform the overlap box check
+        Collider2D[] results = Physics2D.OverlapBoxAll(interactPos, interactSize, 0f);
 
-        // End dash
-        isDashing = false;
+        foreach (var collider in results)
+        {
+            // Skip player's own collider
+            if (collider.gameObject == gameObject) continue;
 
-        // Cooldown
-        yield return new WaitForSeconds(dashCooldown);
-        canDash = true;
+            // Check if the object is interactable
+            IInteractable interactable = collider.GetComponent<IInteractable>();
+            if (interactable != null)
+            {
+                interactable.Interact(this);
+                break; // Only interact with one object at a time
+            }
+        }
     }
 
-    private void UpdateAnimator()
+    // Health management
+    public void TakeDamage(int damage)
     {
-        // Set movement parameters
-        animator.SetFloat("MoveX", moveDirection.x);
-        animator.SetFloat("MoveY", moveDirection.y);
-        animator.SetFloat("MoveMagnitude", moveDirection.magnitude);
+        currentHealth -= damage;
 
-        // Set last direction parameters (for idle state)
-        animator.SetFloat("LastMoveX", lastMoveDirection.x);
-        animator.SetFloat("LastMoveY", lastMoveDirection.y);
+        //if (currentHealth <= 0)
+        //{
+        //    Die();
+        //}
+
+        //// Update LTDK player data
+        //if (LTDKLevelManager.Instance != null)
+        //{
+        //    LTDKLevelManager.Instance.playerData.health = currentHealth;
+        //}
     }
 
-    public Vector2 GetFacingDirection()
+    public void Heal(int amount)
     {
-        return lastMoveDirection;
+        currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
+
+        //// Update LTDK player data
+        //if (LTDKLevelManager.Instance != null)
+        //{
+        //    LTDKLevelManager.Instance.playerData.health = currentHealth;
+        //}
     }
 
-    // Get a normalized direction to the mouse cursor
-    public Vector2 GetDirectionToMouse()
+    private void Die()
     {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 direction = (mousePosition - transform.position).normalized;
-        return direction;
+        // Handle player death
+        canMove = false;
+        rb.linearVelocity = Vector2.zero;
+
+        // Play death animation if available
+        if (animator != null)
+        {
+            animator.SetTrigger("Die");
+        }
+
+        // Respawn or game over logic
+        StartCoroutine(RespawnAfterDelay(2f));
     }
+
+    private IEnumerator RespawnAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        // Reset health
+        currentHealth = maxHealth;
+
+        //// Update LTDK player data
+        //if (LTDKLevelManager.Instance != null)
+        //{
+        //    LTDKLevelManager.Instance.playerData.health = currentHealth;
+
+        //    // Reload current level or go to checkpoint
+        //    string currentLevel = LTDKLevelManager.Instance.GetCurrentLevelId();
+        //    LTDKLevelManager.Instance.LoadLevel(currentLevel);
+        //}
+
+        canMove = true;
+    }
+
+    // Inventory management
+    public void AddToInventory(string itemId)
+    {
+        inventory.Add(itemId);
+
+        //// Update LTDK player data
+        //if (LTDKLevelManager.Instance != null)
+        //{
+        //    LTDKLevelManager.Instance.playerData.inventory.Add(itemId);
+        //}
+    }
+
+    public bool RemoveFromInventory(string itemId)
+    {
+        bool removed = inventory.Remove(itemId);
+
+        //// Update LTDK player data
+        //if (removed && LTDKLevelManager.Instance != null)
+        //{
+        //    LTDKLevelManager.Instance.playerData.inventory.Remove(itemId);
+        //}
+
+        return removed;
+    }
+
+    public bool HasItem(string itemId)
+    {
+        return inventory.Contains(itemId);
+    }
+
+    //// IPlayerController implementation
+    //public void ApplyPlayerData(LTDKLevelManager.PlayerData data)
+    //{
+    //    currentHealth = data.health;
+    //    maxHealth = data.maxHealth;
+    //    inventory = new List<string>(data.inventory);
+    //}
+
+//    public void GetCurrentPlayerData(LTDKLevelManager.PlayerData data)
+//    {
+//        data.health = currentHealth;
+//        data.maxHealth = maxHealth;
+//        data.inventory = new List<string>(inventory);
+//        data.lastPosition = transform.position;
+//    }
+//}
+}
+/// <summary>
+/// Interface for interactable objects
+/// </summary>
+public interface IInteractable
+{
+    void Interact(PlayerController player);
 }
