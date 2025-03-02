@@ -1,0 +1,376 @@
+fileFormatVersion: 2
+guid: 9e78de168890dd947bd973aec427e2df
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f3268c876daf4890b6af6cd462063137, type: 3}
+  _reimportOnDependencyChange: 1
+  _pixelsPerUnit: 16
+  _overrideTexture: {instanceID: 0}
+  _sprites:
+  - name: Stone_and_Rock_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 3e8a3b696d182a94b9aaf07e6fc4127b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 5d23293f79bb9184d964debc0ffa355f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 16
+      width: 16
+      height: 16
+    spriteID: afa457b5f831fbd4885974bf0669ae9d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 16
+      width: 16
+      height: 16
+    spriteID: d1458ac0fa398154fab35219269e835b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 16
+      width: 16
+      height: 16
+    spriteID: e716a131f9b725947b00f36488ebb85c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 96a1638af65754a48a05d56b0b0918ec
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 16
+      width: 16
+      height: 16
+    spriteID: dd90397f8f78f1e49b71cdac080aeb54
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 8aa191b28578089479863f3e1e323e46
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 2e49d3e4c7b3dc9458e6c39b4a5f0357
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 16
+      width: 16
+      height: 16
+    spriteID: f3d103686dbb4274e9ec901b8bd64dc7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 16
+      width: 16
+      height: 16
+    spriteID: b172a8aba176dbb479d262d6bc37fa3b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 16
+      width: 16
+      height: 16
+    spriteID: 0477a14147ba6d74b87a0fe5ef14dfec
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 91966dfe3c1370747bf62bcae160f224
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 16
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 602fa6f473ce6294eb8964511e275732
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 9aa9c8b540216454f82903bf2d21f887
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 7c94971c9c5a6ae49964ba6019110b46
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 0
+      width: 16
+      height: 16
+    spriteID: e662d521128a3f84aa4b2d41742e1779
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 0
+      width: 16
+      height: 16
+    spriteID: ce32bacd6df26eb438e911fb519beafe
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 0
+      width: 16
+      height: 16
+    spriteID: d9f06dc6f1ad84540918e770a530c91b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 75afbdd8182821040adef3b6a4e23e7f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 0
+      width: 16
+      height: 16
+    spriteID: c50e0491187526a4ba7e7eafc8c691c1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 0
+      width: 16
+      height: 16
+    spriteID: af2a47fcbf7068c45b324fb22e7570ce
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 36180d81b81f56c4c9e62325cb5198d0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Stone_and_Rock_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 0
+      width: 16
+      height: 16
+    spriteID: 65dc9603dfea6d549a7db0f2dfa4ec54
+    spriteOutline: []
+    tessellationDetail: 0
+  _secondaryTextures: []
+  _artifacts: {instanceID: 0}

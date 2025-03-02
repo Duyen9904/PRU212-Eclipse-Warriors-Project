@@ -35,9 +35,17 @@ public class PlayerController : MonoBehaviour
     private int moveXHash;
     private int moveYHash;
     private int isMovingHash;
+    private int isShootingHash;
 
     // State
     private bool canMove = true;
+    private bool isShooting = false; // Add this field
+
+    // Add this method to control the shooting state
+    public void SetShooting(bool shooting)
+    {
+        isShooting = shooting;
+    }
 
     private void Awake()
     {
@@ -57,7 +65,8 @@ public class PlayerController : MonoBehaviour
         {
             moveXHash = Animator.StringToHash("MoveX");
             moveYHash = Animator.StringToHash("MoveY");
-            isMovingHash = Animator.StringToHash("IsMoving");
+            isMovingHash = Animator.StringToHash("isMoving");
+            isShootingHash = Animator.StringToHash("isShooting");
         }
     }
 
@@ -87,6 +96,16 @@ public class PlayerController : MonoBehaviour
         // Sprint
         isSprinting = Input.GetKey(KeyCode.LeftShift);
 
+        // Shooting input (for example, using left mouse button)
+        if (Input.GetMouseButtonDown(0))
+        {
+            StartShooting();
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            StopShooting();
+        }
+
         // Update animations
         UpdateAnimation();
 
@@ -95,6 +114,18 @@ public class PlayerController : MonoBehaviour
         {
             Interact();
         }
+    }
+
+    private void StartShooting()
+    {
+        isShooting = true;
+        // Add any other shooting logic here
+    }
+
+    private void StopShooting()
+    {
+        isShooting = false;
+        // Add any other logic to stop shooting
     }
 
     private void FixedUpdate()
@@ -133,6 +164,9 @@ public class PlayerController : MonoBehaviour
                     spriteRenderer.flipX = false;
             }
         }
+
+        // Update shooting parameter - you'll need to call SetShooting(true/false) when appropriate
+        animator.SetBool(isShootingHash, isShooting);
     }
 
     private void Interact()
@@ -279,14 +313,14 @@ public class PlayerController : MonoBehaviour
     //    inventory = new List<string>(data.inventory);
     //}
 
-//    public void GetCurrentPlayerData(LTDKLevelManager.PlayerData data)
-//    {
-//        data.health = currentHealth;
-//        data.maxHealth = maxHealth;
-//        data.inventory = new List<string>(inventory);
-//        data.lastPosition = transform.position;
-//    }
-//}
+    //    public void GetCurrentPlayerData(LTDKLevelManager.PlayerData data)
+    //    {
+    //        data.health = currentHealth;
+    //        data.maxHealth = maxHealth;
+    //        data.inventory = new List<string>(inventory);
+    //        data.lastPosition = transform.position;
+    //    }
+    //}
 }
 /// <summary>
 /// Interface for interactable objects

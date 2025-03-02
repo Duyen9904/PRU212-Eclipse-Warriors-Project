@@ -1,0 +1,33 @@
+{
+  "Rects": null,
+  "Def": {
+    "__cHei": 2,
+    "__cWid": 12,
+    "cachedPixelData": {
+      "opaqueTiles": "000000000000000000000000",
+      "averageColors": "1677177749aa3899178818885cdd4abb18ab28aa49aa38995788478867788778589a4899689a8889689a689a679a978a"
+    },
+    "customData": [
+
+    ],
+    "embedAtlas": null,
+    "enumTags": [
+
+    ],
+    "identifier": "Stone_and_Rock",
+    "padding": 0,
+    "pxHei": 32,
+    "pxWid": 192,
+    "relPath": "Animations/Environment/TileMap/glacier/Stone and Rock.png",
+    "savedSelections": [
+
+    ],
+    "spacing": 0,
+    "tags": [
+
+    ],
+    "tagsSourceEnumUid": null,
+    "tileGridSize": 16,
+    "uid": 226
+  }
+}

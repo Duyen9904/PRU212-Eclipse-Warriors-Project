@@ -1,0 +1,3856 @@
+fileFormatVersion: 2
+guid: 1960975b86582574e99b23df4ff2f3a5
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f3268c876daf4890b6af6cd462063137, type: 3}
+  _reimportOnDependencyChange: 1
+  _pixelsPerUnit: 16
+  _overrideTexture: {instanceID: 0}
+  _sprites:
+  - name: Glacier_tilesetprop_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 38760117de27d6448984150116e72763
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 941fb71908ad3ed4ba5031bdfc416d12
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 480
+      width: 32
+      height: 32
+    spriteID: dff0eac093e54cc4e8d1c3c8bb879b44
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 4f2c096ed419b4a4eaafd9119d95004f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 570c7261889f9f84eb63c5dd9d3b536e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 221c2942f6475f34189cc8ba83f92bd6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 480
+      width: 32
+      height: 32
+    spriteID: b1a4b48fe766c464a8888f43f6bad892
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 2bf4fec6a1eb5e54ba9e275b6eba9cb0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 1e4c50b89baeb144f90d667114c86315
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 6c1b2e3022aa15342ab271414c852343
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 480
+      width: 32
+      height: 32
+    spriteID: d94c938970ae04749a56bdf77a82625a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 8272b21665412b34485b537424f2818b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 107236d83ef4078489e6fd45e507f7ca
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 55c36a3244e78f449bf05d0e68fe305f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 21b917a4b40bf654fa2c2c21e16ef058
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 62483c9ffce2d59429c4379446e0c951
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 448
+      width: 32
+      height: 32
+    spriteID: f9c2ab2f43935084f95b57b0e9a67ec5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 448
+      width: 32
+      height: 32
+    spriteID: a06d37e6de5ee3042a5bdc7dabed443b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 27b4cfd41361d594196597701d32da5b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 345979a8bce31464eb317c4653c4f67d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 47cbe8d8160ef8b43891d3bc2ebcd1f8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 7c7b558844c4c5e4a8121f51811ca2b7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 23654ecb63e4e004e8e70442e859636c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 448
+      width: 32
+      height: 32
+    spriteID: dc986e3e8b276b9489bfbb5edc7f755f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 448
+      width: 32
+      height: 32
+    spriteID: f2bbeb7bb3f6d3c40a568d6b126f0d8a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 97996926d41357f44ac7a9aa1b709d6f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_26
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 5ae36229a956967458cdd7f70e094d10
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_27
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 6be9499787560dd4ca93899574cd5644
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_28
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 97e72459cb161474d903de6f51e26e45
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_29
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 9fd0d2ed49b885e4aae882a107f86616
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_30
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 02c2c7af9f6031c4882b9ee55234f7cc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_31
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 534497688b1051c49ac59f140916c4c5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_32
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 416
+      width: 32
+      height: 32
+    spriteID: d929433be6084be45ab7bc4724fba948
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_33
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 28b2812e369dbd249b6cae40134bab56
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_34
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 416
+      width: 32
+      height: 32
+    spriteID: f8704bbc6d26fe1449c80c256edf3e53
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_35
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 4c9dd9fe775ff8543aced3a3cca83a82
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_36
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 1a91f7b461a514a41b39c14c86cf2364
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_37
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 1b445ce064fa8e34c82595e4763c737f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_38
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 39c6fe63587db2349a27fc7f5c2234a7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_39
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 416
+      width: 32
+      height: 32
+    spriteID: edfdd48d457037243ad0bc1945c8d194
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_40
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 42d0de8707368984593f89581bf5f44a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_41
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 416
+      width: 32
+      height: 32
+    spriteID: dd83b327351dc1e41b60dce25e0a0393
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_42
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 840083acb21fa3d4a987ac67e9fa0d4b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_43
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 96e2db38e9bdf314296a8509a3667612
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_44
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 6c9980d426258ff438d3fe367c2bc532
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_45
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 3e1d739025f48ed4a8d0af0ddcaa975d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_46
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 3dc56298792f79f4c8550f9cf480456d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_47
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 416
+      width: 32
+      height: 32
+    spriteID: be801913dfd92414fac4ba15ba48eb73
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_48
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 9ae3cb1f417031847a3fe562eff0ae7e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_49
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 487f1679490adf74bb72d0c401bbef38
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_50
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 0000f106852b8c640a048688a399ccba
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_51
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 384
+      width: 32
+      height: 32
+    spriteID: a9fdb5c5b63a6754fb1768b61f85b5f5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_52
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 384
+      width: 32
+      height: 32
+    spriteID: dfae43e5d67667248bb2ef14d76e17fa
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_53
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 1a9b6341f9c7ec64897b617336f35834
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_54
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 384
+      width: 32
+      height: 32
+    spriteID: d25c60be01cedb74284fe75efc4fb8f2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_55
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 61e9c9529e918104b81e68bcebe6840e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_56
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 2d60213d7358ae84097092a162ecd267
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_57
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 2c03f7a2a2a027148858be13e42491e1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_58
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 1e0b0b6dd8b3e924986dbec83c7f87cc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_59
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 384
+      width: 32
+      height: 32
+    spriteID: a6562e92cc6232a4b8b767eed3c4871a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_60
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 9b2a88aed8805744eb5331dd5b19f8bc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_61
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 384
+      width: 32
+      height: 32
+    spriteID: c83406a45ab68de4084a2a4542e771fe
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_62
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 77b0ff1b9594e4f4c98bbe7721bffffb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_63
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 384
+      width: 32
+      height: 32
+    spriteID: f351db3f4dc446a448d2862c389b56a2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_64
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 268871b3d1e58864ca8d5d6bf2278375
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_65
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 352
+      width: 32
+      height: 32
+    spriteID: b6af11a0795a8f2419b67866e34b7e06
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_66
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 72a9cc4f9ed633e4fafbb25205c13088
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_67
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 0b76bc799c020b743809cd83b4452264
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_68
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 352
+      width: 32
+      height: 32
+    spriteID: afa0810854a0e0b4bbd9348afe7c3c1d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_69
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 0ddbaf5e70b9d2a4595f8e08ad01dba1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_70
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 24794388dbc7a7e4c942206fc36dd3c0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_71
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 352
+      width: 32
+      height: 32
+    spriteID: f2b3162221d3f7d48839e4c622defff9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_72
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 95d74dd38d91a09438684e524a28780e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_73
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 577fc3d186e1c9848afc4424510b8a55
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_74
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 09efad9a3347eba408691a8e9b0f5418
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_75
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 802806baaa0e2754a91093f72d46f179
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_76
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 352
+      width: 32
+      height: 32
+    spriteID: b58d7fa835e6cb54b8584db420ce3307
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_77
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 9bf57304634483f47af3618fee19ce27
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_78
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 8debee26081fc1347971c865b55b75ef
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_79
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 352
+      width: 32
+      height: 32
+    spriteID: af8979a908bd80a44a938b17072c30f4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_80
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 6f92d81fe1cd2a240b99a7c9783ee951
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_81
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 15e8750f24fd2c84a89acfe2650bb630
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_82
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 320
+      width: 32
+      height: 32
+    spriteID: e4cf8b522ecfd9c498aaa9924413e90b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_83
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 449f8aaa0f656494fbf9c9ebb5c57357
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_84
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 320
+      width: 32
+      height: 32
+    spriteID: a601d1df7dbb04a43818ac67d3d93e89
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_85
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 3d304b0aecdd07c418bccc44ed42de58
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_86
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 320
+      width: 32
+      height: 32
+    spriteID: b11e5e24d9277f847ac86482665df46c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_87
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 82204cdae47254846845c8f158a451fd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_88
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 2ec67fa5d0ca40f49930e0addbdd1a8f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_89
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 3430622249fd4ba4898dd6f53ef759a5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_90
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 83cd15394e7f88b4c953c2f1cea3b482
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_91
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 02f265243cddcf746a84696f05b8fb39
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_92
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 320
+      width: 32
+      height: 32
+    spriteID: d47888db493d01e408a0e172ad556453
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_93
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 320
+      width: 32
+      height: 32
+    spriteID: d4f52f437ed1e0a47b9b3878177e5921
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_94
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 320
+      width: 32
+      height: 32
+    spriteID: a6a87a2b82f52904494c62f1f482f23d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_95
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 22f407edba216934db0f4da3d567944b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_96
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 08a2c8eaeb041a44cb0f4a982472e8d5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_97
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 4da9898832a54f14ca7d33b376e1368f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_98
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 7a4a77fb336e09540a925c74d51e0381
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_99
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 288
+      width: 32
+      height: 32
+    spriteID: ef019b3d3e5016f4494aef8952aa91a0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_100
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 288
+      width: 32
+      height: 32
+    spriteID: af0645af1cc57ea4db752c32d7169530
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_101
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 8d35434892f90cb47ad9d6849251dd80
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_102
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 795afd6e16ef5324fb2081c56c9c4649
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_103
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 288
+      width: 32
+      height: 32
+    spriteID: abe2c789a6893b9478c2c234eac0f53b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_104
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 288
+      width: 32
+      height: 32
+    spriteID: e470a91eae2f72944a999a342ab56601
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_105
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 6e49fd85cb2e1174ea37ef5466260a10
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_106
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 4dae3c0d314ed104ea3cd93ebe24af9d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_107
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 19eef2966667a6f4aa559b2adfb4f785
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_108
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 92862e0bd92e8bd42bdceef9c0bf1f35
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_109
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 84855d71332a21e48a286e71453ab939
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_110
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 5c15f882c11e89847a71ca44ddddb6f6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_111
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 9f37b94b23272be47a5ac57968e8bcc3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_112
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 1359d064bfcc95946a55915ef1e20825
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_113
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 256
+      width: 32
+      height: 32
+    spriteID: b317e0edb917f5b448bfc361d6dadbbe
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_114
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 256
+      width: 32
+      height: 32
+    spriteID: c77e172c3e399d34ba36812820f0aebc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_115
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 51dccc8f1fe8d224dbb78f99cb3c7424
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_116
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 08af2d045aa8280488a63d51fd7f75ce
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_117
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 256
+      width: 32
+      height: 32
+    spriteID: ff05e787ce489e6418c33be205f9c4c3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_118
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 2f87df116ebf5894d9fc740bd7856db0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_119
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 518a7b7a9368f394288bdd97cc1d2d66
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_120
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 45c983fad72d95c44b9932c06f2973e8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_121
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 6952778208e0bb54a94d64d5ae118532
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_122
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 256
+      width: 32
+      height: 32
+    spriteID: cbca393cf20948a4d994a81d23e6f3d1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_123
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 6218d1a9b58022e4baa02e8176965aec
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_124
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 26ed58b14527fe7488ea2860dfd58656
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_125
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 256
+      width: 32
+      height: 32
+    spriteID: ab022b7102ede874784c7dd1b621d69c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_126
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 256
+      width: 32
+      height: 32
+    spriteID: bc0c4ef71f97fdb4f93c7de4504cc0cf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_127
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 3369ce16effd74949a1792d562f0f83c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_128
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 224
+      width: 32
+      height: 32
+    spriteID: d29f0c0b839ebc44e8103afc7d0f1095
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_129
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 224
+      width: 32
+      height: 32
+    spriteID: bc1eb42d2338022418e5bcc17052b1b3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_130
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 4992e9755c6593b4fa57d0e092c1eaea
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_131
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 9f3722960d120c94099951e1444fe22a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_132
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 2f94fe37d299ba14298adf8d80341cd3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_133
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 224
+      width: 32
+      height: 32
+    spriteID: e2214189d74c5fd4b8308b5b8e8440e8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_134
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 1d4ed21e4f4479c40aa34367df61769f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_135
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 40bfdaddd4df90147aba584a876866f0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_136
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 149897c0e39bda6409894468ef7d0746
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_137
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 826942fa1c463384190fa1630b742f02
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_138
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 224
+      width: 32
+      height: 32
+    spriteID: cb1bcbd9e33d08a4caa0acaa5d1aed1f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_139
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 0c1813ef166f534458968677bfe38e86
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_140
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 927c65bac529bad4090ff6e5d897d3a8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_141
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 7de2edcb56920ac438a36845e41b314d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_142
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 224
+      width: 32
+      height: 32
+    spriteID: da1e12fbc3fc4b842b2b766f53916060
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_143
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 224
+      width: 32
+      height: 32
+    spriteID: c6f46f2569076424a8ce8cd07b2d0c4f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_144
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 86ff92a2d1ff22d46b224129a696f202
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_145
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 8c130045d3f430f4184b3103642da730
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_146
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 1f4f6d26cfc11744d91c67031c904fca
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_147
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 192
+      width: 32
+      height: 32
+    spriteID: cd6ec5821133fb341b53e93e34a1f361
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_148
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 192
+      width: 32
+      height: 32
+    spriteID: b4be3461372f7a348b02b78d50d04bf8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_149
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 59f8b378bbfeac942b6a05ff7270a81d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_150
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 999e793ff257d0847bbb2b2254ed6730
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_151
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 192
+      width: 32
+      height: 32
+    spriteID: ed69fcae5b8c8844ba9374f4d843d80d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_152
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 192
+      width: 32
+      height: 32
+    spriteID: f2616aaa516eff74b878fc57f7734e24
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_153
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 192
+      width: 32
+      height: 32
+    spriteID: d3c6fc5b1d79f9e42945dacc44f4f692
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_154
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 192
+      width: 32
+      height: 32
+    spriteID: b6d20c069fd61324db9ae904d0830310
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_155
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 192
+      width: 32
+      height: 32
+    spriteID: ac7350b521f66774485740b168fac956
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_156
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 1dc5958f096a1a74da3f89cc82ccfa05
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_157
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 192
+      width: 32
+      height: 32
+    spriteID: e64f9fa154928fa4db0acc28ec0cad51
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_158
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 5972b60fbfc118f4fa035776609d8643
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_159
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 9f10a645698edee45865b4f8e0e4ee5e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_160
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 1e0306c0c52a6454d9f2d452cbdb7008
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_161
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 160
+      width: 32
+      height: 32
+    spriteID: e25be748cd0d8ca469d9a18f5ad85baf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_162
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 52cf8246ecb738c4f8f9819c61e43083
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_163
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 1aa8c2b453f0bf74b84dd8b58a951c7d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_164
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 160
+      width: 32
+      height: 32
+    spriteID: df1156813c590cf408b189c49d6cc34a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_165
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 160
+      width: 32
+      height: 32
+    spriteID: aa3f1361e4efd9b4fa862ec9cebd7b5a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_166
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 160
+      width: 32
+      height: 32
+    spriteID: e646b5615bb9d854496c30477e7c697e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_167
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 160
+      width: 32
+      height: 32
+    spriteID: caee17b8137a4c04a9f9be489d3f1d9a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_168
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 160
+      width: 32
+      height: 32
+    spriteID: ec92a013d2d024e4ca8d2199610e273e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_169
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 8e9e1f45ee0925e4ea484910a4b0295b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_170
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 6ede176d86d0e934fba4bf63bb1d8cc7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_171
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 0cc009d6ada241d40a7683b895de4353
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_172
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 0e75b0130c7dfa14091731bff1755d6e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_173
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 160
+      width: 32
+      height: 32
+    spriteID: ba6a930b0900f9d4da512de965f68f61
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_174
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 8c39e20c05394594cbb7e613d697d4ee
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_175
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 91a01667a4f495549a6f302ea59ddcb1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_176
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 4307d858b67fd2345ae1d4b84cbc9271
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_177
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 128
+      width: 32
+      height: 32
+    spriteID: f8599a8afd1462844a0e8558fc230475
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_178
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 729b8c4024e74e44389117980b6eb748
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_179
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 7f4acbedeeb6a61498307e7bd62107ad
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_180
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 128
+      width: 32
+      height: 32
+    spriteID: a50cb88077867664ea641ce250816855
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_181
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 128
+      width: 32
+      height: 32
+    spriteID: a2be7579f7d418c4d89841c5aec656b4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_182
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 7787c7921a8d38744b081ed978b60ae0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_183
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 128
+      width: 32
+      height: 32
+    spriteID: d1d952fa9f3b9eb41885318e12247033
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_184
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 128
+      width: 32
+      height: 32
+    spriteID: d654c7090c425174186627a85f025c20
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_185
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 358da4f7d5a05174d824bb004856a371
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_186
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 9cc4bbb0c92f3584d8a44834b233492b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_187
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 342d2f32175f28843939110904d1afe4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_188
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 9a5942b1eb33af24293780679e16f7f5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_189
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 128
+      width: 32
+      height: 32
+    spriteID: c705712bc87a0fd4cb6b069cd092927f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_190
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 0ec4761adda90ef44bf748a1fa16a31b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_191
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 128
+      width: 32
+      height: 32
+    spriteID: d9650bd3781294840b198fa14d25a9bf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_192
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 96
+      width: 32
+      height: 32
+    spriteID: e49c5a69e58a0a04f938babbc4d8f9e5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_193
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 96
+      width: 32
+      height: 32
+    spriteID: a1bffd117b20dc84ba446662c8f216df
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_194
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 96
+      width: 32
+      height: 32
+    spriteID: e0f1b9d24cac64b41b016c7d75ae3def
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_195
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 396cee31d60ceb54fa25757e2f0cea12
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_196
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 96
+      width: 32
+      height: 32
+    spriteID: d6fd3c8cb54bf8741973b259d9054e11
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_197
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 9cfa22dd6b6b05c4ebce37f4605a6fb1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_198
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 91e9e9ce2a1006c4194e005fd721d9d7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_199
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 42aed93c270770948873ee1b62f69407
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_200
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 03b732ab2688492459a3f042389ac667
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_201
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 2969c44e47437714b9e0d7252b9633cb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_202
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 96
+      width: 32
+      height: 32
+    spriteID: c2e20e653f9c85747a35f87cc8461875
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_203
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 13d22313338384b47b437865e6bdc84e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_204
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 96
+      width: 32
+      height: 32
+    spriteID: d5b06014b8f40624b940f99b85b26877
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_205
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 96
+      width: 32
+      height: 32
+    spriteID: e65be79d042ed7b478fe2f281233c6a1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_206
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 020c7c7a13d56da4e858562abb4a6eb4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_207
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 4c59cceba9b641f41ad041500bf6f324
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_208
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 64
+      width: 32
+      height: 32
+    spriteID: d327b12d5a70fcb4e87ce913f717ca20
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_209
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 64
+      width: 32
+      height: 32
+    spriteID: a6e0a5a7f5143c34ab286af30cc9937e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_210
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 64
+      width: 32
+      height: 32
+    spriteID: faa930115c9e98c488794aa3a76809ed
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_211
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 975a054c80746ea41b05b6a2e2a125d4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_212
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 94b3711b332a6fb4592c4169ceb0d7ce
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_213
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 64
+      width: 32
+      height: 32
+    spriteID: aee2c41f89da7bd4e84dfbca34dcfdc2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_214
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 64
+      width: 32
+      height: 32
+    spriteID: f27edb2e7d4e6bf4a8e517ff88bb8637
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_215
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 113c45c275195fb4abbd46058b1404a7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_216
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 64
+      width: 32
+      height: 32
+    spriteID: a74bc9c930310244eb55a4f9ea94dea9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_217
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 3b9223eb1407d9b49aeea6f3be5127e5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_218
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 1720eb91021cb0b4abe10332a6afc6db
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_219
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 64
+      width: 32
+      height: 32
+    spriteID: dd10dcfae1a5cb4498ee8727e404c038
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_220
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 23bcf3d3370fa00428c6d4a20d7b2839
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_221
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 2c250fec7b1172041a18460974c7b212
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_222
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 6198fae44dda3dc489f93a91f8182a7e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_223
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 64
+      width: 32
+      height: 32
+    spriteID: b16f94b3820a090449b9737b94cb1832
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_224
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 051e2f02855dbda41ac879c705b431b6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_225
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 32
+      width: 32
+      height: 32
+    spriteID: b59577fb14d6be54da011f697299ed1a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_226
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 32
+      width: 32
+      height: 32
+    spriteID: d4140cdef020867408e17126dd7fa146
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_227
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 32
+      width: 32
+      height: 32
+    spriteID: bf02ca5dc6be05f4493c906e0b9df14e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_228
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 32
+      width: 32
+      height: 32
+    spriteID: c5fd629ed7ded8e4d8b705b6807eef50
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_229
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 4ff75e25f84d2e1418161bb28f77a0b2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_230
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 4ee3f79838d75ee42b6cc1f26d4f19b6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_231
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 32
+      width: 32
+      height: 32
+    spriteID: aec8454fffcd23f419d62013ab6060f9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_232
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 4c86d8723220a23489b809ad083229f0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_233
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 32
+      width: 32
+      height: 32
+    spriteID: a8d397e490e581a4babfeafdf19cd1c8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_234
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 26aaac0f06013c64ea3479482375955c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_235
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 9726c396b0689944a913b263fad50890
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_236
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 32
+      width: 32
+      height: 32
+    spriteID: bfebb1fc3f8184d459fdf5728efdb518
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_237
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 9c223febba7831140a3ce7b6b0e23277
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_238
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 1a58d7c80257c9c448411d01b2e7a242
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_239
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 24069556dc83c31428ea8a14809a992f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_240
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 32
+      height: 32
+    spriteID: b70d7ae75abbafd408ab01e94d835a45
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_241
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 8208bb4d69053164598c98118022fa6c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_242
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 3bcb3f89e85e45f48a9aa049720e5fb0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_243
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 730c7207ac3c23f45b6299979d909b49
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_244
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 00c4fc24b81a0c046b4e7538f4b6434c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_245
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 3a45d83a8d6e82c47908309255bb1a16
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_246
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 0
+      width: 32
+      height: 32
+    spriteID: c4061bb1065cdd24da770afcdabfcaca
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_247
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 04d5c9b2d2db51547b7979fc08eb17ce
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_248
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 7126c8a48aff02e469136ae704d646b8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_249
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 6c447e94f97cf544d8d8f8aa8742ba0d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_250
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 0
+      width: 32
+      height: 32
+    spriteID: fd7c394194007824fac2d32935c28a2b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_251
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 4428eff815db69d4c977f45f643139aa
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_252
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 687634ee814563f4abfcd7b1d7f14ad4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_253
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 83d8f6c02cdb7e24882b696da8a7a5c0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_254
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 8c7936263e2dcdd448efcb8ec04543e0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_tilesetprop_255
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 73524a2efcc4b9e4595c47b1dc536a44
+    spriteOutline: []
+    tessellationDetail: 0
+  _secondaryTextures: []
+  _artifacts: {instanceID: 0}

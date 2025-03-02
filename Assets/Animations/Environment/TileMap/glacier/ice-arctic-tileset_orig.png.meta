@@ -1,0 +1,3813 @@
+fileFormatVersion: 2
+guid: 8b1d8ffdc54e41b4eb22ee0e05dd081a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -963124728710315820
+    second: ice-arctic-tileset_orig_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afa566784d7a304286f3a217e25cd38
+      internalID: 838053455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3910fa11642eb1346b6716293efb975a
+      internalID: -899611860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e862c68a0e09b459d9531eda4a4653
+      internalID: -1504309903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372f6ea1de52b4a46b21f83ab877c415
+      internalID: 1361612159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae038abedc7cc54aaa40864b746fe9a
+      internalID: 2017890740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb337bc8a3b0894e8e21efdf38de181
+      internalID: 925633941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c223b9f6ab7bf1342ae97b17755a10e7
+      internalID: 872295467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0301317b3ec4b7e40a42d5b171729b83
+      internalID: 1788608764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6c19c569e14904b8b4f4f7d946044a
+      internalID: -844804718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfa5add114cf7041bf1ae25981b5768
+      internalID: 2000986688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4e51036258d3345a65de3e88886a10
+      internalID: -1835652107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803b3425459c44848abdc24fb8ea68c7
+      internalID: -1632977697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21d527ad3265fd4b9e7470fcd8331d0
+      internalID: 821759585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7820017d7a907494497e11f13958d3a8
+      internalID: 1114261227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d27716ac4066144aaeda01a81ff15fa
+      internalID: -89717749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 607
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd74245ccff90cb498f5341e06ae25e1
+      internalID: 2073916069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd008e4f35ceece4fbc1876806c102ae
+      internalID: -436319143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e3e1c8032775b40802384efae24800
+      internalID: -675547770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d61934eba15b84cb2ad48687755bfc
+      internalID: -1336521675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e6eecb3e3f1534ab5c004116740957
+      internalID: 1550699599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b2b5062e68d994b85c7babd5b82852
+      internalID: 534338412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d70bdc9d1aa484488c3f58f614001d
+      internalID: 1144569536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926b1380663bcf24f8afbdbdcfccdd2e
+      internalID: -1713487740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_23
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3852cf3b32860e04688bfe25d7769d60
+      internalID: 538741111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918ee43c09f95214db140825a3ce3e75
+      internalID: 16799814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_25
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c0a8d36b8b86d42be56c2aca64b0ee
+      internalID: -990074076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_26
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a41beb5101a664d8b456f121e4b547
+      internalID: 1910469364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_27
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad166b02b923c86489163b0c3fb6a289
+      internalID: -2033602438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_28
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd645e5fe8e72c54887487b21b480e57
+      internalID: -561973044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_29
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f7cc80646fd2740b031860f99499ae
+      internalID: -1423887987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_30
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927284f86ba42354d9ac5d1a97824d3f
+      internalID: -2068634005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_31
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 543
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709a7a4042fed7f46a224b60ebf8e776
+      internalID: 522256623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6427d067a7cf01f48a61833880040f00
+      internalID: -1702060460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e57a6a5e0f68ba4b8b13d607e03ae2b
+      internalID: 368080584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e0a35c983559347bc88940becfe53f
+      internalID: -2075243038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90e2ceb63139a3459cec6151b0e3b48
+      internalID: 1852502357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7529b4be513aa7842a4de62ed52b30fb
+      internalID: 1813733161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9116f7371bcdc409051426e57ea06b
+      internalID: -1245872319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_38
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc81c74b497ca845aa4a85417833af4
+      internalID: -1012823450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_39
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4655863fc2d31478b8d9286162f447
+      internalID: 1915054775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_40
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1931021c3cf250f439f5c58fb710180a
+      internalID: 1053222122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_41
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f795eb331f02c478625b06d4ccb7fd
+      internalID: -1802409157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_42
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8532f7e6a6a5b41945b6adb6e22adb
+      internalID: -840894174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_43
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5f4b4bd935aa24f8605ff052180c22
+      internalID: 1519907528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_44
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a8f88c6c600224582cf105a8fa716a
+      internalID: 579780114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_45
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f6af08613f1224bac7a36a11ed6d2b
+      internalID: 1114323522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_46
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afda316fd5f7e049b847bf28487da38
+      internalID: 666498544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_47
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 479
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d3c35a293b48945b4c55f3722e8d3e
+      internalID: 2005447884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f0ee211eeb1d74fab1622c32453f87
+      internalID: -223306585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eee89a5259dc2c4eb48aa5ed7994bdf
+      internalID: -1524829732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_50
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d50f5d57ca27c41806ec189ad6298e
+      internalID: 1411022187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38f22ac12bf1c2488fd53db28044df8
+      internalID: -1972033932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdec5aabbbecc547a857ab1d13df34c
+      internalID: -708876301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_53
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757bf58713262b14f8605275d5462f55
+      internalID: 1511748132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618e998917f716645a6c1e20c0e42bde
+      internalID: -720453438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_55
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28031926127a3b44189a92a798235cc0
+      internalID: -1410479121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491b4efc0aaa2ff4891e1ec62d708d0c
+      internalID: -200467442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_57
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef932e74ab063248a8c085b5c7a7ea6
+      internalID: 2122658389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_58
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56518d1e30c52b4981acb1331790367
+      internalID: -1710606701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_59
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd963443f451eb144a9d6f0fcc8bc923
+      internalID: -569049205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_60
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8794250fe4e7b564fa178f42e4007cda
+      internalID: 82111731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_61
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378f046c1d242634c982fe6ce5a4f834
+      internalID: 1293998196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_62
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20106911e9c97f42b48dcc3528eaa87
+      internalID: -737965999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_63
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 415
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6562b296d9f2148b6f10d32b185d52
+      internalID: 1591136333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e6ebabe610fd5478ca33f52e087808
+      internalID: -744669733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_65
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a55543cdc85b6f4c8d04345f0991e64
+      internalID: -1011658310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_66
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47bae7eb2317c0341bc59c12bb4aba1e
+      internalID: 1471911576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_67
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d04fc6a4a4cb33479d8465097035b20
+      internalID: -375466061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd83c2376e5cd64b9c309b9166673c8
+      internalID: 1147181067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_69
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34f212ed1a213b4a8f34a7d71337007
+      internalID: -483441946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_70
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564ae68dd989654458694e76214b03ba
+      internalID: -1831706777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_71
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ceba0f672929548ab903e665c3a75f
+      internalID: 840040157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_72
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f168c6e1de8554ab10c7c7ff5e0183
+      internalID: 1784241593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_73
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fff0a5f6f2d254582e34c4e982c455
+      internalID: 33454332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_74
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4013b07c253238142a0fe4f6d029d74b
+      internalID: -752231151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_75
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0708f6c31c1624989f60c1a188340f
+      internalID: 1324652902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_76
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b23d44d75a2194fa1dbe80b62913d7
+      internalID: -1590852377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_77
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92bcc6bb5b626042ae769ee7406a7ce
+      internalID: 923042175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_78
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cae55b6d6ee5874491e8fd39e1f034b
+      internalID: 1794872506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_79
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 351
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9bd83a3a5836f4daec0244cf366160
+      internalID: 1442056796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd972f371ed737f4d9ce8b7625c7398f
+      internalID: -409849491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_81
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0510f26c6e183f548a85cddb631bddc6
+      internalID: 2003326440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_82
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98863acf1af623f4c875c30c55f5deed
+      internalID: 262260989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_83
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32c432e3043cd44583128ad70a5be2d
+      internalID: -2061389962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_84
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254b111ef01068e48b40220a4c4d7617
+      internalID: 2131955521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_85
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fbe1743c15ef748bff6ecc7dfca770
+      internalID: -639748282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_86
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc18c0ea63d002f49b8b26a821207969
+      internalID: 1118831216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_87
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a593baa7088d3354b8e242c278a34dd6
+      internalID: 1685489130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_88
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19154786f25a462428a09604b53c5ae6
+      internalID: -1056107405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_89
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b47d6856530b6443850a31a8b53327f
+      internalID: -1829032004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_90
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358540cb46f6ec84c8ddd6d3be78cc69
+      internalID: -1597766892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_91
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a20304cd0ea8084d9db789baf9a0c5c
+      internalID: 311973334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_92
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba0997b041ebc1448a934e7c9d306e1
+      internalID: -1056486964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_93
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbcc7288baf41ef489f2e4915ac6e138
+      internalID: -1657868151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_94
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcf643a0ac1aca45b6de4405cb1f46f
+      internalID: 523913554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_95
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 287
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e71645cf223dc4091561741fea9fba
+      internalID: -406901362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072771a5ab43fe7429c18d6dd9805024
+      internalID: 845017677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_97
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017b49551972cf3459efddb0bad78f9c
+      internalID: 1604029395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_98
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75792a5a183c4f349b2d3ac387302e93
+      internalID: -377692953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_99
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853263107558d3946ae4a8741348de88
+      internalID: -179414224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_100
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890b1409d7dc4e14da4a2d654c350ab0
+      internalID: -173547272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_101
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40fc296ce702ccc4e940b78717500ced
+      internalID: 1480929501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_102
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44248137e78b66d42823a9e1fbcb7e51
+      internalID: 134574271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_103
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98831122eb1ba04e827b9586e6d0b56
+      internalID: -146990786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_104
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c890b3f617e5af242b6df218b902eb77
+      internalID: -1460329372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_105
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d719c53aea50b2449f16c76c07e9006
+      internalID: 1061026666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_106
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1932d250ab33fb346a602ddd63df95e2
+      internalID: -1160122161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_107
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6090e483098cc244baa6e08aa0282d4d
+      internalID: -894617213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_108
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4da60295ddcaba40a5a9fee880238af
+      internalID: 392291719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_109
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94937a28e4098cc41b118310ed514c04
+      internalID: 1446009704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_110
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac64d248fa4a2d44bd66f8734eb33d4
+      internalID: -1780513633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_111
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 223
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ae3a62a561c344ab9ddb47558f42d3
+      internalID: -1698810639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f065e5e5e51d1614aa44b26db45a280f
+      internalID: -541208068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_113
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85231e1e183c48e43b6f717f8ea6f7dc
+      internalID: -2084972682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_114
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb625d7255b152b41886484c2ff97ed2
+      internalID: 855385004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_115
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b73396e5f10574ab61cb95e1457192
+      internalID: -1869049630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_116
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71b857f55dd6774384a86c85bbbb050
+      internalID: 797219288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_117
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5b13f0c03720a4a92e9d3c245f605f
+      internalID: 1633280187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_118
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2238f91fdcfea74eb07d6b1214d82c6
+      internalID: -429786830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_119
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77dbb5c118c6d9f40a97d8a80504b52f
+      internalID: -693923350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_120
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7fb02894c11dc43beb4ba9d0cd652b
+      internalID: 752542179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_121
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6539c85c3108eb8449d3f41a58857b0b
+      internalID: 235517660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_122
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2488d9f009f12ea4cbbc0cdc235aad3d
+      internalID: -731371564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_123
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2604bd37aaeedb94998df61e41063567
+      internalID: 1052662113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_124
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f40ec60681c634aa58f4c7c64fbdc7
+      internalID: -546956307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_125
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858644f214903d74ca371800afacd0c5
+      internalID: -990918833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_126
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73415e8aa999b7542a0f668a4786b964
+      internalID: 1229775943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_127
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 159
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bf5346eed478c46b9753e609145fe6
+      internalID: -1981345286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db443e5ee60d914b81c7c869db18228
+      internalID: -54162458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_129
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c6513909ff7194389ec84f1a4998dc
+      internalID: 1842842639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_130
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0c5a4135c31ac4a965829649e94f1a
+      internalID: 661656452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_131
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c398ad430e11ad14b8b90dd15c49191a
+      internalID: -1317294258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_132
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dac11e1d31915c4491af679ba8b4691
+      internalID: 911631337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_133
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ade7440f09feab468a369cff134f037
+      internalID: 1913315475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_134
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5424b052458477a4984e5d3945365bcd
+      internalID: 107205420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_135
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5c34fe63e4ebd4bad65ed5b799f79a
+      internalID: 1964977137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_136
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7473a35fc8cfa24086d02f282f26cc9
+      internalID: 433350452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_137
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b527ad9b3eadaaa41bcd8e07dab6c443
+      internalID: 322106228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_138
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea5dfc1cd8ac5f4983a6786edf5e7f6
+      internalID: 1715072960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_139
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a778390d49e63e4c90eadd2340b3dc5
+      internalID: 1762822799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_140
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32bd329fdf637844aab550ec60ca9cb
+      internalID: -725189740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_141
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d577d34b06852854bb2a8f3323e40642
+      internalID: -1406659692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_142
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa4fa7a59445b34cb51c2f955f72e71
+      internalID: 1706137639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_143
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 95
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98059d7cb2721e744a0e4a4c0002e98e
+      internalID: 752480250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ccd7058e1930844b52664e42a224c2
+      internalID: 701396647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_145
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4774daa3bb644c848a1df8f930eb61eb
+      internalID: 687642940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_146
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c63deb3f2a8b144b95f7e36a056443e
+      internalID: 1837568063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_147
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78b067e6ff315947abd0ad6dff65aef
+      internalID: -1681791572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_148
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddb243420e4c274e8d659ab4f5c1f91
+      internalID: -1321094491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_149
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f6b6e257c75254f8954ae33be84c32
+      internalID: 152006475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_150
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9851f1eea6cb77240aa7a5ac20096375
+      internalID: -1031960427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_151
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940fd2c0ba52e4042b52d8ed6c32ef50
+      internalID: 1594953954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_152
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2ff06ae8496904d937284904828ca9
+      internalID: -665546081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_153
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e2356afca13634da751cf1eebac5c3
+      internalID: 2018266706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_154
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81023d021afd2646b157219eda9293a
+      internalID: -12154146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_155
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d488eb398480a449560a1e84aabb6e
+      internalID: 64146958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_156
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96930124113dd344f826ca68a6273a89
+      internalID: 2121132501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_157
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa55459963ffd294f8f11fc3869f75b5
+      internalID: -2103246930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_158
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820fa348a8b5ad547be7727df0ae92fb
+      internalID: -1277684794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-arctic-tileset_orig_159
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 31
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672541ca56b80fe4c9c2c95e7a2f764f
+      internalID: 1904277440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fc71a92b6e9ee364792db1a99d466b8e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ice-arctic-tileset_orig_0: 838053455
+      ice-arctic-tileset_orig_1: -899611860
+      ice-arctic-tileset_orig_10: -1835652107
+      ice-arctic-tileset_orig_100: -173547272
+      ice-arctic-tileset_orig_101: 1480929501
+      ice-arctic-tileset_orig_102: 134574271
+      ice-arctic-tileset_orig_103: -146990786
+      ice-arctic-tileset_orig_104: -1460329372
+      ice-arctic-tileset_orig_105: 1061026666
+      ice-arctic-tileset_orig_106: -1160122161
+      ice-arctic-tileset_orig_107: -894617213
+      ice-arctic-tileset_orig_108: 392291719
+      ice-arctic-tileset_orig_109: 1446009704
+      ice-arctic-tileset_orig_11: -1632977697
+      ice-arctic-tileset_orig_110: -1780513633
+      ice-arctic-tileset_orig_111: -1698810639
+      ice-arctic-tileset_orig_112: -541208068
+      ice-arctic-tileset_orig_113: -2084972682
+      ice-arctic-tileset_orig_114: 855385004
+      ice-arctic-tileset_orig_115: -1869049630
+      ice-arctic-tileset_orig_116: 797219288
+      ice-arctic-tileset_orig_117: 1633280187
+      ice-arctic-tileset_orig_118: -429786830
+      ice-arctic-tileset_orig_119: -693923350
+      ice-arctic-tileset_orig_12: 821759585
+      ice-arctic-tileset_orig_120: 752542179
+      ice-arctic-tileset_orig_121: 235517660
+      ice-arctic-tileset_orig_122: -731371564
+      ice-arctic-tileset_orig_123: 1052662113
+      ice-arctic-tileset_orig_124: -546956307
+      ice-arctic-tileset_orig_125: -990918833
+      ice-arctic-tileset_orig_126: 1229775943
+      ice-arctic-tileset_orig_127: -1981345286
+      ice-arctic-tileset_orig_128: -54162458
+      ice-arctic-tileset_orig_129: 1842842639
+      ice-arctic-tileset_orig_13: 1114261227
+      ice-arctic-tileset_orig_130: 661656452
+      ice-arctic-tileset_orig_131: -1317294258
+      ice-arctic-tileset_orig_132: 911631337
+      ice-arctic-tileset_orig_133: 1913315475
+      ice-arctic-tileset_orig_134: 107205420
+      ice-arctic-tileset_orig_135: 1964977137
+      ice-arctic-tileset_orig_136: 433350452
+      ice-arctic-tileset_orig_137: 322106228
+      ice-arctic-tileset_orig_138: 1715072960
+      ice-arctic-tileset_orig_139: 1762822799
+      ice-arctic-tileset_orig_14: -89717749
+      ice-arctic-tileset_orig_140: -725189740
+      ice-arctic-tileset_orig_141: -1406659692
+      ice-arctic-tileset_orig_142: 1706137639
+      ice-arctic-tileset_orig_143: 752480250
+      ice-arctic-tileset_orig_144: 701396647
+      ice-arctic-tileset_orig_145: 687642940
+      ice-arctic-tileset_orig_146: 1837568063
+      ice-arctic-tileset_orig_147: -1681791572
+      ice-arctic-tileset_orig_148: -1321094491
+      ice-arctic-tileset_orig_149: 152006475
+      ice-arctic-tileset_orig_15: 2073916069
+      ice-arctic-tileset_orig_150: -1031960427
+      ice-arctic-tileset_orig_151: 1594953954
+      ice-arctic-tileset_orig_152: -665546081
+      ice-arctic-tileset_orig_153: 2018266706
+      ice-arctic-tileset_orig_154: -12154146
+      ice-arctic-tileset_orig_155: 64146958
+      ice-arctic-tileset_orig_156: 2121132501
+      ice-arctic-tileset_orig_157: -2103246930
+      ice-arctic-tileset_orig_158: -1277684794
+      ice-arctic-tileset_orig_159: 1904277440
+      ice-arctic-tileset_orig_16: -436319143
+      ice-arctic-tileset_orig_17: -675547770
+      ice-arctic-tileset_orig_18: -1336521675
+      ice-arctic-tileset_orig_19: 1550699599
+      ice-arctic-tileset_orig_2: -1504309903
+      ice-arctic-tileset_orig_20: 534338412
+      ice-arctic-tileset_orig_21: 1144569536
+      ice-arctic-tileset_orig_22: -1713487740
+      ice-arctic-tileset_orig_23: 538741111
+      ice-arctic-tileset_orig_24: 16799814
+      ice-arctic-tileset_orig_25: -990074076
+      ice-arctic-tileset_orig_26: 1910469364
+      ice-arctic-tileset_orig_27: -2033602438
+      ice-arctic-tileset_orig_28: -561973044
+      ice-arctic-tileset_orig_29: -1423887987
+      ice-arctic-tileset_orig_3: 1361612159
+      ice-arctic-tileset_orig_30: -2068634005
+      ice-arctic-tileset_orig_31: 522256623
+      ice-arctic-tileset_orig_32: -1702060460
+      ice-arctic-tileset_orig_33: 368080584
+      ice-arctic-tileset_orig_34: -2075243038
+      ice-arctic-tileset_orig_35: 1852502357
+      ice-arctic-tileset_orig_36: 1813733161
+      ice-arctic-tileset_orig_37: -1245872319
+      ice-arctic-tileset_orig_38: -1012823450
+      ice-arctic-tileset_orig_39: 1915054775
+      ice-arctic-tileset_orig_4: 2017890740
+      ice-arctic-tileset_orig_40: 1053222122
+      ice-arctic-tileset_orig_41: -1802409157
+      ice-arctic-tileset_orig_42: -840894174
+      ice-arctic-tileset_orig_43: 1519907528
+      ice-arctic-tileset_orig_44: 579780114
+      ice-arctic-tileset_orig_45: 1114323522
+      ice-arctic-tileset_orig_46: 666498544
+      ice-arctic-tileset_orig_47: 2005447884
+      ice-arctic-tileset_orig_48: -223306585
+      ice-arctic-tileset_orig_49: -1524829732
+      ice-arctic-tileset_orig_5: 925633941
+      ice-arctic-tileset_orig_50: 1411022187
+      ice-arctic-tileset_orig_51: -1972033932
+      ice-arctic-tileset_orig_52: -708876301
+      ice-arctic-tileset_orig_53: 1511748132
+      ice-arctic-tileset_orig_54: -720453438
+      ice-arctic-tileset_orig_55: -1410479121
+      ice-arctic-tileset_orig_56: -200467442
+      ice-arctic-tileset_orig_57: 2122658389
+      ice-arctic-tileset_orig_58: -1710606701
+      ice-arctic-tileset_orig_59: -569049205
+      ice-arctic-tileset_orig_6: 872295467
+      ice-arctic-tileset_orig_60: 82111731
+      ice-arctic-tileset_orig_61: 1293998196
+      ice-arctic-tileset_orig_62: -737965999
+      ice-arctic-tileset_orig_63: 1591136333
+      ice-arctic-tileset_orig_64: -744669733
+      ice-arctic-tileset_orig_65: -1011658310
+      ice-arctic-tileset_orig_66: 1471911576
+      ice-arctic-tileset_orig_67: -375466061
+      ice-arctic-tileset_orig_68: 1147181067
+      ice-arctic-tileset_orig_69: -483441946
+      ice-arctic-tileset_orig_7: 1788608764
+      ice-arctic-tileset_orig_70: -1831706777
+      ice-arctic-tileset_orig_71: 840040157
+      ice-arctic-tileset_orig_72: 1784241593
+      ice-arctic-tileset_orig_73: 33454332
+      ice-arctic-tileset_orig_74: -752231151
+      ice-arctic-tileset_orig_75: 1324652902
+      ice-arctic-tileset_orig_76: -1590852377
+      ice-arctic-tileset_orig_77: 923042175
+      ice-arctic-tileset_orig_78: 1794872506
+      ice-arctic-tileset_orig_79: 1442056796
+      ice-arctic-tileset_orig_8: -844804718
+      ice-arctic-tileset_orig_80: -409849491
+      ice-arctic-tileset_orig_81: 2003326440
+      ice-arctic-tileset_orig_82: 262260989
+      ice-arctic-tileset_orig_83: -2061389962
+      ice-arctic-tileset_orig_84: 2131955521
+      ice-arctic-tileset_orig_85: -639748282
+      ice-arctic-tileset_orig_86: 1118831216
+      ice-arctic-tileset_orig_87: 1685489130
+      ice-arctic-tileset_orig_88: -1056107405
+      ice-arctic-tileset_orig_89: -1829032004
+      ice-arctic-tileset_orig_9: 2000986688
+      ice-arctic-tileset_orig_90: -1597766892
+      ice-arctic-tileset_orig_91: 311973334
+      ice-arctic-tileset_orig_92: -1056486964
+      ice-arctic-tileset_orig_93: -1657868151
+      ice-arctic-tileset_orig_94: 523913554
+      ice-arctic-tileset_orig_95: -406901362
+      ice-arctic-tileset_orig_96: 845017677
+      ice-arctic-tileset_orig_97: 1604029395
+      ice-arctic-tileset_orig_98: -377692953
+      ice-arctic-tileset_orig_99: -179414224
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

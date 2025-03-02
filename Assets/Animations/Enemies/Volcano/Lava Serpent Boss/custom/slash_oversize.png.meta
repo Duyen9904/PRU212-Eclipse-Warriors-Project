@@ -178,6 +178,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -722,7 +735,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slash_oversize_0: 3135445491439152490
+      slash_oversize_1: 1292651756373783932
+      slash_oversize_10: 5335824666346643282
+      slash_oversize_11: -1340961486153546644
+      slash_oversize_12: -6393807438878902649
+      slash_oversize_13: 5739212911923232517
+      slash_oversize_14: -7339675682292933991
+      slash_oversize_15: 7383039989675808682
+      slash_oversize_16: -2590620949499697445
+      slash_oversize_17: -7200987625744391104
+      slash_oversize_18: -8388662765544944603
+      slash_oversize_19: 1575319916124575625
+      slash_oversize_2: 6507606284510176013
+      slash_oversize_20: 3757016497155426724
+      slash_oversize_21: -6316643133835765223
+      slash_oversize_22: -3678055170991468522
+      slash_oversize_23: 7722908284331791771
+      slash_oversize_3: 6879791002002361628
+      slash_oversize_4: 4124531738108296769
+      slash_oversize_5: 3486549137225422394
+      slash_oversize_6: -3808626632405232372
+      slash_oversize_7: -7779232049103802358
+      slash_oversize_8: -3628680148778799812
+      slash_oversize_9: -5839679136081437280
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

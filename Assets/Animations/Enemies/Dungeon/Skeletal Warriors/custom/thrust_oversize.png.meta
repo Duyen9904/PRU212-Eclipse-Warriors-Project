@@ -202,6 +202,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -922,7 +935,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      thrust_oversize_0: -7891065376508543300
+      thrust_oversize_1: -2222737387747690593
+      thrust_oversize_10: 3639754946628705879
+      thrust_oversize_11: 3643582680078439359
+      thrust_oversize_12: -1771907395877486258
+      thrust_oversize_13: -5139674340185616595
+      thrust_oversize_14: 4497364085362038727
+      thrust_oversize_15: -5928656798478611414
+      thrust_oversize_16: -2135312632329515480
+      thrust_oversize_17: 5539126544575889541
+      thrust_oversize_18: 762656266976513029
+      thrust_oversize_19: 6718695075753655787
+      thrust_oversize_2: 5356003504243708832
+      thrust_oversize_20: -8734155131168938069
+      thrust_oversize_21: 3908412626407861571
+      thrust_oversize_22: 9040211816774660721
+      thrust_oversize_23: 3676739552202620349
+      thrust_oversize_24: 1805066197526224537
+      thrust_oversize_25: 545879101338866028
+      thrust_oversize_26: -8795917437253360598
+      thrust_oversize_27: -3962202762350433152
+      thrust_oversize_28: -3061504173376738143
+      thrust_oversize_29: 9070126418859644106
+      thrust_oversize_3: -8866541073116032473
+      thrust_oversize_30: 4936013223332600287
+      thrust_oversize_31: 7323625135577654997
+      thrust_oversize_4: -2040657708201986870
+      thrust_oversize_5: -4984975629957176523
+      thrust_oversize_6: -1059284446978512077
+      thrust_oversize_7: 6134365256050139128
+      thrust_oversize_8: -732489563865950162
+      thrust_oversize_9: -6923487978287717110
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

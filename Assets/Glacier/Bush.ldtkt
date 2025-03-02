@@ -1,0 +1,33 @@
+{
+  "Rects": null,
+  "Def": {
+    "__cHei": 2,
+    "__cWid": 4,
+    "cachedPixelData": {
+      "opaqueTiles": "00000000",
+      "averageColors": "657666746965679aa576a674a965a89a"
+    },
+    "customData": [
+
+    ],
+    "embedAtlas": null,
+    "enumTags": [
+
+    ],
+    "identifier": "Bush",
+    "padding": 0,
+    "pxHei": 32,
+    "pxWid": 64,
+    "relPath": "Animations/Environment/TileMap/glacier/Bush.png",
+    "savedSelections": [
+
+    ],
+    "spacing": 0,
+    "tags": [
+
+    ],
+    "tagsSourceEnumUid": null,
+    "tileGridSize": 16,
+    "uid": 224
+  }
+}

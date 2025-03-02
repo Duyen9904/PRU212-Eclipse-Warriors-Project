@@ -178,6 +178,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -722,7 +735,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      emote_0: 9169771922218017640
+      emote_1: -3214663757980261814
+      emote_10: 3991727812138563859
+      emote_11: 1352633666102089524
+      emote_12: -5960881796352115759
+      emote_13: -2458099514417415945
+      emote_14: 8630796303903182175
+      emote_15: 531453290296510283
+      emote_16: -9119933978306465602
+      emote_17: 816388644156442279
+      emote_18: -5636343192451143151
+      emote_19: 4908763878137813085
+      emote_2: -915140180008566091
+      emote_20: -4739336835762093490
+      emote_21: 1378048310820280831
+      emote_22: -6681577458541995469
+      emote_23: 6264258666596098971
+      emote_3: 1148795214054778964
+      emote_4: 5343497033303140011
+      emote_5: 1424305593880766395
+      emote_6: 8222977103552866094
+      emote_7: 7976174012191644307
+      emote_8: -804832018594815637
+      emote_9: -3522186338513903206
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

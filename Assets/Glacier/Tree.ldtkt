@@ -1,0 +1,33 @@
+{
+  "Rects": null,
+  "Def": {
+    "__cHei": 3,
+    "__cWid": 8,
+    "cachedPixelData": {
+      "opaqueTiles": "000000000000000000000000",
+      "averageColors": "36973587378537843b763b763acc3abc85878587868486748a668a6689ab89bb55665566566456645855585559aa59aa"
+    },
+    "customData": [
+
+    ],
+    "embedAtlas": null,
+    "enumTags": [
+
+    ],
+    "identifier": "Tree",
+    "padding": 0,
+    "pxHei": 48,
+    "pxWid": 128,
+    "relPath": "Animations/Environment/TileMap/glacier/Tree.png",
+    "savedSelections": [
+
+    ],
+    "spacing": 0,
+    "tags": [
+
+    ],
+    "tagsSourceEnumUid": null,
+    "tileGridSize": 16,
+    "uid": 225
+  }
+}

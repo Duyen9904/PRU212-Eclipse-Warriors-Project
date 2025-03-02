@@ -1,0 +1,33 @@
+{
+  "Rects": null,
+  "Def": {
+    "__cHei": 2,
+    "__cWid": 12,
+    "cachedPixelData": {
+      "opaqueTiles": "000000000000000000000000",
+      "averageColors": "3976497649763976146714671467147715741574157415743ca74ca74ca75ca71846184618461846169c169c169c169c"
+    },
+    "customData": [
+
+    ],
+    "embedAtlas": null,
+    "enumTags": [
+
+    ],
+    "identifier": "Texture",
+    "padding": 0,
+    "pxHei": 32,
+    "pxWid": 192,
+    "relPath": "Animations/Environment/TileMap/glacier/Texture.png",
+    "savedSelections": [
+
+    ],
+    "spacing": 0,
+    "tags": [
+
+    ],
+    "tagsSourceEnumUid": null,
+    "tileGridSize": 16,
+    "uid": 227
+  }
+}

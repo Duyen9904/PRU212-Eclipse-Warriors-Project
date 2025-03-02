@@ -1,0 +1,3856 @@
+fileFormatVersion: 2
+guid: 1ab3a0ab4d67e464eac0eb02f6a6faff
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f3268c876daf4890b6af6cd462063137, type: 3}
+  _reimportOnDependencyChange: 1
+  _pixelsPerUnit: 16
+  _overrideTexture: {instanceID: 0}
+  _sprites:
+  - name: Glacier_Decoration_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 05f64042cdf8f0d419b9062e232ae68d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 480
+      width: 32
+      height: 32
+    spriteID: c7537e1bcf614a144b7bff5797e73fb9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 480
+      width: 32
+      height: 32
+    spriteID: f84f07c7319a4b04aa893810e5f426b6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 34d2d6985aed0454cbbca5d984c21514
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 480
+      width: 32
+      height: 32
+    spriteID: e83d48fb01d50c946bdeec1ae7aa0de3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 107172ab0cc29b342b3bbe709e936a2a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 72a02dc13525e6d48ae79b674f6cdf5f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 480
+      width: 32
+      height: 32
+    spriteID: be4915aff6a8b434e90dce0df943f904
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 00b70bc8c76fd6645b5d71b4f0c89a84
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 480
+      width: 32
+      height: 32
+    spriteID: e38ac3e368c9ee745b473195cd750fcd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 9c8e95eee28595645996e92c0262d834
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 480
+      width: 32
+      height: 32
+    spriteID: c1847a78ac2fb6e41af3d5c1a1c1e5d7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 7f750d0a03845eb4290775240c9ef997
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 4dc27cabc9742a14da317c795764703d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 480
+      width: 32
+      height: 32
+    spriteID: 5e4983583909fa448bea2d1487082610
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 480
+      width: 32
+      height: 32
+    spriteID: ccf8f63712547aa49a90af25a43b2d1a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 448
+      width: 32
+      height: 32
+    spriteID: cd0849fb3d97e0f428dd5261bba17bbd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 3fb08496c14b8cf40a05984d3ed28017
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 019d7199e42aff041a7da137f52a1961
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 57fcbbc9a4658be479b1a6d0b7129430
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 2c5fdd7d2778e514f89a4f181456f9e8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 89721c87c854b814ab1954234bd96b02
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 448
+      width: 32
+      height: 32
+    spriteID: a668b5d2df7828e4bad18a070f8c2ca1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 36d06cdbcc49c37479bc89fa562f5084
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 9add37964967a61469f3f528c60be734
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 448
+      width: 32
+      height: 32
+    spriteID: ed260ead2d6c0f547ba3ef321f436b60
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_26
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 448
+      width: 32
+      height: 32
+    spriteID: c2f6b31ebacdabe4c873ea930b4578bf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_27
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 448
+      width: 32
+      height: 32
+    spriteID: ec4d0aaddc00fae40a95ef119fbd7fc6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_28
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 9882ae651bf4033449674c6440b698db
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_29
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 448
+      width: 32
+      height: 32
+    spriteID: b9c9bcbb12c076649ba76853ae4f06a1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_30
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 448
+      width: 32
+      height: 32
+    spriteID: 0eb7298f39d9c5b4883927f795abf8d3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_31
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 448
+      width: 32
+      height: 32
+    spriteID: a3ea7cc189688fa42a5e50507b678d92
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_32
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 9cc6101e7d4936d4f85f1ee8ed5a3af9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_33
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 416
+      width: 32
+      height: 32
+    spriteID: e872a7e0c164be140a1ad06dcb4dd448
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_34
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 416
+      width: 32
+      height: 32
+    spriteID: f4fdf6af4f13b614eb5370837967479c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_35
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 0b9926a58bd0ee545a1f22fdea5e6e4b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_36
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 6f05e6dde2a9ed244b0b307bdab7363c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_37
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 1b1743442874b2e468a5c66d53b6ec09
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_38
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 416
+      width: 32
+      height: 32
+    spriteID: f96a86d952d967340b3f8b84aeccf637
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_39
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 416
+      width: 32
+      height: 32
+    spriteID: bdaef5554731740499c4f8df835bb235
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_40
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 416
+      width: 32
+      height: 32
+    spriteID: f50316370e15cfd40bc54e7e3bc12401
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_41
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 9fa96cbee3a7c3c4d8916d0ce0997738
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_42
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 416
+      width: 32
+      height: 32
+    spriteID: f3d31f941794f654ca5557ab94eb5d6c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_43
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 416
+      width: 32
+      height: 32
+    spriteID: e68e1321795095e40bab835ed2cc0472
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_44
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 4fd50520eadd10948bc717532a5d14e3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_45
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 416
+      width: 32
+      height: 32
+    spriteID: c3f29884d4b05fa4891f32f780bf033c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_46
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 1410b3d2226dddf409219fa19369dd01
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_47
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 416
+      width: 32
+      height: 32
+    spriteID: 479df173375b15a4d8c7787db57f00c0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_48
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 384
+      width: 32
+      height: 32
+    spriteID: b517aacd11fbe2742adc6e74883370eb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_49
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 4e5aae422aa763d45b58bd5ef0f6ac5f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_50
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 384
+      width: 32
+      height: 32
+    spriteID: e12d2e59822423d49bf12bc2f7c3a643
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_51
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 517ef8e5e4725584d9fbf3da94c8e25a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_52
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 08a76dc922c2ffe4ab87202f519f2106
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_53
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 89d2ebea9ff50154099d847f521b6306
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_54
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 3a6b22f1bde8f9142a2dc83cdffc3a46
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_55
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 752dfa8a88054154a9502922c4c6f2a1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_56
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 962e3191db98ed14eb0eeda2877ec2f3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_57
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 720d7e4cb07f5574e9bb28d7f3cc2b7e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_58
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 384
+      width: 32
+      height: 32
+    spriteID: bb1958998f415744ea0695f8b860a151
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_59
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 24d343b154ebd1e4d92af0b54b00bff5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_60
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 1917555d0923f4b448ba4b0472e30bb7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_61
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 384
+      width: 32
+      height: 32
+    spriteID: 70df1ddf4138a3d498f5331c82cc3e3f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_62
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 384
+      width: 32
+      height: 32
+    spriteID: d1a46f0b7c5e6754bbb818e9af3491b5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_63
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 384
+      width: 32
+      height: 32
+    spriteID: a8093299dc5a28b439c1ac390d6fdebf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_64
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 352
+      width: 32
+      height: 32
+    spriteID: e0ca618918086af40873a2e0fbc919dc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_65
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 352
+      width: 32
+      height: 32
+    spriteID: f1443d392ee56424b81657fdf02f0596
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_66
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 8cb4915525caef244ad7fc211a8fa4bf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_67
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 352
+      width: 32
+      height: 32
+    spriteID: dbbd376c54eab2f4c9e2420393d1e379
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_68
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 352
+      width: 32
+      height: 32
+    spriteID: aacda21d47315db40853e19f7ef6d680
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_69
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 99dfdd9fc294600419207e64ea4e5cc5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_70
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 12ff4d4dbc7c9664b9dac97ff2d16d45
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_71
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 7fd84533d4f1c084ea4215636ea09a12
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_72
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 352
+      width: 32
+      height: 32
+    spriteID: fa388283790b7e8448ec1434b06f9b18
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_73
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 352
+      width: 32
+      height: 32
+    spriteID: b3b1221009c194b46952193e2639d16d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_74
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 45fa08ef709f42449b988bbf2219c130
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_75
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 352
+      width: 32
+      height: 32
+    spriteID: ff0a19d94be93b7438ba51bc866bb200
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_76
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 1125c98ebc0f26849bdfc658cae7af38
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_77
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 352
+      width: 32
+      height: 32
+    spriteID: e160b818795dd3549ab7d8ec63431674
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_78
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 352
+      width: 32
+      height: 32
+    spriteID: 897e7ccd35822c24496e2e36a9461eb4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_79
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 352
+      width: 32
+      height: 32
+    spriteID: a2c8da85461f3ff4cbeed71da3c62e2e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_80
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 320
+      width: 32
+      height: 32
+    spriteID: e886190d2a70edd439cff0851aca2786
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_81
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 320
+      width: 32
+      height: 32
+    spriteID: a648e32df6beff345a68d56ffba55959
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_82
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 320
+      width: 32
+      height: 32
+    spriteID: e4e5dde67a044934b993eb48337dd1cc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_83
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 726f7166d3301954f9663395a2c4d021
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_84
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 5e4b427b2e727584daa0f59c5d74f042
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_85
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 320
+      width: 32
+      height: 32
+    spriteID: c3a30c8dd3348484d96b709d5b7e2f15
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_86
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 320
+      width: 32
+      height: 32
+    spriteID: a57b1441122f3eb428542ca965bd3766
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_87
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 9753c77806a007e4e917cd386aa8bc52
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_88
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 51421aa083b806b45a18c87d6e22e29a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_89
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 7e37186c62019944db6392e28dc49cd7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_90
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 320
+      width: 32
+      height: 32
+    spriteID: adc8c00ebcd41b049be463ff2a3d6c3d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_91
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 320
+      width: 32
+      height: 32
+    spriteID: d2a5543bd80c68a41b58e4c565155ce2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_92
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 320
+      width: 32
+      height: 32
+    spriteID: 4520e9fd4b60e2b4c84e27e30eafeb24
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_93
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 320
+      width: 32
+      height: 32
+    spriteID: e7514b15e29ebed4c9506da00d094012
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_94
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 320
+      width: 32
+      height: 32
+    spriteID: e2878679e06bc9945b77ac5a03ab930e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_95
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 320
+      width: 32
+      height: 32
+    spriteID: c53c5157bab7a5642830201235652c7d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_96
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 08033edd77d536a47bbea18466912b09
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_97
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 5cefac7f1f2346e4e8f91259681cd454
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_98
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 1aecd8b1b0b1d2745b8b09265e1e25df
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_99
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 288
+      width: 32
+      height: 32
+    spriteID: ed22716ce950295459572e98472f24bf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_100
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 41c5faa8cbb5c044ea486bd17737c982
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_101
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 288
+      width: 32
+      height: 32
+    spriteID: f37790cc7d726804ab5c37903e7c4482
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_102
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 34b61ab2bbefd3e43beb13cbfa20258e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_103
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 288
+      width: 32
+      height: 32
+    spriteID: b865cfc1bbf995b45b333c61dba4cb15
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_104
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 01f8352e967e8804f8b89a1a98ccc260
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_105
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 80114a8d43163074e989c898e549057b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_106
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 845b50bca66d7c344bb39c3843bda0ca
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_107
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 64a32be0bcd9d1a4e9fe79233a5f8024
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_108
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 288
+      width: 32
+      height: 32
+    spriteID: dd75ccf947980884e81d6ba3ccbc47e0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_109
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 288
+      width: 32
+      height: 32
+    spriteID: c9ac921d86147e048880e6b99c056e06
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_110
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 5b543430a1d17064a85078136a1f6b5e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_111
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 288
+      width: 32
+      height: 32
+    spriteID: 53fab27e68da88444b2795f48322c0e6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_112
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 256
+      width: 32
+      height: 32
+    spriteID: a85dc264fc2285148bb38d91db11ed83
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_113
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 256
+      width: 32
+      height: 32
+    spriteID: cbba28a314f12c64386c8ce5c5f9c949
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_114
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 33103cc7b0001664a90137da5610731a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_115
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 256
+      width: 32
+      height: 32
+    spriteID: ab8e443de584085448ad11de65aa9c19
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_116
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 6508fc77ccde0e54d8a2d9dd02e6dcf5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_117
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 6669c28d66ec26f4b9d496e5ce396950
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_118
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 256
+      width: 32
+      height: 32
+    spriteID: c93878b2c6861d449bccf853b697fd63
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_119
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 256
+      width: 32
+      height: 32
+    spriteID: ea1a4ffa617336445b5c1f5c0a49cc79
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_120
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 6b981a9494fb94741920c8a199b86a2a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_121
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 05eaed144097a3742b483d3af141f2d4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_122
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 256
+      width: 32
+      height: 32
+    spriteID: c0ed0f023393bfd4ba521b21231631ca
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_123
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 98710772fa013c4468864e46644ffb5d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_124
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 256
+      width: 32
+      height: 32
+    spriteID: b5ff8b158dde9ea439d19ed1f5961235
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_125
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 6d815cb2485005144b6fa4e2a0ab65a0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_126
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 256
+      width: 32
+      height: 32
+    spriteID: 948af51baaed1554387ed1969abb48cf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_127
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 256
+      width: 32
+      height: 32
+    spriteID: ada96f11a83ca9e439697b64e5b66aad
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_128
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 224
+      width: 32
+      height: 32
+    spriteID: a88ff64a695328349941e361587ea35f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_129
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 780daa03521a40a40ac1e5d55d76392d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_130
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 8f899ddb8a8eb2849bac7460d202cee6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_131
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 2f4e043d764f89e45a17c5f4373ce9a1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_132
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 5866c01460712dc4186e4f3a527ec048
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_133
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 224
+      width: 32
+      height: 32
+    spriteID: b863c7b77c524084982b9ebd3641ecd7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_134
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 8f1403d81d2db1a42b8d1dc4defc5e9a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_135
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 2ec05d37d43e546498706beb0ba16b1e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_136
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 4b90b01ccfa204f4aa3ebc2bc3900384
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_137
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 72ffd86bc3e6f354bab34441b15c53e9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_138
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 31bc579ea69f835499503fc1e8dc9126
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_139
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 9129bd56115bbba45a40a28c3b3f0156
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_140
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 224
+      width: 32
+      height: 32
+    spriteID: d6984fabbfcffc84597a128695e3dedd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_141
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 224
+      width: 32
+      height: 32
+    spriteID: d03dd40214c1da64e98c7c11c1763a74
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_142
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 52e3d315faf45a54cb952a0add5094c3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_143
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 209684553ab1e1543a247c08100bd1bf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_144
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 192
+      width: 32
+      height: 32
+    spriteID: d133b2e155bada847b382209300d84d9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_145
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 3ac380d16cab9754db2efad27a633b0d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_146
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 66a7d4eaa1d7edb4bb002a9a08a89ac9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_147
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 53f699ad958a1c14b84b5e8e90f62e99
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_148
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 2241b0bc713bd0c49956a5ddd9d5a619
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_149
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 192
+      width: 32
+      height: 32
+    spriteID: be4a71712a82df743870bab9138daa10
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_150
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 192
+      width: 32
+      height: 32
+    spriteID: cc38c4e4a61ba3245843fbe483966a8b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_151
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 31cffde230acaa348aa8a96016fa8381
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_152
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 25778e8e4f4a2834eb2fa613670e571d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_153
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 8a70aa48c2b04af4fa24f063ac6d73a4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_154
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 7913c57b032ce0942bca89b0ed302c99
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_155
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 539a3ee8717738a41b72e0a886037031
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_156
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 192
+      width: 32
+      height: 32
+    spriteID: f6acfc0d2381c8d48a23385298105ce1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_157
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 192
+      width: 32
+      height: 32
+    spriteID: 7e8a5b6f425a8a2429dda646579eb9ac
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_158
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 192
+      width: 32
+      height: 32
+    spriteID: af4d961dcfe33b24f8b8ec921b8983db
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_159
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 192
+      width: 32
+      height: 32
+    spriteID: dca8c3497669d1745a24d323a3e58810
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_160
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 160
+      width: 32
+      height: 32
+    spriteID: d022f2ef751c0874795d3bcf650a4208
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_161
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 29c0a011a3a41294893a1be5f5c0e222
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_162
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 160
+      width: 32
+      height: 32
+    spriteID: f593d567c5a2f0647b6c03b3c5437770
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_163
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 160
+      width: 32
+      height: 32
+    spriteID: d04b4ad43069ed14fa8fef49fb0fffc2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_164
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 160
+      width: 32
+      height: 32
+    spriteID: a6824387d141bc2409ac66c52d467d5b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_165
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 396f9585561b15849879775ca9258dd6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_166
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 160
+      width: 32
+      height: 32
+    spriteID: f4afa27f72dbb0649aec5b8f78d84752
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_167
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 61d98c2a2c68d5f4a87c5bec54d31452
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_168
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 35d823114d5caad499c9bb87aa3dbb73
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_169
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 14625759792357241b57e2d7e7246c91
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_170
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 888312662b604094c99ad3658733c5d2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_171
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 191610c8d8d00a5448c964a58353a84d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_172
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 85470f69d17a361429674716acdc2ae9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_173
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 160
+      width: 32
+      height: 32
+    spriteID: bb68180653053d04eb3234cfc18ed0db
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_174
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 160
+      width: 32
+      height: 32
+    spriteID: d030e5ec3d10a9346b14e5890aff84a7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_175
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 984c3c67326d3ed44a645773659b46fc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_176
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 128
+      width: 32
+      height: 32
+    spriteID: f90d8fdba790d564b847ce60f9f2bb14
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_177
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 128
+      width: 32
+      height: 32
+    spriteID: b13e223deb02fa443b2bc1bc4110b099
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_178
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 128
+      width: 32
+      height: 32
+    spriteID: a8acf3c43d798da4fafcf2e3cf698657
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_179
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 2488b6068eafc6b47a0d3372c6521f50
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_180
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 56feeb8f3aec39f45a0b724733abd040
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_181
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 058ee7609227a6340adde97ae71d2e4b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_182
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 364be810d9872ca4b9be7b84f627976f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_183
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 719d961a2b6a22349b2a6e4f499e7ed2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_184
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 7d8896d907595004dafbda13ad5dfe40
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_185
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 9a6e2898b3bfda149a27b1c5a199c0eb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_186
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 3c60ec5cebeaf9f4dbb556565666cca8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_187
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 128
+      width: 32
+      height: 32
+    spriteID: fcad49eee42487747a60ee1b51e24b05
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_188
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 128
+      width: 32
+      height: 32
+    spriteID: ee57692e1b85d6a469ff8b39003c9176
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_189
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 5ba7609e9df822b459650334a26f476a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_190
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 128
+      width: 32
+      height: 32
+    spriteID: bfb6717078e44fc47b107a6979710e9e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_191
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 7f5d911c2233e4a4c9507bcbdf0db99f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_192
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 96
+      width: 32
+      height: 32
+    spriteID: c686e027d16f5f64eacc43537827868d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_193
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 96
+      width: 32
+      height: 32
+    spriteID: fb7816677bd240041bd1a1f3409e034c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_194
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 96
+      width: 32
+      height: 32
+    spriteID: e0e2dca1619528049b7b0590582ba806
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_195
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 098603a95efc7574d94f7ff3dab1eb8d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_196
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 96
+      width: 32
+      height: 32
+    spriteID: dfda9d41b3bf68e48b468c636c37ff6b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_197
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 85b91cbfd2c17294d819b74bc7545b02
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_198
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 96
+      width: 32
+      height: 32
+    spriteID: dd82048500062fe48903e6d514d3a62a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_199
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 96
+      width: 32
+      height: 32
+    spriteID: cd51d5be49d8be34ebf029b6a2750fe4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_200
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 96
+      width: 32
+      height: 32
+    spriteID: a10bf71096b0bf641a040c92cbb618e9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_201
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 34eeab24197e1314382ce28986d0cec9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_202
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 254fd771ce4d77c4383c1bfba6ba4e89
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_203
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 5c59d9459559fca4bb64602d17cfe95c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_204
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 96
+      width: 32
+      height: 32
+    spriteID: e32c134d281475145b7b62e63876412e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_205
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 96
+      width: 32
+      height: 32
+    spriteID: cc19a1fbe7c947b4fa925bd91a020ecd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_206
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 00f7e1a49ae24cf429b08f7f872689f0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_207
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 2b69285a573044c4b97f0710f28804e7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_208
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 64
+      width: 32
+      height: 32
+    spriteID: f4340e8a0014ad046bc4f66c4ff0abb5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_209
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 707f796cc3b4ba24287acde82e6f88f0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_210
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 64
+      width: 32
+      height: 32
+    spriteID: c28b02675e52f0c459de644d997ff565
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_211
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 5391cc2b686d11e409ae27b01188087c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_212
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 64
+      width: 32
+      height: 32
+    spriteID: e5aa98f1d9abc0a4aac51b5f1ff53894
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_213
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 132b963c7b591f74fa0c2e9d7df43b98
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_214
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 64
+      width: 32
+      height: 32
+    spriteID: efaad0a63b4cb864b9bd10b7256227b0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_215
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 784b2c26d571f6b479aad8dd8eeb6e9a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_216
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 744cc2430fec6f847b7b058dd4fcc7ca
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_217
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 64
+      width: 32
+      height: 32
+    spriteID: e339afa3e60d922478fe6c5d4a428cdd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_218
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 317bbc7450d350940af6e10d20debbaf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_219
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 64
+      width: 32
+      height: 32
+    spriteID: e24afeadd94ef7149938d96f99dc01cd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_220
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 384f55e1ee1b52a409aa12632b54a423
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_221
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 306522d0e54b31e42b312f10f14d7014
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_222
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 1975b1d5007a5ed4997f4cf02d6fccea
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_223
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 13a90c2d9308c614a81e41f82e101150
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_224
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 32
+      width: 32
+      height: 32
+    spriteID: c923cd37db1ce33498832563cdd571d9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_225
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 32
+      width: 32
+      height: 32
+    spriteID: c1e195069cf61214ab1695c0361aa2cd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_226
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 28de6bd500e1bcb49960030214b51f63
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_227
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 594abba228db1554fbee4c6224ee0341
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_228
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 8b3e6c96acb2d434c978e2a9daa4ad1d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_229
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 4c717dc37c7f46a46896eb9a0c9e9303
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_230
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 0abb01b3a7d675b4baedc0fbfe00b1ad
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_231
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 7449e844f2c216d4ea71a9654fce7afb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_232
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 32
+      width: 32
+      height: 32
+    spriteID: f04b42649b510a346b4c846b330daabc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_233
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 8292e48e637276841a020acf2534a003
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_234
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 80196198fe5853d40989d95eceeb9979
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_235
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 32
+      width: 32
+      height: 32
+    spriteID: a438d966579922f4da79b1440524a977
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_236
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 129faa55b9f67714399c82680e2b5815
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_237
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 7033b92c69ef7cc4e92e906d9291b2a8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_238
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 32
+      width: 32
+      height: 32
+    spriteID: c979aff801545ea4eb99786f64890c56
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_239
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 0acca248d5fb6df4080876d1a70bc3c8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_240
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 32
+      height: 32
+    spriteID: a6c36dce7708f5a4db4f0020212b44c0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_241
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 3d1712a34950ddd40aa619aaa3c9f64e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_242
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 067d99c30051b7c429c805009e2666ac
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_243
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 0
+      width: 32
+      height: 32
+    spriteID: d76c0ed5cef299545b26a356c8f13c21
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_244
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 038efdd6a7d861d4e923124bfbaa320d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_245
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 5f5fdcff1e7e81c45a4ae1a4ad165c1e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_246
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 0
+      width: 32
+      height: 32
+    spriteID: ad820519d6b00394bb1369cbdc933843
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_247
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 9e9d25f1b42abb84299702c407156dc3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_248
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 5d8765c994351e249aaa92164e84b330
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_249
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 0
+      width: 32
+      height: 32
+    spriteID: de1b6e77459a2b54fbdc7a3d4c97aef4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_250
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 0
+      width: 32
+      height: 32
+    spriteID: c50a6b67ce5101e428ca4138d4b2df58
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_251
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 355670b817707de458fe04d57669027a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_252
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 8b2051bcc921d5042b5600e77166558d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_253
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 0
+      width: 32
+      height: 32
+    spriteID: e78a153c3e94eaf4abaa5b5115e36cc4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_254
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 448
+      y: 0
+      width: 32
+      height: 32
+    spriteID: dbab0011afa6e7d418622b350fe5dd79
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: Glacier_Decoration_255
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 93b1da06e9e7e2944b73ac6d70d82b7b
+    spriteOutline: []
+    tessellationDetail: 0
+  _secondaryTextures: []
+  _artifacts: {instanceID: 0}

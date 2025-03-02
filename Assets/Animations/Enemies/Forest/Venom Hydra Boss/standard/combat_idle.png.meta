@@ -154,6 +154,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -522,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      combat_idle_0: 2184384415916220950
+      combat_idle_1: 3717490139772026114
+      combat_idle_10: 7040130058838107315
+      combat_idle_11: 9000942790685304207
+      combat_idle_12: 7380466088138792675
+      combat_idle_13: -3475540009369928663
+      combat_idle_14: -2370392488252236182
+      combat_idle_15: -1095236634573035755
+      combat_idle_2: -4288704961373833967
+      combat_idle_3: 6018878041716743686
+      combat_idle_4: 6331924217660625532
+      combat_idle_5: 4405558040662734175
+      combat_idle_6: 3329366507398213499
+      combat_idle_7: -4000771394524754132
+      combat_idle_8: 7455954487890033785
+      combat_idle_9: -8481146074771775948
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

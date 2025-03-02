@@ -250,6 +250,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1322,7 +1335,55 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      halfslash_0: -7360887283132248952
+      halfslash_1: 2946491761470812303
+      halfslash_10: -5173414281985999465
+      halfslash_11: 6094884748318500635
+      halfslash_12: 4876112380907562958
+      halfslash_13: -3572205609029229948
+      halfslash_14: 1304762542087779835
+      halfslash_15: 74546710319642390
+      halfslash_16: 8193815060987015745
+      halfslash_17: -2398902210145024811
+      halfslash_18: -6378082291951078312
+      halfslash_19: -8717842878071883546
+      halfslash_2: 6127494618039838714
+      halfslash_20: -3735325796954757333
+      halfslash_21: 3075943434685710941
+      halfslash_22: 2827114350588028742
+      halfslash_23: -2380500779445291125
+      halfslash_24: 4664133093513662877
+      halfslash_25: 3060473834760254788
+      halfslash_26: 7228588540343475146
+      halfslash_27: -8594053961753626867
+      halfslash_28: 410953775454200020
+      halfslash_29: 1932254407409941891
+      halfslash_3: -8560215184948188472
+      halfslash_30: 1771699982103468203
+      halfslash_31: -4589344448610987481
+      halfslash_32: 2500632740963902010
+      halfslash_33: -6966568782194080477
+      halfslash_34: -4609099648485250590
+      halfslash_35: -559759358039936393
+      halfslash_36: -2114131834750432629
+      halfslash_37: -9177845180341282394
+      halfslash_38: 6088639811179849944
+      halfslash_39: -586904093265696336
+      halfslash_4: 7448143732087912070
+      halfslash_40: 2801714811216458555
+      halfslash_41: 1440743625107765371
+      halfslash_42: -2222604102475469771
+      halfslash_43: 5797656003361157588
+      halfslash_44: 2197980172835445449
+      halfslash_45: -5137074730275004865
+      halfslash_46: -3527063479077503182
+      halfslash_47: 1959161595369666699
+      halfslash_5: 4809740281640957854
+      halfslash_6: 8230401423163271297
+      halfslash_7: -5051421541534103253
+      halfslash_8: 4883814456735916637
+      halfslash_9: 5712926535390461950
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
