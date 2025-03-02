@@ -171,10 +171,10 @@ TextureImporter:
       name: Attack_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 42
-        width: 35
-        height: 55
+        x: 57
+        y: 43
+        width: 33
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +193,10 @@ TextureImporter:
       name: Attack_1
       rect:
         serializedVersion: 2
-        x: 195
-        y: 42
-        width: 34
-        height: 54
+        x: 196
+        y: 43
+        width: 32
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: Attack_2
       rect:
         serializedVersion: 2
-        x: 333
-        y: 42
-        width: 32
-        height: 57
+        x: 334
+        y: 43
+        width: 30
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,10 +237,10 @@ TextureImporter:
       name: Attack_3
       rect:
         serializedVersion: 2
-        x: 473
-        y: 42
-        width: 25
-        height: 66
+        x: 474
+        y: 43
+        width: 23
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,10 +259,10 @@ TextureImporter:
       name: Attack_4
       rect:
         serializedVersion: 2
-        x: 611
-        y: 42
-        width: 27
-        height: 67
+        x: 612
+        y: 43
+        width: 25
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: Attack_5
       rect:
         serializedVersion: 2
-        x: 750
-        y: 42
-        width: 28
-        height: 67
+        x: 751
+        y: 43
+        width: 26
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,10 +303,10 @@ TextureImporter:
       name: Attack_6
       rect:
         serializedVersion: 2
-        x: 893
-        y: 42
-        width: 25
-        height: 68
+        x: 894
+        y: 43
+        width: 23
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,10 +325,10 @@ TextureImporter:
       name: Attack_7
       rect:
         serializedVersion: 2
-        x: 1033
-        y: 42
-        width: 32
-        height: 66
+        x: 1034
+        y: 43
+        width: 30
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,10 +347,10 @@ TextureImporter:
       name: Attack_8
       rect:
         serializedVersion: 2
-        x: 1169
-        y: 42
-        width: 65
-        height: 65
+        x: 1170
+        y: 43
+        width: 63
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -369,10 +369,10 @@ TextureImporter:
       name: Attack_9
       rect:
         serializedVersion: 2
-        x: 1308
-        y: 42
-        width: 75
-        height: 63
+        x: 1309
+        y: 43
+        width: 73
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,10 +391,10 @@ TextureImporter:
       name: Attack_10
       rect:
         serializedVersion: 2
-        x: 1449
-        y: 42
-        width: 54
-        height: 61
+        x: 1450
+        y: 43
+        width: 52
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,10 +413,10 @@ TextureImporter:
       name: Attack_11
       rect:
         serializedVersion: 2
-        x: 1505
-        y: 78
-        width: 29
-        height: 11
+        x: 1506
+        y: 79
+        width: 27
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -435,10 +435,10 @@ TextureImporter:
       name: Attack_12
       rect:
         serializedVersion: 2
-        x: 1595
-        y: 42
-        width: 47
-        height: 60
+        x: 1596
+        y: 43
+        width: 45
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,10 +457,10 @@ TextureImporter:
       name: Attack_13
       rect:
         serializedVersion: 2
-        x: 1651
-        y: 78
-        width: 27
-        height: 11
+        x: 1652
+        y: 79
+        width: 25
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,10 +479,10 @@ TextureImporter:
       name: Attack_14
       rect:
         serializedVersion: 2
-        x: 1736
-        y: 42
-        width: 70
-        height: 54
+        x: 1737
+        y: 43
+        width: 68
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -501,7 +501,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bb50c60c643e52e49a9989acb130ebd4
     internalID: 0
     vertices: []
     indices: 
