@@ -422,7 +422,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Water Plants_0: -1954524127357168974
+      Water Plants_1: -3670467170651476512
+      Water Plants_10: 9073855828351865436
+      Water Plants_11: 5158463379169583550
+      Water Plants_2: -798367761518297111
+      Water Plants_3: 7245470068184644932
+      Water Plants_4: -6956039974994233036
+      Water Plants_5: 3205388719739244872
+      Water Plants_6: -8760551658762617126
+      Water Plants_7: 1951817497933118290
+      Water Plants_8: 2804099098705308478
+      Water Plants_9: 8439581992889536127
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
