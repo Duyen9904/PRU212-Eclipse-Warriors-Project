@@ -67,7 +67,7 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -80,7 +80,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -93,7 +93,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -106,8 +106,8 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -119,7 +119,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: VisionOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -146,7 +146,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -161,14 +160,13 @@ TextureImporter:
       name: magecity_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1386
-        width: 64
-        height: 64
+        x: 72
+        y: 1423
+        width: 24
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -183,14 +181,13 @@ TextureImporter:
       name: magecity_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1386
-        width: 64
-        height: 64
+        x: 97
+        y: 1419
+        width: 19
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -205,14 +202,13 @@ TextureImporter:
       name: magecity_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1386
-        width: 64
-        height: 64
+        x: 128
+        y: 1419
+        width: 32
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -227,14 +223,13 @@ TextureImporter:
       name: magecity_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1322
-        width: 64
-        height: 64
+        x: 163
+        y: 1387
+        width: 61
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -249,14 +244,13 @@ TextureImporter:
       name: magecity_5
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1322
-        width: 64
-        height: 64
+        x: 230
+        y: 1418
+        width: 25
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -271,14 +265,13 @@ TextureImporter:
       name: magecity_6
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1322
-        width: 64
-        height: 64
+        x: 65
+        y: 1388
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -293,14 +286,13 @@ TextureImporter:
       name: magecity_7
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1322
-        width: 64
-        height: 64
+        x: 97
+        y: 1386
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -315,14 +307,13 @@ TextureImporter:
       name: magecity_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1258
-        width: 64
-        height: 64
+        x: 130
+        y: 1386
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -337,14 +328,13 @@ TextureImporter:
       name: magecity_9
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1258
-        width: 64
-        height: 64
+        x: 226
+        y: 1394
+        width: 25
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -359,14 +349,13 @@ TextureImporter:
       name: magecity_10
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1258
-        width: 64
-        height: 64
+        x: 0
+        y: 1176
+        width: 256
+        height: 210
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -381,14 +370,13 @@ TextureImporter:
       name: magecity_11
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1258
-        width: 64
-        height: 64
+        x: 0
+        y: 1066
+        width: 160
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -403,14 +391,13 @@ TextureImporter:
       name: magecity_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1194
-        width: 64
-        height: 64
+        x: 162
+        y: 1133
+        width: 28
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -425,14 +412,13 @@ TextureImporter:
       name: magecity_13
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1194
-        width: 64
-        height: 64
+        x: 194
+        y: 1132
+        width: 30
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -447,14 +433,13 @@ TextureImporter:
       name: magecity_14
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1194
-        width: 64
-        height: 64
+        x: 229
+        y: 1133
+        width: 23
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -469,14 +454,13 @@ TextureImporter:
       name: magecity_15
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1194
-        width: 64
-        height: 64
+        x: 166
+        y: 1104
+        width: 20
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -492,13 +476,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1130
-        width: 64
-        height: 64
+        y: 970
+        width: 32
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -513,14 +496,13 @@ TextureImporter:
       name: magecity_17
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1130
-        width: 64
-        height: 64
+        x: 39
+        y: 1034
+        width: 18
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -535,14 +517,13 @@ TextureImporter:
       name: magecity_18
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1130
-        width: 64
-        height: 64
+        x: 67
+        y: 971
+        width: 29
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -557,14 +538,13 @@ TextureImporter:
       name: magecity_19
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1130
-        width: 64
-        height: 64
+        x: 35
+        y: 971
+        width: 29
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -579,14 +559,13 @@ TextureImporter:
       name: magecity_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1066
-        width: 64
-        height: 64
+        x: 129
+        y: 849
+        width: 127
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -601,14 +580,13 @@ TextureImporter:
       name: magecity_21
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1066
-        width: 64
-        height: 64
+        x: 2
+        y: 908
+        width: 62
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -623,14 +601,13 @@ TextureImporter:
       name: magecity_22
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1066
+        x: 64
+        y: 843
         width: 64
-        height: 64
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -646,13 +623,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1002
-        width: 64
-        height: 64
+        y: 874
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -667,14 +643,13 @@ TextureImporter:
       name: magecity_24
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1002
-        width: 64
-        height: 64
+        x: 35
+        y: 843
+        width: 29
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -689,14 +664,13 @@ TextureImporter:
       name: magecity_25
       rect:
         serializedVersion: 2
-        x: 0
-        y: 938
-        width: 64
-        height: 64
+        x: 5
+        y: 842
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -711,14 +685,13 @@ TextureImporter:
       name: magecity_26
       rect:
         serializedVersion: 2
-        x: 64
-        y: 938
-        width: 64
-        height: 64
+        x: 6
+        y: 818
+        width: 19
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -733,14 +706,13 @@ TextureImporter:
       name: magecity_27
       rect:
         serializedVersion: 2
-        x: 128
-        y: 938
-        width: 64
-        height: 64
+        x: 33
+        y: 792
+        width: 31
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -755,14 +727,13 @@ TextureImporter:
       name: magecity_28
       rect:
         serializedVersion: 2
-        x: 192
-        y: 938
-        width: 64
-        height: 64
+        x: 72
+        y: 790
+        width: 15
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -777,14 +748,13 @@ TextureImporter:
       name: magecity_29
       rect:
         serializedVersion: 2
-        x: 0
-        y: 874
-        width: 64
-        height: 64
+        x: 105
+        y: 795
+        width: 15
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -799,14 +769,13 @@ TextureImporter:
       name: magecity_30
       rect:
         serializedVersion: 2
-        x: 64
-        y: 874
-        width: 64
-        height: 64
+        x: 128
+        y: 778
+        width: 31
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -821,14 +790,13 @@ TextureImporter:
       name: magecity_31
       rect:
         serializedVersion: 2
-        x: 128
-        y: 874
-        width: 64
-        height: 64
+        x: 229
+        y: 780
+        width: 27
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -843,14 +811,13 @@ TextureImporter:
       name: magecity_32
       rect:
         serializedVersion: 2
-        x: 192
-        y: 874
-        width: 64
-        height: 64
+        x: 1
+        y: 782
+        width: 31
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -865,14 +832,13 @@ TextureImporter:
       name: magecity_33
       rect:
         serializedVersion: 2
-        x: 0
-        y: 810
-        width: 64
-        height: 64
+        x: 163
+        y: 790
+        width: 58
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -887,14 +853,13 @@ TextureImporter:
       name: magecity_34
       rect:
         serializedVersion: 2
-        x: 64
-        y: 810
-        width: 64
-        height: 64
+        x: 14
+        y: 741
+        width: 36
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -909,14 +874,13 @@ TextureImporter:
       name: magecity_35
       rect:
         serializedVersion: 2
-        x: 128
-        y: 810
-        width: 64
-        height: 64
+        x: 71
+        y: 741
+        width: 18
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -931,14 +895,13 @@ TextureImporter:
       name: magecity_36
       rect:
         serializedVersion: 2
-        x: 192
-        y: 810
-        width: 64
-        height: 64
+        x: 96
+        y: 732
+        width: 32
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -953,14 +916,13 @@ TextureImporter:
       name: magecity_37
       rect:
         serializedVersion: 2
-        x: 0
-        y: 746
-        width: 64
-        height: 64
+        x: 143
+        y: 721
+        width: 35
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -975,14 +937,13 @@ TextureImporter:
       name: magecity_38
       rect:
         serializedVersion: 2
-        x: 64
-        y: 746
-        width: 64
-        height: 64
+        x: 195
+        y: 724
+        width: 28
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -997,14 +958,13 @@ TextureImporter:
       name: magecity_39
       rect:
         serializedVersion: 2
-        x: 128
-        y: 746
-        width: 64
-        height: 64
+        x: 229
+        y: 714
+        width: 25
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1019,14 +979,13 @@ TextureImporter:
       name: magecity_40
       rect:
         serializedVersion: 2
-        x: 192
-        y: 746
-        width: 64
-        height: 64
+        x: 0
+        y: 400
+        width: 256
+        height: 314
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1041,14 +1000,13 @@ TextureImporter:
       name: magecity_41
       rect:
         serializedVersion: 2
-        x: 0
-        y: 682
-        width: 64
-        height: 64
+        x: 200
+        y: 400
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1063,14 +1021,13 @@ TextureImporter:
       name: magecity_42
       rect:
         serializedVersion: 2
-        x: 64
-        y: 682
-        width: 64
-        height: 64
+        x: 0
+        y: 42
+        width: 256
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1081,910 +1038,7 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: magecity_43
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 682
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5dd9791b2a044a4fbef66c77c5375ba
-      internalID: -1009231787
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_44
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 682
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 326ff50a3e3b48345864199f469cbe0d
-      internalID: -304734599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_45
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 618
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85b8eb906e073294b9d7198ae38ca93d
-      internalID: -159640505
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_46
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 618
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 488bf6dc4d8fd1a479279505da710467
-      internalID: -204679898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_47
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 618
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8138da7fa3c84e94c91f8dea850ab673
-      internalID: 1664154006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_48
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 618
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 654e4200c6f8f02488d58a92d997fa1a
-      internalID: -1064028025
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_49
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 554
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d88f07a5fbf97f74784131cb4abf1917
-      internalID: -1607541791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_50
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 554
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e99279a6d3777a458d7a371e6690833
-      internalID: -361322282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_51
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 554
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89223caa1ab895445ba2f91649d9aa88
-      internalID: -1009019356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_52
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 490
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1cacd691d3dfeda4aa83c603ab915055
-      internalID: -1479495448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_53
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 490
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c4aa553ddfdba84990535ba8db9cc5e
-      internalID: 2058824462
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_54
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 490
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3353317d98d6d424b8fa91bc78ec2b0d
-      internalID: 779041070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_55
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 490
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 772248273da7a9e4aa0a875522246b40
-      internalID: -1712711800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_56
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 426
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 341e10ae26900b740b52b16d5b4b7eb8
-      internalID: 334076680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_57
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 426
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08efe9da5cf5f6443800e380f6a20674
-      internalID: 1785793013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_58
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 426
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f80bd7fe9c28e7448a4f22e999ba7b9
-      internalID: 677136909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_59
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 426
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70907e8d7d380ba4198d47db07e86c5f
-      internalID: -389190567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_60
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 362
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aac6eb7723654a944ad5379bdf528a90
-      internalID: 1977132697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_61
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 362
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1e61be7ff7576b40b3819d4e5a7abe4
-      internalID: -1399409480
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_62
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 362
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e2b97700a2bd6d43be3ff0284032fec
-      internalID: 1656968160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_63
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 362
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 723315ae7884bee4ba3997f3f228d14a
-      internalID: 359440276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_64
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 298
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0fb32eaa6672f04182b163b941ff132
-      internalID: -1998674052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_65
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 298
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: beb2226f5053b824f9e34d9bacdee5b3
-      internalID: 1878233491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_66
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 298
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20bed3e1a12afe343a528e61a24e0f4d
-      internalID: -2004530707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_67
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 298
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 207416c7f125c7c418ef204f1922a450
-      internalID: 2092793553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_68
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 234
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 675c5643714096b4e9e4df34e1e5a99d
-      internalID: -1771442479
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_69
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 234
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fda1f9c64767b040add6a3789c8fefb
-      internalID: -341854410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_70
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 234
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 839bad09e88266d469562b59a9b67391
-      internalID: -1873342286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_71
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 234
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65b0f62a7deac0b499487538fd5fb976
-      internalID: -2087505373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_72
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 170
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c85187245b06f7a49ba1e0be2fab29b9
-      internalID: -22950322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_73
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 170
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17db2ba79bc661c4482d880c9ff7b905
-      internalID: -1477907575
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_74
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 170
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bff03a991663b3341a58a0d2d7048cec
-      internalID: -21780026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_75
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 170
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f8fcd999d28e114cb3471427edfb191
-      internalID: 678857384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_76
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 106
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61c45d2baf36f9541a83ca3c21def2d8
-      internalID: -738189021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_77
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 106
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1392b30d6af00945a4445fa695a3edc
-      internalID: 2093178324
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_78
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 106
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7cae6ac1220a8d42a4a895ce4ec2f51
-      internalID: -564591322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_79
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 106
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb85e09481714274c954448638434da6
-      internalID: 559721329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_80
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 42
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1915e634191b1948b6c87eda65f07eb
-      internalID: 1146596032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_81
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 42
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f801b64de970e742a30bfefcb1bf04a
-      internalID: 974668972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_82
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 42
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16033a89d5e4d33418cde377b3e5707f
-      internalID: 1623430534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magecity_83
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 42
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1c9048af5f1fdf4c9c4473e597c4b4c
-      internalID: 1808257306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
-    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -1994,8 +1048,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    spriteCustomMetadata:
-      entries: []
     nameFileIdTable:
       magecity_0: -785546809
       magecity_1: 1243842465
@@ -2035,51 +1087,10 @@ TextureImporter:
       magecity_40: 1382063169
       magecity_41: 1094471699
       magecity_42: 997299883
-      magecity_43: -1009231787
-      magecity_44: -304734599
-      magecity_45: -159640505
-      magecity_46: -204679898
-      magecity_47: 1664154006
-      magecity_48: -1064028025
-      magecity_49: -1607541791
       magecity_5: -2119208557
-      magecity_50: -361322282
-      magecity_51: -1009019356
-      magecity_52: -1479495448
-      magecity_53: 2058824462
-      magecity_54: 779041070
-      magecity_55: -1712711800
-      magecity_56: 334076680
-      magecity_57: 1785793013
-      magecity_58: 677136909
-      magecity_59: -389190567
       magecity_6: 1215224180
-      magecity_60: 1977132697
-      magecity_61: -1399409480
-      magecity_62: 1656968160
-      magecity_63: 359440276
-      magecity_64: -1998674052
-      magecity_65: 1878233491
-      magecity_66: -2004530707
-      magecity_67: 2092793553
-      magecity_68: -1771442479
-      magecity_69: -341854410
       magecity_7: 1676977624
-      magecity_70: -1873342286
-      magecity_71: -2087505373
-      magecity_72: -22950322
-      magecity_73: -1477907575
-      magecity_74: -21780026
-      magecity_75: 678857384
-      magecity_76: -738189021
-      magecity_77: 2093178324
-      magecity_78: -564591322
-      magecity_79: 559721329
       magecity_8: -1123532062
-      magecity_80: 1146596032
-      magecity_81: 974668972
-      magecity_82: 1623430534
-      magecity_83: 1808257306
       magecity_9: -1601142920
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

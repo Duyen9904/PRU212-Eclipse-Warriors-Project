@@ -19,15 +19,15 @@ ScriptedImporter:
   _createLevelBoundsTrigger: 0
   _useParallax: 1
   _intGridValues:
-  - _key: IntGrid_1
+  - _key: Collision_1
     _asset: {instanceID: 0}
-  - _key: IntGrid_2
+  - _key: Collision_2
     _asset: {instanceID: 0}
-  - _key: IntGrid_3
+  - _key: Collision_3
     _asset: {instanceID: 0}
   _entities:
-  - _key: Player
-    _asset: {fileID: 1734726158804743020, guid: 793603709a793cf4fb9ddfa006810b13, type: 3}
+  - _key: PlayerStart
+    _asset: {instanceID: 0}
   - _key: Enemies
     _asset: {instanceID: 0}
   - _key: Boss
