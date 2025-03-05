@@ -809,7 +809,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dungeon_Tileset_0: -3786115476455808955
+      Dungeon_Tileset_1: -3590207636862898149
+      Dungeon_Tileset_10: -8474740879727053552
+      Dungeon_Tileset_11: 4521207776522067839
+      Dungeon_Tileset_12: 1558959487191823921
+      Dungeon_Tileset_13: 595508747133529673
+      Dungeon_Tileset_14: -1474506998622769691
+      Dungeon_Tileset_15: -3624728776038038798
+      Dungeon_Tileset_16: -7606234629451901924
+      Dungeon_Tileset_17: -7657094741939605724
+      Dungeon_Tileset_18: -9000362276992120081
+      Dungeon_Tileset_19: -3317108722525156635
+      Dungeon_Tileset_2: -6941422852762540485
+      Dungeon_Tileset_20: -8355083117788888566
+      Dungeon_Tileset_21: -5918354282546245974
+      Dungeon_Tileset_22: -8139105514105801121
+      Dungeon_Tileset_23: -4582401877760778594
+      Dungeon_Tileset_24: -3211815418825281083
+      Dungeon_Tileset_25: -1866338419035408968
+      Dungeon_Tileset_26: -5052320489504722407
+      Dungeon_Tileset_27: 1114646796741094055
+      Dungeon_Tileset_3: -6419999111262848172
+      Dungeon_Tileset_4: 5094737752361063794
+      Dungeon_Tileset_5: 4023018930920339469
+      Dungeon_Tileset_6: -8120323925528636241
+      Dungeon_Tileset_7: 8938356945095094423
+      Dungeon_Tileset_8: 2818063909598327431
+      Dungeon_Tileset_9: -778764822399169897
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
