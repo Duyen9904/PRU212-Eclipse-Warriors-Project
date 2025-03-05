@@ -1134,7 +1134,48 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dungeon_tiles_0: 6420404250380019895
+      dungeon_tiles_1: 1084784950523803941
+      dungeon_tiles_10: 4545685854912230521
+      dungeon_tiles_11: -3023061875091369103
+      dungeon_tiles_12: 6725311274419569171
+      dungeon_tiles_13: 650693403263584314
+      dungeon_tiles_14: -5058788211806469395
+      dungeon_tiles_15: -6093401293372397660
+      dungeon_tiles_16: 1270211227817927925
+      dungeon_tiles_17: -8060929843619916789
+      dungeon_tiles_18: 8960572527511170056
+      dungeon_tiles_19: -8199437182966303622
+      dungeon_tiles_2: -8746033620184659114
+      dungeon_tiles_20: -5624414064620405630
+      dungeon_tiles_21: -2917350023695644350
+      dungeon_tiles_22: 2108976282551558751
+      dungeon_tiles_23: 5540061561785502580
+      dungeon_tiles_24: -257014355559042649
+      dungeon_tiles_25: -4354237494524392354
+      dungeon_tiles_26: 2664481278081565330
+      dungeon_tiles_27: 2609174863554348470
+      dungeon_tiles_28: 3610339231219930621
+      dungeon_tiles_29: 290047839109599427
+      dungeon_tiles_3: 2728243367429221048
+      dungeon_tiles_30: -2900853429046034592
+      dungeon_tiles_31: -1967943382963979276
+      dungeon_tiles_32: 6765227283418963874
+      dungeon_tiles_33: 3283300695089771475
+      dungeon_tiles_34: 4810687501681150605
+      dungeon_tiles_35: 8930077307140411828
+      dungeon_tiles_36: -1313345583907432619
+      dungeon_tiles_37: -1622683439983695371
+      dungeon_tiles_38: -5745523329672321289
+      dungeon_tiles_39: 6436560349361112449
+      dungeon_tiles_4: -3230975458514250041
+      dungeon_tiles_40: -1776575400403690255
+      dungeon_tiles_5: 2054877772185783745
+      dungeon_tiles_6: -7083331958401386302
+      dungeon_tiles_7: 6971619310513607880
+      dungeon_tiles_8: 4558597556851542799
+      dungeon_tiles_9: 1794310841801812479
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
