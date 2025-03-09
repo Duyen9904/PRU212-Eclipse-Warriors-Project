@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: 5e8dabb3178d62e43a21f7a01f8d19a9
+guid: 3c645f5c18247154d8a4a2156d2b277f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5643359365669763182
-    second: Stone_Guard_0
+      213: 8793639957104055765
+    second: idle_0
   - first:
-      213: -7889800427752468628
-    second: Stone_Guard_1
+      213: 6084859605308855041
+    second: idle_1
   - first:
-      213: 8823094331305336860
-    second: Stone_Guard_2
+      213: 8603369663158992956
+    second: idle_2
   - first:
-      213: 8936757303444205602
-    second: Stone_Guard_3
+      213: -5906421172241655209
+    second: idle_3
   - first:
-      213: -6896997779974493246
-    second: Stone_Guard_4
+      213: 5704420531145803721
+    second: idle_4
+  - first:
+      213: -148617073940163930
+    second: idle_5
+  - first:
+      213: 4729606205655721961
+    second: idle_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,17 +127,74 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stone_Guard_0
+      name: idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 193
+        width: 128
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d55ed543f8490a70800000000000000
+      internalID: 8793639957104055765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 129
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103de827293c17450800000000000000
+      internalID: 6084859605308855041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_2
       rect:
         serializedVersion: 2
         x: 83
-        y: 5
-        width: 122
-        height: 248
+        y: 129
+        width: 45
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e68be9a717d315e40800000000000000
-      internalID: 5643359365669763182
+      spriteID: c30c6f3402f456770800000000000000
+      internalID: 8603369663158992956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stone_Guard_1
+      name: idle_3
       rect:
         serializedVersion: 2
-        x: 371
-        y: 5
-        width: 122
-        height: 254
+        x: 0
+        y: 65
+        width: 65
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c6fc61b105cc18290800000000000000
-      internalID: -7889800427752468628
+      spriteID: 75a90b6cc3d280ea0800000000000000
+      internalID: -5906421172241655209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stone_Guard_2
+      name: idle_4
       rect:
         serializedVersion: 2
-        x: 659
-        y: 5
-        width: 122
-        height: 260
+        x: 64
+        y: 65
+        width: 64
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c10a73d2c8de17a70800000000000000
-      internalID: 8823094331305336860
+      spriteID: 9c70460ff3c2a2f40800000000000000
+      internalID: 5704420531145803721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stone_Guard_3
+      name: idle_5
       rect:
         serializedVersion: 2
-        x: 947
-        y: 5
-        width: 122
-        height: 254
+        x: 0
+        y: 1
+        width: 45
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +269,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2207ba32b6db50c70800000000000000
-      internalID: 8936757303444205602
+      spriteID: 6a21d340f8100fdf0800000000000000
+      internalID: -148617073940163930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stone_Guard_4
+      name: idle_6
       rect:
         serializedVersion: 2
-        x: 1151
-        y: 0
-        width: 865
-        height: 288
+        x: 64
+        y: 1
+        width: 45
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +291,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2cb66fb9f01f840a0800000000000000
-      internalID: -6896997779974493246
+      spriteID: 9e7a79719cfe2a140800000000000000
+      internalID: 4729606205655721961
       vertices: []
       indices: 
       edges: []
@@ -247,7 +310,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      idle_0: 8793639957104055765
+      idle_1: 6084859605308855041
+      idle_2: 8603369663158992956
+      idle_3: -5906421172241655209
+      idle_4: 5704420531145803721
+      idle_5: -148617073940163930
+      idle_6: 4729606205655721961
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
