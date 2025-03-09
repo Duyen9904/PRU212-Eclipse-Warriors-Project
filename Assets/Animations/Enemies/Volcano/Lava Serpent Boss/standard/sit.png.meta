@@ -1,22 +1,34 @@
 fileFormatVersion: 2
-guid: 5e8dabb3178d62e43a21f7a01f8d19a9
+guid: fc41d00c65940064fa0f6071f04196eb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5643359365669763182
-    second: Stone_Guard_0
+      213: -1780346783942680854
+    second: sit_0
   - first:
-      213: -7889800427752468628
-    second: Stone_Guard_1
+      213: -5835926142609931317
+    second: sit_1
   - first:
-      213: 8823094331305336860
-    second: Stone_Guard_2
+      213: -6548175957524531438
+    second: sit_2
   - first:
-      213: 8936757303444205602
-    second: Stone_Guard_3
+      213: 1056712624508818636
+    second: sit_3
   - first:
-      213: -6896997779974493246
-    second: Stone_Guard_4
+      213: -3289999227947949178
+    second: sit_4
+  - first:
+      213: 3408377101938051098
+    second: sit_5
+  - first:
+      213: 5518955271013388159
+    second: sit_6
+  - first:
+      213: 1618981678213280874
+    second: sit_7
+  - first:
+      213: -3147318851508016046
+    second: sit_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,17 +133,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stone_Guard_0
+      name: sit_0
       rect:
         serializedVersion: 2
-        x: 83
-        y: 5
-        width: 122
-        height: 248
+        x: 0
+        y: 191
+        width: 128
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e68be9a717d315e40800000000000000
-      internalID: 5643359365669763182
+      spriteID: aee561e5800fa47e0800000000000000
+      internalID: -1780346783942680854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stone_Guard_1
+      name: sit_1
       rect:
         serializedVersion: 2
-        x: 371
-        y: 5
-        width: 122
-        height: 254
+        x: 127
+        y: 196
+        width: 65
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c6fc61b105cc18290800000000000000
-      internalID: -7889800427752468628
+      spriteID: bc3c156e710a20fa0800000000000000
+      internalID: -5835926142609931317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stone_Guard_2
+      name: sit_2
       rect:
         serializedVersion: 2
-        x: 659
-        y: 5
-        width: 122
-        height: 260
+        x: 14
+        y: 127
+        width: 49
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c10a73d2c8de17a70800000000000000
-      internalID: 8823094331305336860
+      spriteID: 2173ffc09a43025a0800000000000000
+      internalID: -6548175957524531438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stone_Guard_3
+      name: sit_3
       rect:
         serializedVersion: 2
-        x: 947
-        y: 5
-        width: 122
-        height: 254
+        x: 81
+        y: 127
+        width: 46
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +231,64 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2207ba32b6db50c70800000000000000
-      internalID: 8936757303444205602
+      spriteID: cc4d48588823aae00800000000000000
+      internalID: 1056712624508818636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stone_Guard_4
+      name: sit_4
       rect:
         serializedVersion: 2
-        x: 1151
+        x: 140
+        y: 130
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6836ad222239752d0800000000000000
+      internalID: -3289999227947949178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sit_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 192
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18c7957aecfc4f20800000000000000
+      internalID: 3408377101938051098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sit_6
+      rect:
+        serializedVersion: 2
+        x: 1
         y: 0
-        width: 865
-        height: 288
+        width: 49
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +297,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2cb66fb9f01f840a0800000000000000
-      internalID: -6896997779974493246
+      spriteID: f7fc50c0494479c40800000000000000
+      internalID: 5518955271013388159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sit_7
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64b4c33247c77610800000000000000
+      internalID: 1618981678213280874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sit_8
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 2
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c69f40e2a7254d0800000000000000
+      internalID: -3147318851508016046
       vertices: []
       indices: 
       edges: []
@@ -247,7 +360,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sit_0: -1780346783942680854
+      sit_1: -5835926142609931317
+      sit_2: -6548175957524531438
+      sit_3: 1056712624508818636
+      sit_4: -3289999227947949178
+      sit_5: 3408377101938051098
+      sit_6: 5518955271013388159
+      sit_7: 1618981678213280874
+      sit_8: -3147318851508016046
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
