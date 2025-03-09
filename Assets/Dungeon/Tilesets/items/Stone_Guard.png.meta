@@ -247,12 +247,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Stone_Guard_0: 5643359365669763182
-      Stone_Guard_1: -7889800427752468628
-      Stone_Guard_2: 8823094331305336860
-      Stone_Guard_3: 8936757303444205602
-      Stone_Guard_4: -6896997779974493246
+    nameFileIdTable:{}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
