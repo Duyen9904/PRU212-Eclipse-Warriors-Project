@@ -1,5 +1,4 @@
-// EnemyAI.cs - Basic enemy AI for top-down games
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class EnemyAI : MonoBehaviour
@@ -28,8 +27,6 @@ public class EnemyAI : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     public enum EnemyState { Patrol, Chase, Attack }
-
-    [Header("State Tracking")]
     public EnemyState currentState = EnemyState.Patrol;
 
     private void Awake()
@@ -37,28 +34,42 @@ public class EnemyAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+        {
+            player = playerObj.transform;
+        }
+        else
+        {
+            Debug.LogWarning("⚠ EnemyAI: Không tìm thấy Player, sẽ chỉ tuần tra!");
+        }
     }
 
     private void Update()
     {
-        // Update state based on distance to player
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
-        if (distanceToPlayer <= attackRange)
-        {
-            currentState = EnemyState.Attack;
-        }
-        else if (distanceToPlayer <= detectionRange)
-        {
-            currentState = EnemyState.Chase;
-        }
-        else
+        if (player == null)
         {
             currentState = EnemyState.Patrol;
         }
+        else
+        {
+            float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        // Handle different states
+            if (distanceToPlayer <= attackRange)
+            {
+                currentState = EnemyState.Attack;
+            }
+            else if (distanceToPlayer <= detectionRange)
+            {
+                currentState = EnemyState.Chase;
+            }
+            else
+            {
+                currentState = EnemyState.Patrol;
+            }
+        }
+
         switch (currentState)
         {
             case EnemyState.Patrol:
@@ -72,133 +83,130 @@ public class EnemyAI : MonoBehaviour
                 break;
         }
 
-        // Update animations
         UpdateAnimator();
     }
 
     private void Patrol()
     {
-        // If no patrol points, stand still
         if (patrolPoints == null || patrolPoints.Length == 0)
         {
-            rb.linearVelocity = Vector2.zero;
+            rb.velocity = Vector2.zero;
             return;
         }
 
-        // If waiting at patrol point, don't move
         if (isWaiting)
         {
-            rb.linearVelocity = Vector2.zero;
+            rb.velocity = Vector2.zero;
             return;
         }
 
-        // Get current patrol target
         Transform target = patrolPoints[currentPatrolIndex];
 
-        // Check if we reached the target
         if (Vector2.Distance(transform.position, target.position) < 0.1f)
         {
-            // Start waiting
             StartCoroutine(WaitAtPatrolPoint());
             return;
         }
 
-        // Move towards patrol point
         Vector2 direction = (target.position - transform.position).normalized;
-        rb.linearVelocity = direction * moveSpeed;
+        rb.velocity = direction * moveSpeed;
 
-        // Update sprite direction
-        UpdateSpriteDirection(direction.x);
+        UpdateSpriteDirection(direction);
     }
 
     private IEnumerator WaitAtPatrolPoint()
     {
         isWaiting = true;
-        rb.linearVelocity = Vector2.zero;
+        rb.velocity = Vector2.zero;
 
         yield return new WaitForSeconds(patrolWaitTime);
 
-        // Move to next patrol point
         currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length;
         isWaiting = false;
     }
 
     private void ChasePlayer()
     {
-        // Calculate direction to player
+        if (player == null) return;
+
         Vector2 direction = (player.position - transform.position).normalized;
+        rb.velocity = direction * moveSpeed;
 
-        // Move towards player
-        rb.linearVelocity = direction * moveSpeed;
-
-        // Update sprite direction
-        UpdateSpriteDirection(direction.x);
+        UpdateSpriteDirection(direction);
     }
 
     private void AttackPlayer()
     {
-        // Stop moving when attacking
-        rb.linearVelocity = Vector2.zero;
+        rb.velocity = Vector2.zero;
 
-        // Face player
+        if (player == null) return;
+
         Vector2 direction = (player.position - transform.position).normalized;
-        UpdateSpriteDirection(direction.x);
+        UpdateSpriteDirection(direction);
 
-        // Attack if not on cooldown
         if (canAttack)
         {
-            StartCoroutine(PerformAttack());
+            StartCoroutine(PerformAttack(direction));
         }
     }
 
-    private IEnumerator PerformAttack()
+    private IEnumerator PerformAttack(Vector2 direction)
     {
         canAttack = false;
-
-        // Play attack animation
         animator.SetTrigger("Attack");
 
-        // Wait for animation to reach damage frame (approximately 0.3 seconds)
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y)) // Nếu tấn công ngang
+        {
+            animator.Play("Slash_Side");
+            spriteRenderer.flipX = direction.x < 0;
+        }
+        else if (direction.y > 0)
+        {
+            animator.Play("Slash_Back");
+        }
+        else
+        {
+            animator.Play("Slash_Front");
+        }
+
         yield return new WaitForSeconds(0.3f);
 
-        // Check if player is still in range
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-        if (distanceToPlayer <= attackRange)
+        if (player != null && Vector2.Distance(transform.position, player.position) <= attackRange)
         {
-            // Damage player
             player.GetComponent<PlayerStats>()?.TakeDamage(attackDamage);
         }
 
-        // Wait for cooldown
         yield return new WaitForSeconds(attackCooldown);
         canAttack = true;
     }
 
     private void UpdateAnimator()
     {
-        // Set movement parameters
-        animator.SetFloat("MoveX", rb.linearVelocity.x);
-        animator.SetFloat("MoveY", rb.linearVelocity.y);
-        animator.SetFloat("MoveMagnitude", rb.linearVelocity.magnitude);
+        animator.SetFloat("MoveX", rb.velocity.x);
+        animator.SetFloat("MoveY", rb.velocity.y);
+        animator.SetFloat("MoveMagnitude", rb.velocity.magnitude);
 
-        // Set state parameters
         animator.SetBool("IsChasing", currentState == EnemyState.Chase);
         animator.SetBool("IsAttacking", currentState == EnemyState.Attack);
     }
 
-    private void UpdateSpriteDirection(float directionX)
+    private void UpdateSpriteDirection(Vector2 direction)
     {
-        if (directionX > 0)
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y)) // Nếu di chuyển ngang
         {
-            spriteRenderer.flipX = false;
+            animator.Play("Walk_Side");
+            spriteRenderer.flipX = direction.x < 0; // Lật nếu đi trái
         }
-        else if (directionX < 0)
+        else if (direction.y > 0)
         {
-            spriteRenderer.flipX = true;
+            animator.Play("Walk_Back");
+        }
+        else
+        {
+            animator.Play("Walk_Front");
         }
     }
 
-    // Helper method to visualize ranges in editor
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
@@ -207,7 +215,6 @@ public class EnemyAI : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
 
-        // Draw patrol path if available
         if (patrolPoints != null && patrolPoints.Length > 0)
         {
             Gizmos.color = Color.green;
@@ -218,12 +225,11 @@ public class EnemyAI : MonoBehaviour
                     Vector3 pos = patrolPoints[i].position;
                     Gizmos.DrawSphere(pos, 0.3f);
 
-                    // Draw lines between patrol points
                     if (i < patrolPoints.Length - 1 && patrolPoints[i + 1] != null)
                     {
                         Gizmos.DrawLine(pos, patrolPoints[i + 1].position);
                     }
-                    else if (patrolPoints[0] != null) // Connect last to first
+                    else if (patrolPoints[0] != null)
                     {
                         Gizmos.DrawLine(pos, patrolPoints[0].position);
                     }

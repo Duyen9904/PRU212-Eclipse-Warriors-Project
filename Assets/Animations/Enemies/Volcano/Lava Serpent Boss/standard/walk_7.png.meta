@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 5e8dabb3178d62e43a21f7a01f8d19a9
+guid: 8fc3228eacf89da4eba44924ebc7538f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5643359365669763182
-    second: Stone_Guard_0
-  - first:
-      213: -7889800427752468628
-    second: Stone_Guard_1
-  - first:
-      213: 8823094331305336860
-    second: Stone_Guard_2
-  - first:
-      213: 8936757303444205602
-    second: Stone_Guard_3
-  - first:
-      213: -6896997779974493246
-    second: Stone_Guard_4
+      213: 9016736692722721256
+    second: walk_7_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stone_Guard_0
+      name: walk_7_0
       rect:
         serializedVersion: 2
-        x: 83
-        y: 5
-        width: 122
-        height: 248
+        x: 0
+        y: 6
+        width: 65
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,96 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e68be9a717d315e40800000000000000
-      internalID: 5643359365669763182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stone_Guard_1
-      rect:
-        serializedVersion: 2
-        x: 371
-        y: 5
-        width: 122
-        height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c6fc61b105cc18290800000000000000
-      internalID: -7889800427752468628
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stone_Guard_2
-      rect:
-        serializedVersion: 2
-        x: 659
-        y: 5
-        width: 122
-        height: 260
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c10a73d2c8de17a70800000000000000
-      internalID: 8823094331305336860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stone_Guard_3
-      rect:
-        serializedVersion: 2
-        x: 947
-        y: 5
-        width: 122
-        height: 254
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2207ba32b6db50c70800000000000000
-      internalID: 8936757303444205602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stone_Guard_4
-      rect:
-        serializedVersion: 2
-        x: 1151
-        y: 0
-        width: 865
-        height: 288
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2cb66fb9f01f840a0800000000000000
-      internalID: -6896997779974493246
+      spriteID: 8e1e7f2df32e12d70800000000000000
+      internalID: 9016736692722721256
       vertices: []
       indices: 
       edges: []
@@ -248,11 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Stone_Guard_0: 5643359365669763182
-      Stone_Guard_1: -7889800427752468628
-      Stone_Guard_2: 8823094331305336860
-      Stone_Guard_3: 8936757303444205602
-      Stone_Guard_4: -6896997779974493246
+      walk_7_0: 9016736692722721256
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
