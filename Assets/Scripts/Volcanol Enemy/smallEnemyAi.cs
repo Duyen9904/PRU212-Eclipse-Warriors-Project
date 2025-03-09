@@ -1,22 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyAI : MonoBehaviour
+public class SmallEnemyAI : MonoBehaviour
 {
     [Header("Movement Settings")]
-    public float moveSpeed = 3f;
+    public float moveSpeed = 4.5f; // SmallEnemy chạy nhanh hơn
     public float detectionRange = 8f;
     public float attackRange = 1.5f;
     public float stoppingDistance = 1f;
 
     [Header("Attack Settings")]
     public int attackDamage = 10;
-    public float attackCooldown = 1.5f;
+    public float attackCooldown = 1.2f; // Tấn công nhanh hơn
     private bool canAttack = true;
 
     [Header("Patrol Settings")]
     public Transform[] patrolPoints;
-    public float patrolWaitTime = 1f;
+    public float patrolWaitTime = 0.8f; // Ít thời gian chờ hơn
     private int currentPatrolIndex = 0;
     private bool isWaiting = false;
 
@@ -24,7 +24,7 @@ public class EnemyAI : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
-    private Transform target; // Thay vì player
+    private Transform target;
 
     public enum EnemyState { Patrol, Chase, Attack }
     public EnemyState currentState = EnemyState.Patrol;
@@ -35,7 +35,6 @@ public class EnemyAI : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        // Nếu chưa có Player, tạo một dummy target để enemy hướng đến
         if (GameObject.FindGameObjectWithTag("Player") != null)
         {
             target = GameObject.FindGameObjectWithTag("Player").transform;
@@ -43,7 +42,7 @@ public class EnemyAI : MonoBehaviour
         else
         {
             GameObject dummyTarget = new GameObject("DummyTarget");
-            dummyTarget.transform.position = transform.position + new Vector3(5f, 0f, 0f); // Tạo mục tiêu ảo cách 5 đơn vị
+            dummyTarget.transform.position = transform.position + new Vector3(5f, 0f, 0f);
             target = dummyTarget.transform;
         }
     }
@@ -146,7 +145,6 @@ public class EnemyAI : MonoBehaviour
         canAttack = false;
         animator.SetTrigger("Attack");
 
-        // Chọn animation attack theo hướng
         if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
             animator.Play("slashX");
@@ -166,7 +164,7 @@ public class EnemyAI : MonoBehaviour
         float distanceToTarget = Vector2.Distance(transform.position, target.position);
         if (distanceToTarget <= attackRange)
         {
-            Debug.Log("Enemy attacked!");
+            Debug.Log("SmallEnemy slashed!");
         }
 
         yield return new WaitForSeconds(attackCooldown);
@@ -181,26 +179,24 @@ public class EnemyAI : MonoBehaviour
         animator.SetBool("IsMoving", velocity.magnitude > 0);
         animator.SetBool("IsAttacking", currentState == EnemyState.Attack);
 
-        // Chọn animation di chuyển
         if (velocity.magnitude > 0)
         {
             if (Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y))
             {
-                animator.Play("walkX");
+                animator.Play("runX");
                 spriteRenderer.flipX = velocity.x < 0;
             }
             else if (velocity.y > 0)
             {
-                animator.Play("wakBack");
+                animator.Play("runBack");
             }
             else
             {
-                animator.Play("walkY");
+                animator.Play("runY");
             }
         }
         else if (currentState != EnemyState.Attack)
         {
-            // Khi không di chuyển, về trạng thái idle
             if (Mathf.Abs(velocity.x) > Mathf.Abs(velocity.y))
             {
                 animator.Play("idleX");
