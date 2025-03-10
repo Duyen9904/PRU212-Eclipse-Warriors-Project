@@ -84,13 +84,13 @@ public class SmallEnemyAI : MonoBehaviour
     {
         if (patrolPoints == null || patrolPoints.Length == 0)
         {
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
             return;
         }
 
         if (isWaiting)
         {
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
             return;
         }
 
@@ -103,7 +103,7 @@ public class SmallEnemyAI : MonoBehaviour
         }
 
         Vector2 direction = (targetPoint.position - transform.position).normalized;
-        rb.velocity = direction * moveSpeed;
+        rb.linearVelocity = direction * moveSpeed;
 
         UpdateSpriteDirection(direction.x);
     }
@@ -111,7 +111,7 @@ public class SmallEnemyAI : MonoBehaviour
     private IEnumerator WaitAtPatrolPoint()
     {
         isWaiting = true;
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
 
         yield return new WaitForSeconds(patrolWaitTime);
 
@@ -122,14 +122,14 @@ public class SmallEnemyAI : MonoBehaviour
     private void ChaseTarget()
     {
         Vector2 direction = (target.position - transform.position).normalized;
-        rb.velocity = direction * moveSpeed;
+        rb.linearVelocity = direction * moveSpeed;
 
         UpdateSpriteDirection(direction.x);
     }
 
     private void AttackTarget()
     {
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
 
         Vector2 direction = (target.position - transform.position).normalized;
         UpdateSpriteDirection(direction.x);
@@ -173,7 +173,7 @@ public class SmallEnemyAI : MonoBehaviour
 
     private void UpdateAnimator()
     {
-        Vector2 velocity = rb.velocity;
+        Vector2 velocity = rb.linearVelocity;
         animator.SetFloat("Horizontal", velocity.x);
         animator.SetFloat("Vertical", velocity.y);
         animator.SetBool("IsMoving", velocity.magnitude > 0);
