@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/VolcanoBiome.unity
+    guid: 09fe76be166c88742955e4d9392e5dc8
+  - enabled: 1
+    path: Assets/Scenes/DungeonBiome.unity
+    guid: 67998e331d5a21a4b9262d99a48d2fb1
+  - enabled: 1
+    path: Assets/Scenes/ForestBiome.unity
+    guid: 424e64cc2ac2f254ea4a309de441e7ae
+  - enabled: 1
+    path: Assets/Scenes/GlacierBiome.unity
+    guid: cfdcf1b1265c6684b90ed5bb06f96ffb
+  - enabled: 1
+    path: Assets/Scenes/AbyssalGate.unity
+    guid: 15691f774b6348441a7db85b7b51e09d
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 5b1b9f87bf4f96f47a614b698c1a6852, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
