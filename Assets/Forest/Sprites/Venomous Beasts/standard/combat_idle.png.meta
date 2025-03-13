@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 549a9f46e2ade2e429dfa0a91482245a
+guid: 8b4b0d345432f344bb763eb569140951
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8793639957104055765
-    second: idle_0
+      213: 2184384415916220950
+    second: combat_idle_0
   - first:
-      213: 6084859605308855041
-    second: idle_1
+      213: 3717490139772026114
+    second: combat_idle_1
   - first:
-      213: 8603369663158992956
-    second: idle_2
+      213: -4288704961373833967
+    second: combat_idle_2
   - first:
-      213: -5906421172241655209
-    second: idle_3
+      213: 6018878041716743686
+    second: combat_idle_3
   - first:
-      213: 5704420531145803721
-    second: idle_4
+      213: 6331924217660625532
+    second: combat_idle_4
   - first:
-      213: -148617073940163930
-    second: idle_5
+      213: 4405558040662734175
+    second: combat_idle_5
   - first:
-      213: 4729606205655721961
-    second: idle_6
+      213: 3329366507398213499
+    second: combat_idle_6
   - first:
-      213: -2073685336235588006
-    second: idle_7
+      213: -4000771394524754132
+    second: combat_idle_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -147,12 +147,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_0
+      name: combat_idle_0
       rect:
         serializedVersion: 2
-        x: 16
+        x: 20
         y: 193
-        width: 32
+        width: 27
         height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -162,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d55ed543f8490a70800000000000000
-      internalID: 8793639957104055765
+      spriteID: 612e59b8d0e705e10800000000000000
+      internalID: 2184384415916220950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_1
+      name: combat_idle_1
       rect:
         serializedVersion: 2
-        x: 80
+        x: 84
         y: 193
-        width: 32
-        height: 45
+        width: 27
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,63 +184,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 103de827293c17450800000000000000
-      internalID: 6084859605308855041
+      spriteID: 20df025069d279330800000000000000
+      internalID: 3717490139772026114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_2
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 129
-        width: 35
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c30c6f3402f456770800000000000000
-      internalID: 8603369663158992956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_3
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 129
-        width: 35
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 75a90b6cc3d280ea0800000000000000
-      internalID: -5906421172241655209
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_4
+      name: combat_idle_2
       rect:
         serializedVersion: 2
         x: 16
-        y: 65
-        width: 32
+        y: 129
+        width: 39
         height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -250,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c70460ff3c2a2f40800000000000000
-      internalID: 5704420531145803721
+      spriteID: 1157bd66f857b74c0800000000000000
+      internalID: -4288704961373833967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_5
+      name: combat_idle_3
       rect:
         serializedVersion: 2
-        x: 80
-        y: 65
-        width: 32
-        height: 46
+        x: 79
+        y: 129
+        width: 39
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,19 +228,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a21d340f8100fdf0800000000000000
-      internalID: -148617073940163930
+      spriteID: 60edce680b9578350800000000000000
+      internalID: 6018878041716743686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_6
+      name: combat_idle_4
       rect:
         serializedVersion: 2
-        x: 11
-        y: 1
-        width: 35
+        x: 20
+        y: 64
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72da5a27838fd750800000000000000
+      internalID: 6331924217660625532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combat_idle_5
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 64
+        width: 25
         height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -294,20 +272,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e7a79719cfe2a140800000000000000
-      internalID: 4729606205655721961
+      spriteID: f55711342bfa32d30800000000000000
+      internalID: 4405558040662734175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_7
+      name: combat_idle_6
       rect:
         serializedVersion: 2
-        x: 75
+        x: 9
         y: 1
-        width: 35
-        height: 46
+        width: 39
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,8 +294,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a56cdbd6c2ac833e0800000000000000
-      internalID: -2073685336235588006
+      spriteID: b7fad80e239443e20800000000000000
+      internalID: 3329366507398213499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combat_idle_7
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2fcec91d976a78c0800000000000000
+      internalID: -4000771394524754132
       vertices: []
       indices: 
       edges: []
@@ -336,14 +336,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      idle_0: 8793639957104055765
-      idle_1: 6084859605308855041
-      idle_2: 8603369663158992956
-      idle_3: -5906421172241655209
-      idle_4: 5704420531145803721
-      idle_5: -148617073940163930
-      idle_6: 4729606205655721961
-      idle_7: -2073685336235588006
+      combat_idle_0: 2184384415916220950
+      combat_idle_1: 3717490139772026114
+      combat_idle_2: -4288704961373833967
+      combat_idle_3: 6018878041716743686
+      combat_idle_4: 6331924217660625532
+      combat_idle_5: 4405558040662734175
+      combat_idle_6: 3329366507398213499
+      combat_idle_7: -4000771394524754132
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
