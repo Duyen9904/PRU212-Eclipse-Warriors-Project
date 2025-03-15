@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4ad7e8e30ce2f2d41b67383664db83c6
+guid: 659e96e31990f274cb2eb5167f32dde1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 631229466137274804
-    second: Introl Green Effect Bullet Impact Explosion 32x32_0
+      213: 7400798384094905104
+    second: Particle Sprite_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Introl Green Effect Bullet Impact Explosion 32x32_0
+      name: Particle Sprite_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 864
-        height: 672
+        x: 3
+        y: 3
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b92fd4ead392c800800000000000000
-      internalID: 631229466137274804
+      spriteID: 01303425beae4b660800000000000000
+      internalID: 7400798384094905104
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Introl Green Effect Bullet Impact Explosion 32x32_0: 631229466137274804
+      Particle Sprite_0: 7400798384094905104
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

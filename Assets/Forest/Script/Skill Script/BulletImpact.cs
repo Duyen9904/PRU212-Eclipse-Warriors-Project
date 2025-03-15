@@ -4,8 +4,9 @@ using UnityEngine;
 public class BulletImpact : MonoBehaviour
 {
 	[SerializeField] private int damage = 2;
-	[SerializeField] private float moveSpeed = 10f;
-	[SerializeField] private float skillDuration = 2f;
+	[SerializeField] private float moveSpeed = 6f;
+	[SerializeField] private float skillDuration = 5f;
+	[SerializeField] private GameObject bulletImpactVFX;
 	public bool IsActingComplete { get; private set; }
 	private Animator animator;
 
@@ -63,12 +64,13 @@ public class BulletImpact : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		Debug.Log("Va chạm với: " + collision.gameObject.name);
-		if (collision.gameObject.GetComponent<PlayerController>())
+		if (collision.gameObject.GetComponent<KnightControlller>())
 		{
-			PlayerHealth playerHealth = PlayerController.Instance.GetComponent<PlayerHealth>();
-			Debug.Log("take dmg from the shoot skill: " + damage);
+			PlayerHealth playerHealth = KnightControlller.Instance.GetComponent<PlayerHealth>();
+			Instantiate(bulletImpactVFX, transform.position, Quaternion.identity);
 			playerHealth.TakeDamage(damage, this.transform);
+			Debug.Log("Damage the player");
+			gameObject.SetActive(false);
 		}
 	}
 }
