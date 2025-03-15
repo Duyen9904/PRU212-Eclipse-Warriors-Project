@@ -7,9 +7,9 @@ public class LizzerController : MonoBehaviour
 	[Header("Movement Settings")]
 	public float moveSpeed = 3f;
 	public float detectionRange = 10f;
-	public float attackRange = 3f;
+	public float attackRange = 100f;
 	public float stoppingDistance = 1f;
-	public float moveRadius = 5f; 
+	public float moveRadius = 5f;
 
 	[Header("Attack Settings")]
 	public int attackDamage = 10;
@@ -37,6 +37,12 @@ public class LizzerController : MonoBehaviour
 	public enum EnemyState { Patrol, Chase, Attack }
 	public EnemyState currentState = EnemyState.Patrol;
 
+
+	[Header("Skill")]
+	[SerializeField] private BulletImpact bulletImpact;
+	private bool isAttacking = false;
+
+
 	private void Awake()
 	{
 		rb = GetComponent<Rigidbody2D>();
@@ -47,10 +53,10 @@ public class LizzerController : MonoBehaviour
 
 	private void Update()
 	{
+		if (isAttacking) return;
 		float distanceToTarget = Vector2.Distance(transform.position, target.position);
 		if (distanceToTarget <= attackRange)
 		{
-			// Nếu trong tầm đánh, thực hiện tấn công
 			AttackTarget();
 		}
 		else if (distanceToTarget <= detectionRange)
@@ -70,12 +76,10 @@ public class LizzerController : MonoBehaviour
 		float distanceToTarget = Vector2.Distance(target.position, transform.position);
 		if (distanceToTarget <= detectionRange)
 		{
-			// Nếu người chơi trong detectionRange -> Chase
 			ChasePlayer();
 		}
 		else
 		{
-			// Nếu người chơi ngoài detectionRange -> Di chuyển ngẫu nhiên
 			WanderRandomly();
 		}
 	}
@@ -94,13 +98,13 @@ public class LizzerController : MonoBehaviour
 		if (Vector2.Distance(transform.position, randomDestination) < 0.5f || timer <= 0f)
 		{
 			Vector2 newDestination;
-			float minDistance = 5f;  
-			float maxDistance = moveRadius * 2.5f; 
+			float minDistance = 5f;
+			float maxDistance = moveRadius * 2.5f;
 			do
 			{
 				newDestination = (Vector2)transform.position +
 								 UnityEngine.Random.insideUnitCircle.normalized * UnityEngine.Random.Range(minDistance, maxDistance);
-			} while (Vector2.Distance(transform.position, newDestination) < 2f); 
+			} while (Vector2.Distance(transform.position, newDestination) < 2f);
 
 			randomDestination = newDestination;
 
@@ -108,7 +112,7 @@ public class LizzerController : MonoBehaviour
 		}
 
 		Vector2 direction = (randomDestination - (Vector2)transform.position).normalized;
-		rb.linearVelocity = direction * moveSpeed; 
+		rb.linearVelocity = direction * moveSpeed;
 		UpdateSpriteDirection(direction.x);
 	}
 
@@ -116,13 +120,14 @@ public class LizzerController : MonoBehaviour
 
 	private void AttackTarget()
 	{
+		if (isAttacking) return;
+
+		isAttacking = true;
+
 		rb.linearVelocity = Vector2.zero; // Dừng di chuyển khi tấn công
 		UpdateSpriteDirection((target.position - transform.position).normalized.x);
 
-		if (canAttack)
-		{
-			StartCoroutine(PerformAttack());
-		}
+		StartCoroutine(PerformAttack());
 	}
 
 	private IEnumerator PerformAttack()
@@ -130,22 +135,20 @@ public class LizzerController : MonoBehaviour
 		canAttack = false;
 		animator.SetTrigger("Attack");
 
-		yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Attacking"));
-		yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.5f); // Giữa animation
-
-
-		DealDamageToPlayer();
-
-
-		yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f);
-
-		yield return new WaitForSeconds(attackCooldown);
+		yield return new WaitForSeconds(0.5f);
+		if (!bulletImpact.gameObject.activeInHierarchy)
+		{
+			bulletImpact.gameObject.SetActive(true);
+		}
+		
+		yield return StartCoroutine(bulletImpact.Impact());
 		canAttack = true;
+		isAttacking = false;
 	}
 
 	private void UpdateSpriteDirection(float directionX)
 	{
-		
+
 		if (directionX > 0)
 		{
 			spriteRenderer.flipX = true;
@@ -156,24 +159,10 @@ public class LizzerController : MonoBehaviour
 		}
 	}
 
-	private void DealDamageToPlayer()
-	{
+	//private void DealDamageToPlayer()
+	//{
 
-		Debug.Log("Player Layer: " + LayerMask.LayerToName(target.gameObject.layer));
-		Debug.Log("Expected Layer: " + LayerMask.LayerToName(playerLayer));
-
-		Collider2D hitPlayer = Physics2D.OverlapCircle(transform.position + (Vector3.right * (spriteRenderer.flipX ? -1 : 1)), attackRange, playerLayer);
-		
-		if (hitPlayer != null)
-		{
-			PlayerController playerHealth = hitPlayer.GetComponent<PlayerController>();
-			if (playerHealth != null)
-			{
-				playerHealth.TakeDamage(attackDamage);
-				Debug.Log("Lizzer dealt " + attackDamage + " damage to Player!");
-			}
-		}
-	}
+	//}
 
 
 	private void OnDrawGizmosSelected()
