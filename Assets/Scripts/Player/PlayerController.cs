@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Top-down RPG player controller with LTDK Level Manager integration
 /// </summary>
-public class PlayerController : MonoBehaviour
+public class PlayerController : Singleton<PlayerController>
 {
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 5f;
@@ -47,30 +47,33 @@ public class PlayerController : MonoBehaviour
         isShooting = shooting;
     }
 
-    private void Awake()
-    {
-        // Get components
-        rb = GetComponent<Rigidbody2D>();
-        boxCollider = GetComponent<BoxCollider2D>();
+	protected override void Awake()
+	{
+		base.Awake();
+		// Get components
+		rb = GetComponent<Rigidbody2D>();
+		boxCollider = GetComponent<BoxCollider2D>();
 
-        // If animator reference is missing, try to get it
-        if (animator == null)
-            animator = GetComponent<Animator>();
+		// If animator reference is missing, try to get it
+		if (animator == null)
+			animator = GetComponent<Animator>();
 
-        if (spriteRenderer == null)
-            spriteRenderer = GetComponent<SpriteRenderer>();
+		if (spriteRenderer == null)
+			spriteRenderer = GetComponent<SpriteRenderer>();
 
-        // Cache animation parameter hashes
-        if (animator != null)
-        {
-            moveXHash = Animator.StringToHash("MoveX");
-            moveYHash = Animator.StringToHash("MoveY");
-            isMovingHash = Animator.StringToHash("isMoving");
-            isShootingHash = Animator.StringToHash("isShooting");
-        }
-    }
+		// Cache animation parameter hashes
+		if (animator != null)
+		{
+			moveXHash = Animator.StringToHash("MoveX");
+			moveYHash = Animator.StringToHash("MoveY");
+			isMovingHash = Animator.StringToHash("isMoving");
+			isShootingHash = Animator.StringToHash("isShooting");
+		}
+		DontDestroyOnLoad(gameObject);
 
-    private void Start()
+	}
+
+	private void Start()
     {
         // Register with level manager if it exists
         //if (LTDKLevelManager.Instance != null)

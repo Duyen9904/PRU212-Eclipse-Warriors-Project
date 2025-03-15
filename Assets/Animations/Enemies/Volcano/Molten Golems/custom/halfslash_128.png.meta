@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 1a1eec8910561ee45be83672a86d1bfa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8674895600238454306
+    second: halfslash_128_0
+  - first:
+      213: 5036452826156719526
+    second: halfslash_128_1
+  - first:
+      213: -7164095992489099211
+    second: halfslash_128_2
+  - first:
+      213: -118031461950927732
+    second: halfslash_128_3
+  - first:
+      213: -3409654046608452646
+    second: halfslash_128_4
+  - first:
+      213: -6681959923547177739
+    second: halfslash_128_5
+  - first:
+      213: -3704014451951506989
+    second: halfslash_128_6
+  - first:
+      213: -1783987561358431824
+    second: halfslash_128_7
+  - first:
+      213: -132723118235077465
+    second: halfslash_128_8
+  - first:
+      213: 6045369595213045285
+    second: halfslash_128_9
+  - first:
+      213: 6979207711550860565
+    second: halfslash_128_10
+  - first:
+      213: 5111556055616290756
+    second: halfslash_128_11
+  - first:
+      213: -2587597671178157383
+    second: halfslash_128_12
+  - first:
+      213: 8363358657699203419
+    second: halfslash_128_13
+  - first:
+      213: 1019406695362090026
+    second: halfslash_128_14
+  - first:
+      213: -1102152490589753335
+    second: halfslash_128_15
+  - first:
+      213: 3632374878722594928
+    second: halfslash_128_16
+  - first:
+      213: 5757078927323395490
+    second: halfslash_128_17
+  - first:
+      213: 4067735034869741298
+    second: halfslash_128_18
+  - first:
+      213: -6011072224086770931
+    second: halfslash_128_19
+  - first:
+      213: 7652850875288531864
+    second: halfslash_128_20
+  - first:
+      213: 4636992013323311556
+    second: halfslash_128_21
+  - first:
+      213: 2254176831353005582
+    second: halfslash_128_22
+  - first:
+      213: -6910752007292499302
+    second: halfslash_128_23
+  - first:
+      213: 99451071722725019
+    second: halfslash_128_24
+  - first:
+      213: -4076710390016926931
+    second: halfslash_128_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: halfslash_128_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 416
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226efcb369b636870800000000000000
+      internalID: 8674895600238454306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_1
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 417
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad551f392315e540800000000000000
+      internalID: 5036452826156719526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_2
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 418
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53043eed6a4049c90800000000000000
+      internalID: -7164095992489099211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_3
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 419
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c481eb20bac5ef0800000000000000
+      internalID: -118031461950927732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_4
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 419
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad31ee0b5b97ea0d0800000000000000
+      internalID: -3409654046608452646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_5
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 417
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fcf2912ad8e443a0800000000000000
+      internalID: -6681959923547177739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_6
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 342
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9648c0b72b89cc0800000000000000
+      internalID: -3704014451951506989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_7
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 289
+        width: 57
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b9e381d3c00e37e0800000000000000
+      internalID: -1783987561358431824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_8
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 289
+        width: 64
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4bd14f609782ef0800000000000000
+      internalID: -132723118235077465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_9
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 287
+        width: 67
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ede9afd9775e350800000000000000
+      internalID: 6045369595213045285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_10
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 287
+        width: 69
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51de7acaf602bd060800000000000000
+      internalID: 6979207711550860565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_11
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 289
+        width: 69
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf71808625efe640800000000000000
+      internalID: 5111556055616290756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_12
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 289
+        width: 65
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b24cc3b0a1071cd0800000000000000
+      internalID: -2587597671178157383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_13
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 160
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b594951636e901470800000000000000
+      internalID: 8363358657699203419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_14
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 160
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2456b60df8a52e00800000000000000
+      internalID: 1019406695362090026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_15
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 158
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900f516362e54b0f0800000000000000
+      internalID: -1102152490589753335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_16
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 158
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078105105b9c86230800000000000000
+      internalID: 3632374878722594928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_17
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 158
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a57ff638c045ef40800000000000000
+      internalID: 5757078927323395490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_18
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 160
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f672d1667f737830800000000000000
+      internalID: 4067735034869741298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_19
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 33
+        width: 57
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b371409a1649ca0800000000000000
+      internalID: -6011072224086770931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_20
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 86
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8933c941353643a60800000000000000
+      internalID: 7652850875288531864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_21
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 33
+        width: 64
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c995741ba7e95040800000000000000
+      internalID: 4636992013323311556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_22
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 31
+        width: 67
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0626bd82e1784f10800000000000000
+      internalID: 2254176831353005582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_23
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 31
+        width: 69
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a43820aa31810a0800000000000000
+      internalID: -6910752007292499302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_24
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 33
+        width: 69
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e909a0932516100800000000000000
+      internalID: 99451071722725019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: halfslash_128_25
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 33
+        width: 65
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b95e6ef7d9c67c0800000000000000
+      internalID: -4076710390016926931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      halfslash_128_0: 8674895600238454306
+      halfslash_128_1: 5036452826156719526
+      halfslash_128_10: 6979207711550860565
+      halfslash_128_11: 5111556055616290756
+      halfslash_128_12: -2587597671178157383
+      halfslash_128_13: 8363358657699203419
+      halfslash_128_14: 1019406695362090026
+      halfslash_128_15: -1102152490589753335
+      halfslash_128_16: 3632374878722594928
+      halfslash_128_17: 5757078927323395490
+      halfslash_128_18: 4067735034869741298
+      halfslash_128_19: -6011072224086770931
+      halfslash_128_2: -7164095992489099211
+      halfslash_128_20: 7652850875288531864
+      halfslash_128_21: 4636992013323311556
+      halfslash_128_22: 2254176831353005582
+      halfslash_128_23: -6910752007292499302
+      halfslash_128_24: 99451071722725019
+      halfslash_128_25: -4076710390016926931
+      halfslash_128_3: -118031461950927732
+      halfslash_128_4: -3409654046608452646
+      halfslash_128_5: -6681959923547177739
+      halfslash_128_6: -3704014451951506989
+      halfslash_128_7: -1783987561358431824
+      halfslash_128_8: -132723118235077465
+      halfslash_128_9: 6045369595213045285
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

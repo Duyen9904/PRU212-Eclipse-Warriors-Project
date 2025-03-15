@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 0043476eb0bdd3d4396ee7e500a65abc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5257205898293041415
+    second: slash_oversize_3_0
+  - first:
+      213: 403516125446932738
+    second: slash_oversize_3_1
+  - first:
+      213: 694466000740902566
+    second: slash_oversize_3_2
+  - first:
+      213: -8854524154174940305
+    second: slash_oversize_3_3
+  - first:
+      213: 9114398967199942478
+    second: slash_oversize_3_4
+  - first:
+      213: 1961531012102461126
+    second: slash_oversize_3_5
+  - first:
+      213: 1321402717435410215
+    second: slash_oversize_3_6
+  - first:
+      213: 3628835144142834180
+    second: slash_oversize_3_7
+  - first:
+      213: 4782862209460704972
+    second: slash_oversize_3_8
+  - first:
+      213: -1131483287375157523
+    second: slash_oversize_3_9
+  - first:
+      213: 6698398073553645613
+    second: slash_oversize_3_10
+  - first:
+      213: -6351924745113180707
+    second: slash_oversize_3_11
+  - first:
+      213: -165014299835905355
+    second: slash_oversize_3_12
+  - first:
+      213: 5513623335851903835
+    second: slash_oversize_3_13
+  - first:
+      213: -2847128012256242459
+    second: slash_oversize_3_14
+  - first:
+      213: -6774401255126999619
+    second: slash_oversize_3_15
+  - first:
+      213: -8104551848220965717
+    second: slash_oversize_3_16
+  - first:
+      213: 2863895414451651008
+    second: slash_oversize_3_17
+  - first:
+      213: -4090291033816983316
+    second: slash_oversize_3_18
+  - first:
+      213: 5380751919993987040
+    second: slash_oversize_3_19
+  - first:
+      213: -4092082681940088005
+    second: slash_oversize_3_20
+  - first:
+      213: -53697644405073393
+    second: slash_oversize_3_21
+  - first:
+      213: -4424066966967550242
+    second: slash_oversize_3_22
+  - first:
+      213: 7960298702249639596
+    second: slash_oversize_3_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: slash_oversize_3_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 641
+        width: 66
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f6a721e617aa07b0800000000000000
+      internalID: -5257205898293041415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_1
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 640
+        width: 66
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209086637c3999500800000000000000
+      internalID: 403516125446932738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_2
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 640
+        width: 64
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a66fb2f52d33a900800000000000000
+      internalID: 694466000740902566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_3
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 640
+        width: 77
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b594fe1396e1580800000000000000
+      internalID: -8854524154174940305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_4
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 640
+        width: 83
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47c32d0299dc7e70800000000000000
+      internalID: 9114398967199942478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_5
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 640
+        width: 95
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c697481012c83b10800000000000000
+      internalID: 1961531012102461126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_6
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 447
+        width: 77
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72739f935c0965210800000000000000
+      internalID: 1321402717435410215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_7
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 449
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a461356563c5230800000000000000
+      internalID: 3628835144142834180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_8
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 449
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc69b8cb6d3206240800000000000000
+      internalID: 4782862209460704972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_9
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 449
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de666bae1f92c40f0800000000000000
+      internalID: -1131483287375157523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_10
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 449
+        width: 111
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20735aee8d75fc50800000000000000
+      internalID: 6698398073553645613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_11
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 449
+        width: 110
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5e387291e69d7a0800000000000000
+      internalID: -6351924745113180707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_12
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 254
+        width: 66
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bacb6b5e50c5bdf0800000000000000
+      internalID: -165014299835905355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_13
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 257
+        width: 67
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bc1c62633548c40800000000000000
+      internalID: 5513623335851903835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_14
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 257
+        width: 65
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e417675828fc78d0800000000000000
+      internalID: -2847128012256242459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_15
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 257
+        width: 74
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbdd13663fd7cf1a0800000000000000
+      internalID: -6774401255126999619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_16
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 238
+        width: 83
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4cd07a809d68f80800000000000000
+      internalID: -8104551848220965717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_17
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 241
+        width: 96
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1c244b4b99eb720800000000000000
+      internalID: 2863895414451651008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 63
+        width: 77
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce89f5dd9fd5c37c0800000000000000
+      internalID: -4090291033816983316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_19
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 65
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef1ebfdc554caa40800000000000000
+      internalID: 5380751919993987040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_20
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 65
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3bee674b700637c0800000000000000
+      internalID: -4092082681940088005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_21
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 65
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ad5f3e64a314ff0800000000000000
+      internalID: -53697644405073393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_22
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 65
+        width: 111
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edefb53888e8a92c0800000000000000
+      internalID: -4424066966967550242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slash_oversize_3_23
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 65
+        width: 110
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caeb7958e79a87e60800000000000000
+      internalID: 7960298702249639596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      slash_oversize_3_0: -5257205898293041415
+      slash_oversize_3_1: 403516125446932738
+      slash_oversize_3_10: 6698398073553645613
+      slash_oversize_3_11: -6351924745113180707
+      slash_oversize_3_12: -165014299835905355
+      slash_oversize_3_13: 5513623335851903835
+      slash_oversize_3_14: -2847128012256242459
+      slash_oversize_3_15: -6774401255126999619
+      slash_oversize_3_16: -8104551848220965717
+      slash_oversize_3_17: 2863895414451651008
+      slash_oversize_3_18: -4090291033816983316
+      slash_oversize_3_19: 5380751919993987040
+      slash_oversize_3_2: 694466000740902566
+      slash_oversize_3_20: -4092082681940088005
+      slash_oversize_3_21: -53697644405073393
+      slash_oversize_3_22: -4424066966967550242
+      slash_oversize_3_23: 7960298702249639596
+      slash_oversize_3_3: -8854524154174940305
+      slash_oversize_3_4: 9114398967199942478
+      slash_oversize_3_5: 1961531012102461126
+      slash_oversize_3_6: 1321402717435410215
+      slash_oversize_3_7: 3628835144142834180
+      slash_oversize_3_8: 4782862209460704972
+      slash_oversize_3_9: -1131483287375157523
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
