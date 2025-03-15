@@ -212,3 +212,4 @@ MonoBehaviour:
   damage: 2
   moveSpeed: 10
   skillDuration: 2
+  bulletImpactVFX: {fileID: 2111989615941534087, guid: 52bc13c52bb98b54ba4ae8de9e1daf3c, type: 3}
