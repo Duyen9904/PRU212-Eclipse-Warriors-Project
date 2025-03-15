@@ -120,7 +120,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -722,7 +722,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Portal_0: 2189510010676529607
+      Portal_1: -2655743518466041805
+      Portal_10: -6243829485269475877
+      Portal_11: -4040977761308534313
+      Portal_12: 9187669588170011834
+      Portal_13: -5770780211250784973
+      Portal_14: 6929692584990154426
+      Portal_15: -7193387756126948556
+      Portal_16: 8532301567556799393
+      Portal_17: -7057878137808709057
+      Portal_18: -4947229090106881374
+      Portal_19: 2053025966658111632
+      Portal_2: 5763079367947051459
+      Portal_20: 2816034117096381973
+      Portal_21: 2189769627333426262
+      Portal_22: 2663875443410626922
+      Portal_23: 2625762517618189750
+      Portal_3: 4595544271858990753
+      Portal_4: -4595522883015475761
+      Portal_5: 7871413547306426770
+      Portal_6: 4576928675844355861
+      Portal_7: -8225264815004563020
+      Portal_8: -3456897263846328435
+      Portal_9: 4799579431202298925
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
