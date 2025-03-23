@@ -10,13 +10,11 @@ public class PlayerController : Singleton<PlayerController>
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float sprintMultiplier = 1.5f;
-    [SerializeField] private float diagonalMovementModifier = 0.7071f; // Approximately 1/sqrt(2)
+    [SerializeField] private float diagonalMovementModifier = 0.7071f; // 1/sqrt(2) if you want to manually scale diagonal
 
     [Header("Animation")]
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer spriteRenderer;
-
-    // Player Stats are now handled by PlayerHealth component
 
     [Header("Character Selection")]
     [SerializeField] private CharacterDatabase characterDatabase;
@@ -30,47 +28,58 @@ public class PlayerController : Singleton<PlayerController>
     // Movement
     private Vector2 movementInput;
     private bool isSprinting = false;
+    private bool canMove = true;
+    private bool isShooting = false;
 
-    // Inventory
-    private List<string> inventory = new List<string>();
-
-    // Animation parameter hashes (for performance)
+    // Animation parameter hashes
     private int moveXHash;
     private int moveYHash;
     private int isMovingHash;
     private int isShootingHash;
+    // For remembering last input direction
+    private int lastInputXHash;
+    private int lastInputYHash;
+
+    // Store last non-zero input direction
+    private float lastInputX = 0f;
+    private float lastInputY = -1f; // Default facing down
+
+    // Inventory
+    private List<string> inventory = new List<string>();
 
     // Death state
     private PlayerHealth playerHealth;
     private bool isDead = false;
 
-    // State
-    private bool canMove = true;
-    private bool isShooting = false;
-
     protected override void Awake()
     {
         base.Awake();
+
         // Get components
         rb = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
 
-        // If animator reference is missing, try to get it
+        // If animator reference is missing, try to get it on the same object
+        // (If your Animator is on a child, change to GetComponentInChildren<Animator>())
         if (animator == null)
             animator = GetComponent<Animator>();
 
+        // Same for SpriteRenderer
         if (spriteRenderer == null)
             spriteRenderer = GetComponent<SpriteRenderer>();
 
         // Cache animation parameter hashes
         if (animator != null)
         {
-            moveXHash = Animator.StringToHash("MoveX");
-            moveYHash = Animator.StringToHash("MoveY");
+            moveXHash = Animator.StringToHash("WalkInputX");
+            moveYHash = Animator.StringToHash("WalkInputY");
             isMovingHash = Animator.StringToHash("isWalking");
             isShootingHash = Animator.StringToHash("isShooting");
+            lastInputXHash = Animator.StringToHash("LastInputX");
+            lastInputYHash = Animator.StringToHash("LastInputY");
         }
 
+        // Make player persistent across scene loads
         DontDestroyOnLoad(gameObject);
     }
 
@@ -78,7 +87,6 @@ public class PlayerController : Singleton<PlayerController>
     {
         // Get the player health component
         playerHealth = GetComponent<PlayerHealth>();
-
         if (playerHealth != null)
         {
             // Subscribe to the player death event
@@ -93,46 +101,40 @@ public class PlayerController : Singleton<PlayerController>
     {
         if (!canMove || isDead) return;
 
-        Debug.Log($"Input: {movementInput}, Speed: {moveSpeed}, Vel: {rb.linearVelocity}");
-
         // Get input
         movementInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        Debug.Log($"Input 2: {movementInput}, Speed: {moveSpeed}, Vel: {rb.linearVelocity}");
-        // Normalize diagonal movement to prevent faster diagonal speed
-        if (movementInput.magnitude > 1)
+        // Normalize diagonal movement if needed
+        if (movementInput.magnitude > 1f)
         {
             movementInput.Normalize();
         }
 
+        Debug.Log(movementInput);
         // Sprint
         isSprinting = Input.GetKey(KeyCode.LeftShift);
+
+        // Update animations
+        UpdateAnimation();
+
+        // Simple shooting test
+        if (Input.GetMouseButtonDown(0)) StartShooting();
+        else if (Input.GetMouseButtonUp(0)) StopShooting();
+
+        // Interaction
+        if (Input.GetKeyDown(KeyCode.E)) Interact();
+    }
+
+    void FixedUpdate()
+    {
+        if (!canMove || isDead) return;
 
         // Calculate movement
         float currentMoveSpeed = moveSpeed * (isSprinting ? sprintMultiplier : 1f);
         Vector2 movement = movementInput * currentMoveSpeed;
 
-        // Apply movement
+        // Apply movement via velocity
         rb.linearVelocity = movement;
-
-        // Shooting input (for example, using left mouse button)
-        if (Input.GetMouseButtonDown(0))
-        {
-            StartShooting();
-        }
-        else if (Input.GetMouseButtonUp(0))
-        {
-            StopShooting();
-        }
-
-        // Update animations
-        UpdateAnimation();
-
-        // Interaction input
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Interact();
-        }
     }
 
     private void OnDestroy()
@@ -144,12 +146,44 @@ public class PlayerController : Singleton<PlayerController>
         }
     }
 
+
+    // Add this new method to your existing PlayerController.cs
+    public void InitializeController()
+    {
+        // Reset movement state
+        canMove = true;
+        isDead = false;
+
+        // Make sure components are properly referenced
+        if (rb == null) rb = GetComponent<Rigidbody2D>();
+        if (animator == null) animator = GetComponent<Animator>();
+        if (spriteRenderer == null) spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // Verify Rigidbody settings
+        if (rb != null)
+        {
+            rb.isKinematic = false;
+            rb.simulated = true;
+            Debug.Log("PlayerController initialized with Rigidbody2D: " +
+                      (rb.simulated ? "Simulated" : "Not Simulated"));
+        }
+        else
+        {
+            Debug.LogError("Rigidbody2D missing on PlayerController!");
+        }
+
+        // Load character data
+        LoadSelectedCharacter();
+
+        Debug.Log("PlayerController initialized successfully");
+    }
+
     private void HandlePlayerDeath()
     {
         isDead = true;
+        canMove = false;
 
         // Stop movement
-        canMove = false;
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
@@ -161,24 +195,17 @@ public class PlayerController : Singleton<PlayerController>
             animator.SetTrigger("Die");
         }
 
-        // You could start a coroutine for respawn logic or game over
+        // Start a coroutine to handle death sequence (respawn, game over, etc.)
         StartCoroutine(HandleDeathSequence());
     }
 
     private IEnumerator HandleDeathSequence()
     {
-        // Wait for death animation to play
+        // Wait for death animation to finish
         yield return new WaitForSeconds(2f);
 
-        // Here you can implement different behaviors:
-
-        // Option 1: Game Over
-        // GameManager.Instance.GameOver();
-
-        // Option 2: Respawn
-        // Respawn();
-
-        // Option 3: Destroy the player
+        // You could add your game over or respawn logic here
+        // For now, we just destroy the player
         Destroy(gameObject);
     }
 
@@ -229,25 +256,27 @@ public class PlayerController : Singleton<PlayerController>
     protected virtual void UpdateAnimation()
     {
         if (animator == null) return;
-
-        // Don't update movement animations if dead
-        if (isDead)
-        {
-            // We let the death animation play and don't override it
-            return;
-        }
+        if (isDead) return;
 
         // Update movement animation parameters
         bool isWalking = movementInput.magnitude > 0.1f;
         animator.SetBool(isMovingHash, isWalking);
 
-        // Only update direction when actually moving
+        // Update walking input parameters
+        animator.SetFloat(moveXHash, movementInput.x);
+        animator.SetFloat(moveYHash, movementInput.y);
+
+        // Store last direction when moving
         if (isWalking)
         {
-            animator.SetFloat(moveXHash, movementInput.x);
-            animator.SetFloat(moveYHash, movementInput.y);
+            lastInputX = movementInput.x;
+            lastInputY = movementInput.y;
 
-            // Flip sprite if needed (if your art faces right by default)
+            // Only set these if your animator uses them
+            animator.SetFloat(lastInputXHash, lastInputX);
+            animator.SetFloat(lastInputYHash, lastInputY);
+
+            // Flip sprite if needed
             if (spriteRenderer != null)
             {
                 if (movementInput.x < 0)
@@ -261,13 +290,12 @@ public class PlayerController : Singleton<PlayerController>
         animator.SetBool(isShootingHash, isShooting);
     }
 
-    // Manual animation handling (alternative to Animator component)
+    // Optional: If you prefer manual sprite animation instead of Animator
     private void ManualAnimationUpdate()
     {
         if (selectedCharacter == null || spriteRenderer == null)
             return;
 
-        // Determine which animation to use based on player state
         Sprite[] currentAnimation;
 
         if (isShooting && selectedCharacter.shootSprites != null && selectedCharacter.shootSprites.Length > 0)
@@ -289,8 +317,7 @@ public class PlayerController : Singleton<PlayerController>
             return;
         }
 
-        // Simple animation based on time
-        // For a real game, you would want to manage frame rates properly
+        // Simple sprite index based on time
         int frameIndex = (int)(Time.time * 10) % currentAnimation.Length;
         spriteRenderer.sprite = currentAnimation[frameIndex];
 
@@ -304,13 +331,13 @@ public class PlayerController : Singleton<PlayerController>
     private void StartShooting()
     {
         isShooting = true;
-        // Add any other shooting logic here
+        // Additional shooting logic here...
     }
 
     private void StopShooting()
     {
         isShooting = false;
-        // Add any other logic to stop shooting
+        // Additional logic to stop shooting...
     }
 
     private void Interact()
@@ -334,12 +361,11 @@ public class PlayerController : Singleton<PlayerController>
         // Calculate position of interaction box
         Vector2 interactPos = (Vector2)transform.position + (facingDirection * interactDistance);
 
-        // Debug visualization of the interaction area
-        Debug.DrawLine(transform.position, (Vector2)transform.position + facingDirection * interactDistance, Color.red, 0.5f);
+        // Debug visualization
+        Debug.DrawLine(transform.position, interactPos, Color.red, 0.5f);
 
         // Perform the overlap box check
         Collider2D[] results = Physics2D.OverlapBoxAll(interactPos, interactSize, 0f);
-
         foreach (var collider in results)
         {
             // Skip player's own collider
@@ -350,23 +376,9 @@ public class PlayerController : Singleton<PlayerController>
             if (interactable != null)
             {
                 interactable.Interact(this);
-                break; // Only interact with one object at a time
+                break; // Only interact with one object
             }
         }
-    }
-
-    // These health methods are no longer needed since we're using PlayerHealth
-    // The HandlePlayerDeath method will be called via the PlayerHealth event system
-
-    private IEnumerator RespawnAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-
-        // Reset player state
-        isDead = false;
-        canMove = true;
-
-        // Note: Health reset should be handled by PlayerHealth
     }
 
     // Inventory management
@@ -385,7 +397,7 @@ public class PlayerController : Singleton<PlayerController>
         return inventory.Contains(itemId);
     }
 
-    // Public method to control the shooting state
+    // Public method to control the shooting state externally
     public void SetShooting(bool shooting)
     {
         isShooting = shooting;

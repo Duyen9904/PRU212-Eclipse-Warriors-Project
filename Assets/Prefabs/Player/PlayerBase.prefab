@@ -63,7 +63,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &1461543622421428489
 BoxCollider2D:
@@ -95,7 +95,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   diagonalMovementModifier: 0.7071
   animator: {fileID: 0}
   spriteRenderer: {fileID: 0}
-  characterDatabase: {fileID: 0}
+  characterDatabase: {fileID: 11400000, guid: ff0b2c4a794c61843932b1555a664cc6, type: 2}
 --- !u!114 &2114962003678780143
 MonoBehaviour:
   m_ObjectHideFlags: 0
