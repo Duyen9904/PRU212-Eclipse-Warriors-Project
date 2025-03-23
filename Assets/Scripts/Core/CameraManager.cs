@@ -1,5 +1,5 @@
 using UnityEngine;
-using Cinemachine;
+using Unity.Cinemachine;
 
 public class CameraManager : MonoBehaviour
 {
@@ -7,7 +7,7 @@ public class CameraManager : MonoBehaviour
     public static CameraManager Instance { get; private set; }
 
     [Header("Camera References")]
-    [SerializeField] private CinemachineVirtualCamera virtualCamera;
+    [SerializeField] private CinemachineCamera virtualCamera;
     [SerializeField] private Transform defaultTarget;
 
     [Header("Camera Settings")]
@@ -43,7 +43,27 @@ public class CameraManager : MonoBehaviour
         // Setup default camera
         if (virtualCamera == null)
         {
-            virtualCamera = GetComponentInChildren<CinemachineVirtualCamera>();
+            virtualCamera = GetComponentInChildren<CinemachineCamera>();
+        }
+
+        // Initialize with default settings if we have a camera
+        if (virtualCamera != null)
+        {
+            SetDefaultCamera();
+        }
+        else
+        {
+            Debug.LogError("No CinemachineCamera found on CameraManager. Please assign one in the inspector.");
+        }
+    }
+
+    private void Start()
+    {
+        // Initial setup based on current scene
+        if (string.IsNullOrEmpty(currentScene))
+        {
+            currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            SetupForScene(currentScene);
         }
     }
 
@@ -53,6 +73,12 @@ public class CameraManager : MonoBehaviour
     /// <param name="sceneName">Current scene name</param>
     public void SetupForScene(string sceneName)
     {
+        if (virtualCamera == null)
+        {
+            Debug.LogError("Cannot setup camera for scene: virtualCamera is null");
+            return;
+        }
+
         currentScene = sceneName;
 
         switch (sceneName)
@@ -94,17 +120,25 @@ public class CameraManager : MonoBehaviour
     /// <param name="target">Transform to follow</param>
     public void SetTarget(Transform target)
     {
-        currentTarget = target;
-
-        if (virtualCamera != null)
+        if (target == null)
         {
-            virtualCamera.Follow = target;
+            Debug.LogWarning("Attempted to set null target for camera");
+            return;
+        }
 
-            // If it's a gameplay scene, also set the camera to look at the target
-            if (IsGameplayScene())
-            {
-                virtualCamera.LookAt = target;
-            }
+        if (virtualCamera == null)
+        {
+            Debug.LogError("Cannot set target: virtualCamera is null");
+            return;
+        }
+
+        currentTarget = target;
+        virtualCamera.Follow = target;
+
+        // If it's a gameplay scene, also set the camera to look at the target
+        if (IsGameplayScene())
+        {
+            virtualCamera.LookAt = target;
         }
     }
 
@@ -112,74 +146,86 @@ public class CameraManager : MonoBehaviour
     {
         virtualCamera.Follow = defaultTarget;
         virtualCamera.LookAt = null;
-
-        // Adjust camera settings
-        var composer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
-        if (composer != null)
-        {
-            composer.m_CameraDistance = defaultDistance;
-        }
     }
 
     private void SetupCharacterSelectionCamera()
     {
         virtualCamera.Follow = defaultTarget;
         virtualCamera.LookAt = defaultTarget;
-
-        // Adjust camera settings for character selection
-        var composer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
-        if (composer != null)
-        {
-            composer.m_CameraDistance = characterSelectionDistance;
-        }
     }
 
     private void SetupGameplayCamera(Vector2 bounds)
     {
+        // Find the player if we haven't set a current target
+        if (currentTarget == null)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                currentTarget = player.transform;
+            }
+            else
+            {
+                Debug.LogWarning("No player found for gameplay camera setup");
+                currentTarget = defaultTarget;
+            }
+        }
+
+        // Set target to follow
+        virtualCamera.Follow = currentTarget;
+        virtualCamera.LookAt = currentTarget;
+
         // Set camera bounds based on level
-        var confiner = virtualCamera.GetComponent<CinemachineConfiner>();
+        var confiner = virtualCamera.GetComponent<CinemachineConfiner2D>();
         if (confiner != null)
         {
-            // Create a temporary bounding box
-            var boundingBox = new Bounds(Vector3.zero, new Vector3(bounds.x, bounds.y, 100f));
-
-            // Here you would set the actual bounding volume - typically you'd use a polygon collider
-            // For demonstration, we're just showing the concept
-            Debug.Log($"Setting camera bounds for {currentScene}: {bounds}");
+            // Create bounds or use existing bounds
+            CreateOrUpdateBoundaryForScene(confiner, bounds);
         }
+    }
 
-        // Adjust camera settings for gameplay
-        var composer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
-        if (composer != null)
+    private void CreateOrUpdateBoundaryForScene(CinemachineConfiner2D confiner, Vector2 bounds)
+    {
+        // This method would create a polygon collider or other boundary shape
+        // based on the current scene's needs
+
+        // Example code to create a simple rectangular boundary:
+        GameObject boundaryObj = GameObject.Find("CameraBoundary");
+        if (boundaryObj == null)
         {
-            composer.m_CameraDistance = gameplayDistance;
+            boundaryObj = new GameObject("CameraBoundary");
+            boundaryObj.layer = LayerMask.NameToLayer("CameraBounds"); // Make sure this layer exists
         }
+
+        PolygonCollider2D boundary = boundaryObj.GetComponent<PolygonCollider2D>();
+        if (boundary == null)
+        {
+            boundary = boundaryObj.AddComponent<PolygonCollider2D>();
+        }
+
+        // Create a simple rectangle based on the bounds
+        Vector2[] points = new Vector2[4];
+        points[0] = new Vector2(-bounds.x / 2, -bounds.y / 2);  // Bottom-left
+        points[1] = new Vector2(bounds.x / 2, -bounds.y / 2);   // Bottom-right
+        points[2] = new Vector2(bounds.x / 2, bounds.y / 2);    // Top-right
+        points[3] = new Vector2(-bounds.x / 2, bounds.y / 2);   // Top-left
+
+        boundary.points = points;
+
+        // Assign the boundary to the confiner
+        confiner.BoundingShape2D = boundary;
     }
 
     private void SetupEndScreenCamera()
     {
         virtualCamera.Follow = defaultTarget;
         virtualCamera.LookAt = defaultTarget;
-
-        // Adjust camera settings
-        var composer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
-        if (composer != null)
-        {
-            composer.m_CameraDistance = defaultDistance;
-        }
     }
 
     private void SetDefaultCamera()
     {
-        virtualCamera.Follow = defaultTarget;
+        virtualCamera.Follow = defaultTarget ?? transform;
         virtualCamera.LookAt = null;
-
-        // Adjust camera settings
-        var composer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
-        if (composer != null)
-        {
-            composer.m_CameraDistance = defaultDistance;
-        }
     }
 
     private bool IsGameplayScene()
@@ -189,5 +235,39 @@ public class CameraManager : MonoBehaviour
                currentScene == "ForestBiome" ||
                currentScene == "DungeonBiome" ||
                currentScene == "AbyssalGate";
+    }
+
+    // Method to handle scene transitions
+    public void OnSceneLoaded(string sceneName)
+    {
+        SetupForScene(sceneName);
+    }
+
+    // This can be called from a game manager when the player is instantiated
+    public void FindAndFollowPlayer()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            SetTarget(player.transform);
+        }
+        else
+        {
+            Debug.LogWarning("No player found to follow");
+        }
+    }
+
+    // Method to update camera bounds
+    public void UpdateCameraBounds(Collider2D bounds)
+    {
+        var confiner = virtualCamera.GetComponent<CinemachineConfiner2D>();
+        if (confiner != null)
+        {
+            confiner.BoundingShape2D = bounds;
+        }
+        else
+        {
+            Debug.LogWarning("No CinemachineConfiner2D found on the virtual camera.");
+        }
     }
 }

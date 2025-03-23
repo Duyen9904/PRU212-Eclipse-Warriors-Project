@@ -183,7 +183,7 @@ public class LevelManager : MonoBehaviour
             // Set up camera to follow player
             if (cameraManager != null)
             {
-                cameraManager.SetCameraTarget(currentPlayer.transform);
+                cameraManager.SetTarget(currentPlayer.transform);
             }
         }
 

@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     private string selectedCharacter;
 
     // Reference to Database
-    private Character playerData;
+    private PlayerDataManager playerData;
 
     // Player progress tracking
     private int currentBiomeIndex = 0;
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
 
             // Initialize player data manager
-            playerData = GetComponent<Character>();
+            playerData = GetComponent<PlayerDataManager>();
             if (playerData == null)
             {
                 playerData = gameObject.AddComponent<PlayerDataManager>();
