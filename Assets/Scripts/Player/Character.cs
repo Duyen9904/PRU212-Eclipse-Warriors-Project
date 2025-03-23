@@ -13,6 +13,12 @@ public class Character
     public Sprite[] shootSprites;
     public Sprite[] dieSprites;
 
+    // Add gameplay stats
+    [Header("Gameplay Stats")]
+    public int health = 100;
+    public float moveSpeed = 5f;
+    public float damageMultiplier = 1f;
+
     // Optional: preview animations in the selection screen
     public bool isSelected = false;
 }

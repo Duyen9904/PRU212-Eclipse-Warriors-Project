@@ -201,7 +201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 68293156}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 154754563}
+        m_TargetAssemblyTypeName: CharacterManager, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &68293156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,7 +526,12 @@ MonoBehaviour:
   characterDatabase: {fileID: 11400000, guid: ff0b2c4a794c61843932b1555a664cc6, type: 2}
   nameText: {fileID: 1059778039}
   artworkSprite: {fileID: 154754561}
-  selectedOption: 0
+  showAnimationPreview: 1
+  animationPreviewSpeed: 10
+  idleToggle: {fileID: 0}
+  walkToggle: {fileID: 0}
+  shootToggle: {fileID: 0}
+  nextSceneName: GlacierBiome
 --- !u!1 &246840521
 GameObject:
   m_ObjectHideFlags: 0

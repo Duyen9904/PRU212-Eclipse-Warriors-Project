@@ -20,7 +20,7 @@ public class CharacterManager : MonoBehaviour
     private AnimationState currentPreviewState = AnimationState.Idle;
     private float animationTimer = 0f;
     private int currentFrameIndex = 0;
-
+    public string nextSceneName = "GlacierBiome";
     private enum AnimationState
     {
         Idle,
@@ -173,14 +173,32 @@ public class CharacterManager : MonoBehaviour
 
     private void Save()
     {
+        // Save the selected character index
         PlayerPrefs.SetInt("SelectedOption", selectedOption);
-    }
+        PlayerPrefs.SetInt("SelectedCharacter", selectedOption);
 
-    public void ChangeScene(int sceneId)
+        // Get the selected character from the database
+        Character character = characterDatabase.GetCharacter(selectedOption);
+
+        // Save character-specific stats
+        PlayerPrefs.SetInt($"Character_{selectedOption}_Health", character.health);
+        PlayerPrefs.SetFloat($"Character_{selectedOption}_Speed", character.moveSpeed);
+        PlayerPrefs.SetFloat($"Character_{selectedOption}_DamageMultiplier", character.damageMultiplier);
+
+        // Save the changes
+        PlayerPrefs.Save();
+    }
+    public void ChangeScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneId);
-    }
+        // Optional: Add debug logging to verify the method is called
+        Debug.Log("Loading scene: " + sceneName);
 
+        // Save character selection before changing scene
+        Save();
+
+        // Load the scene by name
+        SceneManager.LoadScene(nextSceneName);
+    }
     // Preview specific animations through UI buttons
     public void PreviewIdle()
     {
