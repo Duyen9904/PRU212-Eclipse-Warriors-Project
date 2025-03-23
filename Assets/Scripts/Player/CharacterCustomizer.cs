@@ -25,35 +25,33 @@ public class CharacterCustomizer : MonoBehaviour
             characterSprite = GetComponent<SpriteRenderer>();
 
         // Apply character data after a short delay
-        Invoke("ApplySelectedCharacter", 0.1f);
+        ApplySelectedCharacter();
     }
 
     void ApplySelectedCharacter()
     {
         // Get selected character ID from PlayerPrefs
         int selectedCharacterId = PlayerPrefs.GetInt("SelectedCharacter", 0);
+        Debug.Log($"Applying character data for ID: {selectedCharacterId}");
         ApplyCharacterData(selectedCharacterId);
     }
 
     public void ApplyCharacterData(int characterId)
     {
-        // Get character settings from PlayerPrefs
-
         // Apply health settings
         if (playerHealth != null)
         {
-            // Note: You'll need to modify PlayerHealth to expose maxHealth as settable
-            // or add a SetMaxHealth method
-            int healthValue = PlayerPrefs.GetInt($"Character_{characterId}_Health", 30);
-            // Either call a new method on PlayerHealth or modify it later
+            int healthValue = PlayerPrefs.GetInt($"Character_{characterId}_Health", 100);
+            playerHealth.SetMaxHealth(healthValue);
+            Debug.Log($"Set health to {healthValue}");
         }
 
         // Apply movement settings
         if (playerController != null)
         {
             float moveSpeed = PlayerPrefs.GetFloat($"Character_{characterId}_Speed", 5f);
-            // Assuming your PlayerController has a moveSpeed property
-            // playerController.moveSpeed = moveSpeed;
+            playerController.SetMoveSpeed(moveSpeed);
+            Debug.Log($"Set move speed to {moveSpeed}");
         }
 
         // Apply visual changes
@@ -68,15 +66,37 @@ public class CharacterCustomizer : MonoBehaviour
             }
         }
 
-        // Apply animation controller
+        // Apply animation controller - FIXED
         if (animator != null)
         {
-            string animControllerPath = PlayerPrefs.GetString($"Character_{characterId}_AnimatorPath", "");
-            if (!string.IsNullOrEmpty(animControllerPath))
+            string animControllerName = PlayerPrefs.GetString($"Character_{characterId}_AnimController", "");
+            if (!string.IsNullOrEmpty(animControllerName))
             {
-                RuntimeAnimatorController controller = Resources.Load<RuntimeAnimatorController>(animControllerPath);
+                // Find the animator controller in Resources
+                RuntimeAnimatorController controller = Resources.Load<RuntimeAnimatorController>($"Animations/{animControllerName}");
                 if (controller != null)
+                {
                     animator.runtimeAnimatorController = controller;
+                    Debug.Log($"Applied animator controller: {animControllerName}");
+                }
+                else
+                {
+                    // Try to find it in any folder
+                    RuntimeAnimatorController[] controllers = Resources.FindObjectsOfTypeAll<RuntimeAnimatorController>();
+                    foreach (var foundController in controllers)
+                    {
+                        if (foundController.name == animControllerName)
+                        {
+                            animator.runtimeAnimatorController = foundController;
+                            Debug.Log($"Found and applied animator controller: {animControllerName}");
+                            break;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                Debug.LogWarning($"No animator controller saved for character ID {characterId}");
             }
         }
     }

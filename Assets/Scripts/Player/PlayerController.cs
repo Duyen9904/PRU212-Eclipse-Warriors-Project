@@ -96,34 +96,21 @@ public class PlayerController : Singleton<PlayerController>
         // Load the selected character from PlayerPrefs
         LoadSelectedCharacter();
     }
-
     void Update()
     {
-        if (!canMove || isDead) return;
-
         // Get input
-        movementInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        // Normalize diagonal movement if needed
-        if (movementInput.magnitude > 1f)
-        {
-            movementInput.Normalize();
-        }
+        // Normalize diagonal movement
+        if (input.magnitude > 1) input.Normalize();
 
-        Debug.Log(movementInput);
-        // Sprint
-        isSprinting = Input.GetKey(KeyCode.LeftShift);
+        // Move character directly
+        transform.position += new Vector3(input.x, input.y, 0) * moveSpeed * Time.deltaTime;
 
-        // Update animations
-        UpdateAnimation();
-
-        // Simple shooting test
-        if (Input.GetMouseButtonDown(0)) StartShooting();
-        else if (Input.GetMouseButtonUp(0)) StopShooting();
-
-        // Interaction
-        if (Input.GetKeyDown(KeyCode.E)) Interact();
+        // Update animation
+        UpdateAnimation(input);
     }
+
 
     void FixedUpdate()
     {
@@ -146,6 +133,25 @@ public class PlayerController : Singleton<PlayerController>
         }
     }
 
+    public void SetMoveSpeed(float speed)
+    {
+        moveSpeed = speed;
+        Debug.Log($"Player move speed set to: {moveSpeed}");
+    }
+
+    private void UpdateSpriteDirection(Vector2 movementDir)
+    {
+        // Handle left/right flipping
+        if (Mathf.Abs(movementDir.x) > 0.1f)
+        {
+            spriteRenderer.flipX = (movementDir.x < 0);
+        }
+
+        // Set animator parameters for all directions
+        animator.SetFloat("WalkInputX", movementDir.x);
+        animator.SetFloat("WalkInputY", movementDir.y);
+        animator.SetBool("isWalking", movementDir.magnitude > 0.1f);
+    }
 
     // Add this new method to your existing PlayerController.cs
     public void InitializeController()
@@ -253,41 +259,20 @@ public class PlayerController : Singleton<PlayerController>
         }
     }
 
-    protected virtual void UpdateAnimation()
+    private void UpdateAnimation(Vector2 movementDir)
     {
         if (animator == null) return;
-        if (isDead) return;
 
-        // Update movement animation parameters
-        bool isWalking = movementInput.magnitude > 0.1f;
-        animator.SetBool(isMovingHash, isWalking);
+        // Use your parameter names
+        animator.SetFloat("WalkInputX", movementDir.x);
+        animator.SetFloat("WalkInputY", movementDir.y);
+        animator.SetBool("isWalking", movementDir.magnitude > 0.1f);
 
-        // Update walking input parameters
-        animator.SetFloat(moveXHash, movementInput.x);
-        animator.SetFloat(moveYHash, movementInput.y);
-
-        // Store last direction when moving
-        if (isWalking)
+        // Handle sprite flipping
+        if (spriteRenderer != null && Mathf.Abs(movementDir.x) > 0.1f)
         {
-            lastInputX = movementInput.x;
-            lastInputY = movementInput.y;
-
-            // Only set these if your animator uses them
-            animator.SetFloat(lastInputXHash, lastInputX);
-            animator.SetFloat(lastInputYHash, lastInputY);
-
-            // Flip sprite if needed
-            if (spriteRenderer != null)
-            {
-                if (movementInput.x < 0)
-                    spriteRenderer.flipX = true;
-                else if (movementInput.x > 0)
-                    spriteRenderer.flipX = false;
-            }
+            spriteRenderer.flipX = (movementDir.x < 0);
         }
-
-        // Update shooting parameter
-        animator.SetBool(isShootingHash, isShooting);
     }
 
     // Optional: If you prefer manual sprite animation instead of Animator

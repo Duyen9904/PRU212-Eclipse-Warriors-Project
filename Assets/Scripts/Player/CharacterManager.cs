@@ -185,9 +185,18 @@ public class CharacterManager : MonoBehaviour
         PlayerPrefs.SetFloat($"Character_{selectedOption}_Speed", character.moveSpeed);
         PlayerPrefs.SetFloat($"Character_{selectedOption}_DamageMultiplier", character.damageMultiplier);
 
+        // IMPORTANT: Save the animator controller reference path so it can be loaded properly
+        if (character.animatorController != null)
+        {
+            string animControllerPath = character.animatorController.name;
+            PlayerPrefs.SetString($"Character_{selectedOption}_AnimController", animControllerPath);
+            Debug.Log($"Saved animator controller: {animControllerPath} for character {character.characterName}");
+        }
+
         // Save the changes
         PlayerPrefs.Save();
     }
+
     public void ChangeScene(string sceneName)
     {
         // Optional: Add debug logging to verify the method is called
@@ -199,6 +208,7 @@ public class CharacterManager : MonoBehaviour
         // Load the scene by name
         SceneManager.LoadScene(nextSceneName);
     }
+
     // Preview specific animations through UI buttons
     public void PreviewIdle()
     {
@@ -217,4 +227,4 @@ public class CharacterManager : MonoBehaviour
         SetPreviewState(AnimationState.Shoot);
         if (shootToggle != null) shootToggle.isOn = true;
     }
-}   
+}
