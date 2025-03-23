@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &62965272 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1734726158804743020, guid: 793603709a793cf4fb9ddfa006810b13, type: 3}
-  m_PrefabInstance: {fileID: 1815288650}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &182421965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4756,20 +4751,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1061646574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11d5374a385d71345b37eaeec6da8cdb, type: 3}
+  m_Script: {fileID: 11500000, guid: b023f284e89cb394da4281f4a6c4958b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelSceneNames:
-  - 0
-  startingLevelIndex: -1
-  playerController: {fileID: 0}
-  cineCamera: {fileID: 0}
-  cameraConfiner: {fileID: 0}
+  levelSceneNames: []
+  usesLDTK: 
+  startingLevelIndex: 0
+  standardSpawnPoints: []
+  levelEnvironments: []
+  wizardPrefab: {fileID: 0}
+  roguePrefab: {fileID: 0}
+  knightPrefab: {fileID: 0}
+  cameraManager: {fileID: 0}
+  loadingScreen: {fileID: 0}
+  loadingBar: {fileID: 0}
   playerData:
     health: 100
+    mana: 100
+    collectedRelics: 0
     inventory: []
-  enemyPrefabs:
-  - {fileID: 62965272}
+    lastPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1115157966
 GameObject:
   m_ObjectHideFlags: 0

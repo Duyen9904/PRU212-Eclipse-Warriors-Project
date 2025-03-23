@@ -2,6 +2,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.ResourceManagement.ResourceProviders;
+using UnityEngine.AddressableAssets;
 
 public class GameSceneManager : MonoBehaviour
 {
@@ -38,7 +41,9 @@ public class GameSceneManager : MonoBehaviour
         { SceneType.GameOver, "GameOver" },
         { SceneType.Resume, "Resume" },
         { SceneType.Victory, "WinningGame" }
-    };
+    };  
+
+    private Dictionary<string, SceneInstance> loadedScenes = new Dictionary<string, SceneInstance>();
 
     // Keep track of the current level for progression
     public SceneType CurrentScene { get; private set; }

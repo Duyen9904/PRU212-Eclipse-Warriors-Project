@@ -224,7 +224,7 @@ public class PlayerController : Singleton<PlayerController>
         }
     }
 
-    private void UpdateAnimation()
+    protected virtual void UpdateAnimation()
     {
         if (animator == null) return;
 
