@@ -23,10 +23,10 @@ public class BulletImpact : MonoBehaviour
 
 	public IEnumerator Impact()
 	{
-		if (KnightControlller.Instance != null && transform.parent != null)
+		if (PlayerController.Instance != null && transform.parent != null)
 		{
 			Vector3 startPosition = transform.parent.position;
-			Vector3 targetPosition = KnightControlller.Instance.transform.position;
+			Vector3 targetPosition = PlayerController.Instance.transform.position;
 
 			Vector3 direction = (targetPosition - startPosition).normalized;
 
@@ -64,9 +64,9 @@ public class BulletImpact : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.gameObject.GetComponent<KnightControlller>())
+		if (collision.gameObject.GetComponent<PlayerController>())
 		{
-			PlayerHealth playerHealth = KnightControlller.Instance.GetComponent<PlayerHealth>();
+			PlayerHealth playerHealth = PlayerController.Instance.GetComponent<PlayerHealth>();
 			Instantiate(bulletImpactVFX, transform.position, Quaternion.identity);
 			playerHealth.TakeDamage(damage, this.transform);
 			Debug.Log("Damage the player");

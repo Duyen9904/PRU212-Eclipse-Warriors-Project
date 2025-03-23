@@ -9,22 +9,23 @@ public class CharacterSpawner : MonoBehaviour
     [Header("Runtime Reference")]
     [SerializeField] private PlayerController activePlayer;
 
+    // In CharacterSpawner.cs
     private void Awake()
     {
-        // Check if a Player instance already exists (from DontDestroyOnLoad)
         PlayerController existingPlayer = FindObjectOfType<PlayerController>();
         if (existingPlayer != null)
         {
-            // Player already exists, just position it at spawn point
+            // Position existing player and use it
             existingPlayer.transform.position = spawnPoint != null
                 ? spawnPoint.position
                 : Vector3.zero;
             activePlayer = existingPlayer;
-            Debug.Log("Found existing player, repositioning at spawn point");
-            return;
+            Debug.Log("Using existing player at " + existingPlayer.transform.position);
         }
-        // No existing player found, spawn a new one
-        SpawnNewPlayer();
+        else
+        {
+            SpawnNewPlayer();
+        }
     }
 
     private void SpawnNewPlayer()

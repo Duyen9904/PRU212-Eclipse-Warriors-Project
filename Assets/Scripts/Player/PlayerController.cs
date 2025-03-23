@@ -67,7 +67,7 @@ public class PlayerController : Singleton<PlayerController>
         {
             moveXHash = Animator.StringToHash("MoveX");
             moveYHash = Animator.StringToHash("MoveY");
-            isMovingHash = Animator.StringToHash("isMoving");
+            isMovingHash = Animator.StringToHash("isWalking");
             isShootingHash = Animator.StringToHash("isShooting");
         }
 
@@ -91,12 +91,14 @@ public class PlayerController : Singleton<PlayerController>
 
     void Update()
     {
-        if (isDead) return;
-        if (!canMove) return;
+        if (!canMove || isDead) return;
+
+        Debug.Log($"Input: {movementInput}, Speed: {moveSpeed}, Vel: {rb.linearVelocity}");
 
         // Get input
         movementInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
+        Debug.Log($"Input 2: {movementInput}, Speed: {moveSpeed}, Vel: {rb.linearVelocity}");
         // Normalize diagonal movement to prevent faster diagonal speed
         if (movementInput.magnitude > 1)
         {
@@ -236,11 +238,11 @@ public class PlayerController : Singleton<PlayerController>
         }
 
         // Update movement animation parameters
-        bool isMoving = movementInput.magnitude > 0.1f;
-        animator.SetBool(isMovingHash, isMoving);
+        bool isWalking = movementInput.magnitude > 0.1f;
+        animator.SetBool(isMovingHash, isWalking);
 
         // Only update direction when actually moving
-        if (isMoving)
+        if (isWalking)
         {
             animator.SetFloat(moveXHash, movementInput.x);
             animator.SetFloat(moveYHash, movementInput.y);
