@@ -1764,6 +1764,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207486138ba02114284e4e4a6356669e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 4.5
+  detectionRange: 8
+  attackRange: 1.5
+  stoppingDistance: 1
+  attackDamage: 10
+  attackCooldown: 1.2
+  patrolPoints: []
+  patrolWaitTime: 0.8
+  currentState: 0
 --- !u!50 &334482653
 Rigidbody2D:
   serializedVersion: 5
@@ -1779,7 +1788,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1790,7 +1799,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &334482654
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2765,6 +2774,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207486138ba02114284e4e4a6356669e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 4.5
+  detectionRange: 8
+  attackRange: 1.5
+  stoppingDistance: 1
+  attackDamage: 10
+  attackCooldown: 1.2
+  patrolPoints: []
+  patrolWaitTime: 0.8
+  currentState: 0
 --- !u!50 &473289606
 Rigidbody2D:
   serializedVersion: 5
@@ -2780,7 +2798,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2791,7 +2809,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &473289607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3493,7 +3511,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3504,7 +3522,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &572003740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3517,6 +3535,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e1289e8918f8348b985ce734923c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 3
+  detectionRange: 8
+  attackRange: 1.5
+  stoppingDistance: 1
+  attackDamage: 10
+  attackCooldown: 1.5
+  patrolPoints: []
+  patrolWaitTime: 1
+  currentState: 0
 --- !u!1 &583581039
 GameObject:
   m_ObjectHideFlags: 0
@@ -7083,6 +7110,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207486138ba02114284e4e4a6356669e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 4.5
+  detectionRange: 8
+  attackRange: 1.5
+  stoppingDistance: 1
+  attackDamage: 10
+  attackCooldown: 1.2
+  patrolPoints: []
+  patrolWaitTime: 0.8
+  currentState: 0
 --- !u!50 &1216722996
 Rigidbody2D:
   serializedVersion: 5
@@ -7098,7 +7134,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -7109,7 +7145,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1216722997
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9530,7 +9566,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -9541,7 +9577,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1606249280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9554,6 +9590,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207486138ba02114284e4e4a6356669e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 4.5
+  detectionRange: 8
+  attackRange: 1.5
+  stoppingDistance: 1
+  attackDamage: 10
+  attackCooldown: 1.2
+  patrolPoints: []
+  patrolWaitTime: 0.8
+  currentState: 0
 --- !u!1 &1619302463
 GameObject:
   m_ObjectHideFlags: 0
@@ -11858,6 +11903,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207486138ba02114284e4e4a6356669e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 4.5
+  detectionRange: 8
+  attackRange: 1.5
+  stoppingDistance: 1
+  attackDamage: 10
+  attackCooldown: 1.2
+  patrolPoints: []
+  patrolWaitTime: 0.8
+  currentState: 0
 --- !u!50 &1973582948
 Rigidbody2D:
   serializedVersion: 5
@@ -11873,7 +11927,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -11884,7 +11938,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1973582949
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12357,6 +12411,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207486138ba02114284e4e4a6356669e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 4.5
+  detectionRange: 8
+  attackRange: 1.5
+  stoppingDistance: 1
+  attackDamage: 10
+  attackCooldown: 1.2
+  patrolPoints: []
+  patrolWaitTime: 0.8
+  currentState: 0
 --- !u!50 &2056449294
 Rigidbody2D:
   serializedVersion: 5
@@ -12372,7 +12435,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -12383,7 +12446,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &2056449295
 SpriteRenderer:
   m_ObjectHideFlags: 0
