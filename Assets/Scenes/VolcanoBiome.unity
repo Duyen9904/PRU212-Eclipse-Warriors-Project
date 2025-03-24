@@ -3473,7 +3473,6 @@ GameObject:
   - component: {fileID: 572003736}
   - component: {fileID: 572003740}
   - component: {fileID: 572003739}
-  - component: {fileID: 572003741}
   m_Layer: 0
   m_Name: Boss Enemy
   m_TagString: Untagged
@@ -4044,7 +4043,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -802551515, guid: 3825918c594979743b339c34f44951ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6398,7 +6397,7 @@ Transform:
   m_GameObject: {fileID: 1089899402}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.27, y: -2.49, z: 0}
+  m_LocalPosition: {x: -9.42, y: -2.18, z: 0}
   m_LocalScale: {x: -0.61456794, y: 0.38996187, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
