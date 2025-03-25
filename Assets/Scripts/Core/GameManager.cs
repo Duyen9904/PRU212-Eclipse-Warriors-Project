@@ -241,6 +241,36 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void LoadScene(string sceneName)
     {
+        // Save player state before scene transition
+        if (currentPlayerInstance != null)
+        {
+            SavePlayerState();
+
+            // Make sure we don't destroy the player when loading the main menu
+            if (sceneName == "MainMenu")
+            {
+                currentPlayerInstance.SetActive(false);
+            }
+            else
+            {
+                currentPlayerInstance.SetActive(true);
+            }
+        }
+
         SceneManager.LoadScene(sceneName);
+    }
+
+    private void SavePlayerState()
+    {
+        if (currentPlayerInstance == null) return;
+
+        // Save player health, position, etc.
+        PlayerHealth playerHealth = currentPlayerInstance.GetComponent<PlayerHealth>();
+        if (playerHealth != null)
+        {
+            PlayerPrefs.SetInt("PlayerHealth", playerHealth.GetCurrentHealth());
+        }
+
+        PlayerPrefs.Save();
     }
 }
