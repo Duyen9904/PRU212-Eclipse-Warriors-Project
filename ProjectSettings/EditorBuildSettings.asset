@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/GlacierBiome.unity
+    guid: ace61356c35ae104b87238defd2ef63a
+  - enabled: 1
     path: Assets/Scenes/VolcanoBiome.unity
     guid: 09fe76be166c88742955e4d9392e5dc8
   - enabled: 1
@@ -15,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ForestBiome.unity
     guid: 424e64cc2ac2f254ea4a309de441e7ae
   - enabled: 1
-    path: Assets/Scenes/GlacierBiome.unity
+    path: Assets/Scenes/OldGlacierBiome.unity
     guid: cfdcf1b1265c6684b90ed5bb06f96ffb
   - enabled: 1
     path: Assets/Scenes/AbyssalGate.unity
