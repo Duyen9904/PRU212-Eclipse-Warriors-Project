@@ -172,7 +172,15 @@ public class GameSceneManager : MonoBehaviour
     // Method to return to main menu
     public void LoadMainMenu()
     {
-        LoadScene(SceneType.MainMenu);
+        // Don't destroy player, just deactivate it
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            player.SetActive(false);
+        }
+
+        // Load main menu scene
+        SceneManager.LoadScene("MainMenu");
     }
 
     // Method to load a specific scene with transition
@@ -240,12 +248,33 @@ public class GameSceneManager : MonoBehaviour
     }
 
     // Scene loaded event handler
+    // In GameSceneManager.cs
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Check if this is a gameplay scene
-        if (IsGameplayScene(scene.name))
+        // Debug the player state
+        GameObject existingPlayer = GameObject.FindGameObjectWithTag("Player");
+        Debug.Log($"OnSceneLoaded: {scene.name}, player exists: {existingPlayer != null}");
+
+        // Check if this is a gameplay scene and no player exists
+        if (IsGameplayScene(scene.name) && existingPlayer == null)
         {
             StartCoroutine(SpawnPlayerAndSetupCamera());
+        }
+        else if (IsGameplayScene(scene.name) && existingPlayer != null)
+        {
+            // Just reposition existing player at spawn point
+            GameObject spawnPoint = GameObject.FindGameObjectWithTag("PlayerSpawn");
+            if (spawnPoint != null)
+            {
+                existingPlayer.transform.position = spawnPoint.transform.position;
+
+                // Make sure camera follows existing player
+                CinemachineCamera vcam = FindObjectOfType<CinemachineCamera>();
+                if (vcam != null)
+                {
+                    vcam.Follow = existingPlayer.transform;
+                }
+            }
         }
     }
 

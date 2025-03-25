@@ -271,6 +271,65 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(LoadLevelRoutine(levelSceneNames[index]));
     }
 
+    private void SpawnPlayer(Vector3 position)
+    {
+        // Get selected character from GameSceneManager
+        GameSceneManager.CharacterType selectedCharacter =
+            GameSceneManager.Instance != null ?
+            GameSceneManager.Instance.SelectedCharacter :
+            GameSceneManager.CharacterType.Knight; // Default
+
+        // Spawn the appropriate character prefab
+        GameObject prefabToSpawn = null;
+        switch (selectedCharacter)
+        {
+            case GameSceneManager.CharacterType.Wizard:
+                prefabToSpawn = wizardPrefab;
+                break;
+            case GameSceneManager.CharacterType.Rogue:
+                prefabToSpawn = roguePrefab;
+                break;
+            case GameSceneManager.CharacterType.Knight:
+            default:
+                prefabToSpawn = knightPrefab;
+                break;
+        }
+
+        if (prefabToSpawn != null)
+        {
+            currentPlayerInstance = Instantiate(prefabToSpawn, position, Quaternion.identity);
+            DontDestroyOnLoad(currentPlayerInstance);
+
+            // Get player controller reference
+            playerController = currentPlayerInstance.GetComponent<PlayerController>();
+
+            // Apply saved player data
+            ApplyPlayerData();
+        }
+        else
+        {
+            Debug.LogError("Failed to spawn player character. No prefab available.");
+        }
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        // Hide player in non-gameplay scenes
+        if (currentPlayerInstance != null)
+        {
+            bool isGameplayScene =
+                sceneName == "GlacierBiome" ||
+                sceneName == "VolcanoBiome" ||
+                sceneName == "ForestBiome" ||
+                sceneName == "DungeonBiome" ||
+                sceneName == "AbyssalGate";
+
+            currentPlayerInstance.SetActive(isGameplayScene);
+        }
+
+        SceneManager.LoadScene(sceneName);
+    }
+
     private IEnumerator LoadLevelRoutine(string sceneName)
     {
         // Show loading screen
@@ -358,6 +417,9 @@ public class LevelManager : MonoBehaviour
             // Load traditional Unity scene level
             LoadTraditionalLevel();
         }
+        FixColliders();
+
+        CreateLevelBoundaries();
 
         // Find or create player
         SetupPlayer();
@@ -372,6 +434,27 @@ public class LevelManager : MonoBehaviour
             levelEvents.OnLevelStart();
         }
     }
+
+    // Add this method to your LevelManager script
+    private void FixColliders()
+    {
+        // Find all box colliders in the scene
+        BoxCollider2D[] colliders = FindObjectsOfType<BoxCollider2D>();
+        int fixedCount = 0;
+
+        foreach (var collider in colliders)
+        {
+            // If it's set as a trigger, make it a solid collider
+            if (collider.isTrigger)
+            {
+                collider.isTrigger = false;
+                fixedCount++;
+            }
+        }
+
+        Debug.Log($"Fixed {fixedCount} trigger colliders to be solid colliders");
+    }
+
 
     /// <summary>
     /// Loads an LDtk-based level
@@ -489,6 +572,8 @@ public class LevelManager : MonoBehaviour
             Debug.LogError("Failed to spawn player character. Prefab or spawn point is missing.");
         }
     }
+
+
 
     /// <summary>
     /// Finds an appropriate spawn point in the level
@@ -681,8 +766,17 @@ public class LevelManager : MonoBehaviour
     /// <summary>
     /// Load the next level in sequence
     /// </summary>
+    // In LevelManager.cs
     public void LoadNextLevel()
     {
+        // Save current player before leaving
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            // Don't destroy, just make it persistent
+            DontDestroyOnLoad(player);
+        }
+
         int nextIndex = currentLevelIndex + 1;
         if (nextIndex < levelSceneNames.Length)
         {
@@ -694,7 +788,42 @@ public class LevelManager : MonoBehaviour
             SceneManager.LoadScene("WinningGame");
         }
     }
+    private void SetupGameplayScene(string sceneName)
+    {
+        // Find player spawn point
+        GameObject spawnObj = GameObject.FindWithTag("PlayerSpawn");
+        if (spawnObj == null)
+        {
+            Debug.LogError("No PlayerSpawn found in scene: " + sceneName);
+            return;
+        }
 
+        // Log player status for debugging
+        Debug.Log($"Player status: {(currentPlayerInstance != null ? (currentPlayerInstance.activeSelf ? "Active" : "Inactive") : "Null")}");
+
+        // Check if player exists but is inactive (from main menu)
+        if (currentPlayerInstance != null && !currentPlayerInstance.activeSelf)
+        {
+            currentPlayerInstance.SetActive(true);
+            currentPlayerInstance.transform.position = spawnObj.transform.position;
+        }
+        // Check if player exists and is active
+        else if (currentPlayerInstance != null && currentPlayerInstance.activeSelf)
+        {
+            currentPlayerInstance.transform.position = spawnObj.transform.position;
+        }
+        // No player exists, create new one
+        else
+        {
+            SpawnPlayer(spawnObj.transform.position);
+        }
+
+        // Set camera to follow player
+        if (CameraManager.Instance != null && currentPlayerInstance != null)
+        {
+            CameraManager.Instance.SetTarget(currentPlayerInstance.transform);
+        }
+    }
     /// <summary>
     /// Reload the current level (after death)
     /// </summary>
@@ -717,6 +846,59 @@ public class LevelManager : MonoBehaviour
         PlayerPrefs.Save();
 
         Debug.Log("Game progress saved");
+    }
+
+
+    // Add this to your LevelManager.cs - within the class
+
+    [Header("Level Boundaries")]
+    [SerializeField] private bool useCustomBounds = true;
+    [SerializeField] private Vector2 levelBoundsSize = new Vector2(784f, 512f); // Default size based on 49x32 cells
+
+    public void CreateLevelBoundaries()
+    {
+        // Create empty GameObject for boundaries
+        GameObject boundaries = new GameObject("LevelBoundaries");
+        boundaries.tag = "LevelBounds";
+
+        // Add a composite collider for better performance (optional)
+        Rigidbody2D rb = boundaries.AddComponent<Rigidbody2D>();
+        rb.bodyType = RigidbodyType2D.Static;
+
+        // Create individual colliders
+        // Bottom boundary
+        CreateBoundaryCollider(boundaries, new Vector2(0, -levelBoundsSize.y / 2 - 1), new Vector2(levelBoundsSize.x, 2));
+
+        // Top boundary
+        CreateBoundaryCollider(boundaries, new Vector2(0, levelBoundsSize.y / 2 + 1), new Vector2(levelBoundsSize.x, 2));
+
+        // Left boundary
+        CreateBoundaryCollider(boundaries, new Vector2(-levelBoundsSize.x / 2 - 1, 0), new Vector2(2, levelBoundsSize.y));
+
+        // Right boundary
+        CreateBoundaryCollider(boundaries, new Vector2(levelBoundsSize.x / 2 + 1, 0), new Vector2(2, levelBoundsSize.y));
+
+        Debug.Log($"Created level boundaries: {levelBoundsSize.x}x{levelBoundsSize.y}");
+
+        // Setup camera bounds if camera manager exists
+        if (cameraManager != null)
+        {
+            BoxCollider2D boundsCollider = boundaries.AddComponent<BoxCollider2D>();
+            boundsCollider.isTrigger = true;
+            boundsCollider.size = levelBoundsSize;
+            cameraManager.UpdateCameraBounds(boundsCollider);
+        }
+    }
+
+    private void CreateBoundaryCollider(GameObject parent, Vector2 position, Vector2 size)
+    {
+        GameObject colliderObj = new GameObject("BoundaryCollider");
+        colliderObj.transform.parent = parent.transform;
+        colliderObj.transform.position = position;
+
+        BoxCollider2D collider = colliderObj.AddComponent<BoxCollider2D>();
+        collider.size = size;
+        collider.isTrigger = false;
     }
 
     /// <summary>
@@ -767,6 +949,7 @@ public class LevelManager : MonoBehaviour
         // Start from the beginning
         LoadLevel(startingLevelIndex);
     }
+
 
     /// <summary>
     /// Handle trigger events in the level (level completion, checkpoints, etc.)
