@@ -129,8 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89a69b09913222142a67a46726de33a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 20
-  lifetime: 3
+  bulletSpeed: 10
+  lifetime: 1.5
   arrowVFX: {fileID: 2111989615941534087, guid: 623d3117df0836142bdfb5f58591e6f1, type: 3}
 --- !u!60 &4155086115517416407
 PolygonCollider2D:
