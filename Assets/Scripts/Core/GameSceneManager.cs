@@ -264,7 +264,11 @@ public class GameSceneManager : MonoBehaviour
         yield return null;
 
         // Find spawn point
-        GameObject spawnPoint = GameObject.FindGameObjectWithTag("PlayerSpawnPoint");
+        GameObject spawnPoint = GameObject.FindGameObjectWithTag("PlayerSpawn");
+       if (spawnPoint == null)
+        {
+            Debug.LogWarning("No player spawn point found in scene!");
+        }
         Vector3 spawnPosition = spawnPoint != null ? spawnPoint.transform.position : Vector3.zero;
 
         // Spawn appropriate character based on selection

@@ -90,7 +90,7 @@ public class ArrowAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Lizzer")) 
+        if (other.CompareTag("Enemy")) 
         {
             LizzerController lizzer = other.GetComponent<LizzerController>();
             Instantiate(arrowVFX, transform.position, Quaternion.identity);

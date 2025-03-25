@@ -179,6 +179,7 @@ public class LizzerController : MonoBehaviour
     {
         Debug.Log("Lizzer died!");
         Destroy(gameObject); 
+        EnemyManager.instance.EnemyKilled();
     }
 
 
