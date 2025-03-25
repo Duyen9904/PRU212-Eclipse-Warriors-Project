@@ -30,7 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3850629765536121013}
+  - {fileID: 4571814932470793878}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4877682705636799721
@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneIndex: 0
-  levelExit: {fileID: 6632169609129349405}
---- !u!1 &6632169609129349405
+  levelExit: {fileID: 4835225812865969424}
+--- !u!1 &4835225812865969424
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,10 +55,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3850629765536121013}
-  - component: {fileID: 5029615209006443263}
-  - component: {fileID: 5009675456648546148}
-  - component: {fileID: 8736695572590775809}
+  - component: {fileID: 4571814932470793878}
+  - component: {fileID: 8562977312064039384}
+  - component: {fileID: 313603209460025694}
+  - component: {fileID: 4915426786863328105}
   m_Layer: 0
   m_Name: LevelExit
   m_TagString: Untagged
@@ -66,28 +66,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &3850629765536121013
+--- !u!4 &4571814932470793878
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6632169609129349405}
+  m_GameObject: {fileID: 4835225812865969424}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 108.52605, y: -22.178715, z: 0.52172875}
+  m_LocalPosition: {x: 100.52605, y: -23.178715, z: 0.52172875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7455832750649105846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5029615209006443263
+--- !u!212 &8562977312064039384
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6632169609129349405}
+  m_GameObject: {fileID: 4835225812865969424}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -136,13 +136,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5009675456648546148
+--- !u!61 &313603209460025694
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6632169609129349405}
+  m_GameObject: {fileID: 4835225812865969424}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -182,15 +182,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.15, y: 3.98}
   m_EdgeRadius: 0
---- !u!114 &8736695572590775809
+--- !u!114 &4915426786863328105
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6632169609129349405}
+  m_GameObject: {fileID: 4835225812865969424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 331194fb4739bb64aab547b5d35e3237, type: 3}
+  m_Script: {fileID: 11500000, guid: a71e852c114ee754a844590e018798d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  requiresRelic: 1
+  requiredRelicIndex: 1
+  lockedVisual: {fileID: 0}
+  unlockedVisual: {fileID: 0}
+  activationEffect: {fileID: 0}
+  lockedMessage: You need the relic to unlock this gate!

@@ -72,6 +72,7 @@ public class ArrowAttack : MonoBehaviour
 
     public void Shoot(Vector2 firePosition, Vector2 targetPosition)
     {
+        Debug.Log("ArrowAttack.Shoot()");
         transform.position = firePosition;
 
         Vector2 direction = (targetPosition - firePosition).normalized;
