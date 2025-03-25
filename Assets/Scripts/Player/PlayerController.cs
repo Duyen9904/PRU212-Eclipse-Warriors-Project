@@ -10,12 +10,12 @@ public class PlayerController : Singleton<PlayerController>
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float sprintMultiplier = 1.5f;
-    [SerializeField] private float diagonalMovementModifier = 0.7071f; // 1/sqrt(2) if you want to manually scale diagonal
 
     [Header("Animation")]
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer spriteRenderer;
 
+    // Character Selection
     [Header("Character Selection")]
     [SerializeField] private CharacterDatabase characterDatabase;
     private Character selectedCharacter;
@@ -28,43 +28,38 @@ public class PlayerController : Singleton<PlayerController>
     // Movement
     private Vector2 movementInput;
     private bool isSprinting = false;
-    private bool canMove = true;
-    private bool isShooting = false;
 
-    // Animation parameter hashes
+    // Inventory
+    private List<string> inventory = new List<string>();
+
+    // Animation parameter hashes (for performance)
     private int moveXHash;
     private int moveYHash;
     private int isMovingHash;
     private int isShootingHash;
-    // For remembering last input direction
-    private int lastInputXHash;
-    private int lastInputYHash;
-
-    // Store last non-zero input direction
-    private float lastInputX = 0f;
-    private float lastInputY = -1f; // Default facing down
-
-    // Inventory
-    private List<string> inventory = new List<string>();
 
     // Death state
     private PlayerHealth playerHealth;
     private bool isDead = false;
 
+    // State
+    private bool canMove = true;
+    private bool isShooting = false;
+    private bool isInitialized = false;
+
+    private Vector2 lastMovementDirection = Vector2.down;
+
     protected override void Awake()
     {
         base.Awake();
-
         // Get components
         rb = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
 
-        // If animator reference is missing, try to get it on the same object
-        // (If your Animator is on a child, change to GetComponentInChildren<Animator>())
+        // If animator reference is missing, try to get it
         if (animator == null)
             animator = GetComponent<Animator>();
 
-        // Same for SpriteRenderer
         if (spriteRenderer == null)
             spriteRenderer = GetComponent<SpriteRenderer>();
 
@@ -75,55 +70,105 @@ public class PlayerController : Singleton<PlayerController>
             moveYHash = Animator.StringToHash("WalkInputY");
             isMovingHash = Animator.StringToHash("isWalking");
             isShootingHash = Animator.StringToHash("isShooting");
-            lastInputXHash = Animator.StringToHash("LastInputX");
-            lastInputYHash = Animator.StringToHash("LastInputY");
         }
 
-        // Make player persistent across scene loads
         DontDestroyOnLoad(gameObject);
     }
 
     void Start()
     {
+        if (!isInitialized)
+        {
+            InitializeController();
+        }
+    }
+
+    /// <summary>
+    /// Initializes the player controller, loading character data and setting up components
+    /// Called by CharacterSpawner when instantiating a new player or repositioning an existing one
+    /// </summary>
+    public void InitializeController()
+    {
         // Get the player health component
         playerHealth = GetComponent<PlayerHealth>();
+
         if (playerHealth != null)
         {
             // Subscribe to the player death event
             playerHealth.OnPlayerDeath += HandlePlayerDeath;
         }
+        else
+        {
+            Debug.LogWarning("PlayerHealth component not found on player!");
+        }
 
         // Load the selected character from PlayerPrefs
         LoadSelectedCharacter();
+
+        // Reset state variables
+        isDead = false;
+        canMove = true;
+
+        // Set up rigidbody constraints
+        if (rb != null)
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        }
+
+        isInitialized = true;
+
+        Debug.Log("Player controller initialized successfully");
     }
+
     void Update()
     {
+        if (isDead) return;
+        if (!canMove) return;
+
         // Get input
-        Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        movementInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        // Normalize diagonal movement
-        if (input.magnitude > 1) input.Normalize();
+        // Normalize diagonal movement to prevent faster diagonal speed
+        if (movementInput.magnitude > 1)
+        {
+            movementInput.Normalize();
+        }
 
-        // Move character directly
-        transform.position += new Vector3(input.x, input.y, 0) * moveSpeed * Time.deltaTime;
+        // Sprint
+        isSprinting = Input.GetKey(KeyCode.LeftShift);
 
-        // Update animation
-        UpdateAnimation(input);
+        // Shooting input (for example, using left mouse button)
+        if (Input.GetMouseButtonDown(0))
+        {
+            StartShooting();
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            StopShooting();
+        }
+
+        // Update animations
+        UpdateAnimation();
+
+        // Interaction input
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Interact();
+        }
     }
 
-
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        if (!canMove || isDead) return;
+        if (isDead) return;
+        if (!canMove) return;
 
         // Calculate movement
         float currentMoveSpeed = moveSpeed * (isSprinting ? sprintMultiplier : 1f);
         Vector2 movement = movementInput * currentMoveSpeed;
 
-        // Apply movement via velocity
-        rb.linearVelocity = movement;
+        // Apply movement
     }
-
     private void OnDestroy()
     {
         // Unsubscribe from events when destroyed
@@ -133,63 +178,12 @@ public class PlayerController : Singleton<PlayerController>
         }
     }
 
-    public void SetMoveSpeed(float speed)
-    {
-        moveSpeed = speed;
-        Debug.Log($"Player move speed set to: {moveSpeed}");
-    }
-
-    private void UpdateSpriteDirection(Vector2 movementDir)
-    {
-        // Handle left/right flipping
-        if (Mathf.Abs(movementDir.x) > 0.1f)
-        {
-            spriteRenderer.flipX = (movementDir.x < 0);
-        }
-
-        // Set animator parameters for all directions
-        animator.SetFloat("WalkInputX", movementDir.x);
-        animator.SetFloat("WalkInputY", movementDir.y);
-        animator.SetBool("isWalking", movementDir.magnitude > 0.1f);
-    }
-
-    // Add this new method to your existing PlayerController.cs
-    public void InitializeController()
-    {
-        // Reset movement state
-        canMove = true;
-        isDead = false;
-
-        // Make sure components are properly referenced
-        if (rb == null) rb = GetComponent<Rigidbody2D>();
-        if (animator == null) animator = GetComponent<Animator>();
-        if (spriteRenderer == null) spriteRenderer = GetComponent<SpriteRenderer>();
-
-        // Verify Rigidbody settings
-        if (rb != null)
-        {
-            rb.isKinematic = false;
-            rb.simulated = true;
-            Debug.Log("PlayerController initialized with Rigidbody2D: " +
-                      (rb.simulated ? "Simulated" : "Not Simulated"));
-        }
-        else
-        {
-            Debug.LogError("Rigidbody2D missing on PlayerController!");
-        }
-
-        // Load character data
-        LoadSelectedCharacter();
-
-        Debug.Log("PlayerController initialized successfully");
-    }
-
     private void HandlePlayerDeath()
     {
         isDead = true;
-        canMove = false;
 
         // Stop movement
+        canMove = false;
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
@@ -198,21 +192,34 @@ public class PlayerController : Singleton<PlayerController>
         // Play death animation if animator exists
         if (animator != null)
         {
-            animator.SetTrigger("Die");
+            animator.SetTrigger("isDead");
         }
 
-        // Start a coroutine to handle death sequence (respawn, game over, etc.)
+        // You could start a coroutine for respawn logic or game over
         StartCoroutine(HandleDeathSequence());
     }
 
     private IEnumerator HandleDeathSequence()
     {
-        // Wait for death animation to finish
+        // Wait for death animation to play
         yield return new WaitForSeconds(2f);
 
-        // You could add your game over or respawn logic here
-        // For now, we just destroy the player
-        Destroy(gameObject);
+        // Here you can implement different behaviors:
+        // Option 1: Game Over
+        if (LevelManager.Instance != null)
+        {
+            LevelManager.Instance.PlayerDied();
+        }
+        else if (GameSceneManager.Instance != null)
+        {
+            GameSceneManager.Instance.LoadGameOver();
+        }
+        else
+        {
+            Debug.LogWarning("No level controller or scene manager found for game over handling");
+            // Fallback: Destroy the player
+            Destroy(gameObject);
+        }
     }
 
     private void LoadSelectedCharacter()
@@ -224,13 +231,13 @@ public class PlayerController : Singleton<PlayerController>
         }
 
         // Get the selected character index from PlayerPrefs
-        selectedCharacterIndex = PlayerPrefs.GetInt("SelectedOption", 0);
+        selectedCharacterIndex = PlayerPrefs.GetInt("SelectedCharacter", 0);
 
         // Ensure the index is valid
         if (selectedCharacterIndex >= characterDatabase.characterCount)
         {
             selectedCharacterIndex = 0;
-            PlayerPrefs.SetInt("SelectedOption", 0);
+            PlayerPrefs.SetInt("SelectedCharacter", 0);
         }
 
         // Get the selected character data
@@ -238,6 +245,11 @@ public class PlayerController : Singleton<PlayerController>
 
         // Apply character visuals and animations
         ApplyCharacterVisuals();
+
+        // Apply character stats
+        ApplyCharacterStats();
+
+
     }
 
     private void ApplyCharacterVisuals()
@@ -259,70 +271,73 @@ public class PlayerController : Singleton<PlayerController>
         }
     }
 
-    private void UpdateAnimation(Vector2 movementDir)
+    private void ApplyCharacterStats()
+    {
+        if (selectedCharacter == null)
+            return;
+
+        // Apply movement speed
+        moveSpeed = selectedCharacter.moveSpeed;
+
+        // Apply health if PlayerHealth component exists
+        PlayerHealth health = GetComponent<PlayerHealth>();
+        if (health != null)
+        {
+            health.SetMaxHealth(selectedCharacter.health);
+        }
+
+        // Apply any other character-specific stats
+        // This could include attack damage, special abilities, etc.
+    }
+
+    private void UpdateAnimation()
     {
         if (animator == null) return;
 
-        // Use your parameter names
-        animator.SetFloat("WalkInputX", movementDir.x);
-        animator.SetFloat("WalkInputY", movementDir.y);
-        animator.SetBool("isWalking", movementDir.magnitude > 0.1f);
+        // Don't update movement animations if dead
+        if (isDead) return;
 
-        // Handle sprite flipping
-        if (spriteRenderer != null && Mathf.Abs(movementDir.x) > 0.1f)
-        {
-            spriteRenderer.flipX = (movementDir.x < 0);
-        }
-    }
+        // Update movement animation parameters
+        bool isMoving = movementInput.magnitude > 0.1f;
+        animator.SetBool(isMovingHash, isMoving);
 
-    // Optional: If you prefer manual sprite animation instead of Animator
-    private void ManualAnimationUpdate()
-    {
-        if (selectedCharacter == null || spriteRenderer == null)
-            return;
-
-        Sprite[] currentAnimation;
-
-        if (isShooting && selectedCharacter.shootSprites != null && selectedCharacter.shootSprites.Length > 0)
+        // Save the last movement direction when moving
+        if (isMoving)
         {
-            currentAnimation = selectedCharacter.shootSprites;
-        }
-        else if (movementInput.magnitude > 0.1f && selectedCharacter.walkSprites != null && selectedCharacter.walkSprites.Length > 0)
-        {
-            currentAnimation = selectedCharacter.walkSprites;
-        }
-        else if (selectedCharacter.idleSprites != null && selectedCharacter.idleSprites.Length > 0)
-        {
-            currentAnimation = selectedCharacter.idleSprites;
+            lastMovementDirection = movementInput.normalized;
+            animator.SetFloat(moveXHash, movementInput.x);
+            animator.SetFloat(moveYHash, movementInput.y);
         }
         else
         {
-            // No animation sprites available, just use the default sprite
-            spriteRenderer.sprite = selectedCharacter.characterSprite;
-            return;
+            // When idle, use the last known direction
+            animator.SetFloat(moveXHash, lastMovementDirection.x);
+            animator.SetFloat(moveYHash, lastMovementDirection.y);
         }
 
-        // Simple sprite index based on time
-        int frameIndex = (int)(Time.time * 10) % currentAnimation.Length;
-        spriteRenderer.sprite = currentAnimation[frameIndex];
+        // Flip sprite based on last movement direction
+        if (spriteRenderer != null)
+        {
+            if (lastMovementDirection.x < 0)
+                spriteRenderer.flipX = true;
+            else if (lastMovementDirection.x > 0)
+                spriteRenderer.flipX = false;
+        }
 
-        // Handle sprite flipping
-        if (movementInput.x < 0)
-            spriteRenderer.flipX = true;
-        else if (movementInput.x > 0)
-            spriteRenderer.flipX = false;
+        // Update shooting parameter
+        animator.SetBool(isShootingHash, isShooting);
     }
 
     private void StartShooting()
     {
         isShooting = true;
-        // Additional shooting logic here...
+        // Add any other shooting logic here
     }
 
     private void StopShooting()
     {
         isShooting = false;
-        // Additional logic to stop shooting...
+        // Add any other logic to stop shooting
     }
 
     private void Interact()
@@ -346,11 +361,12 @@ public class PlayerController : Singleton<PlayerController>
         // Calculate position of interaction box
         Vector2 interactPos = (Vector2)transform.position + (facingDirection * interactDistance);
 
-        // Debug visualization
-        Debug.DrawLine(transform.position, interactPos, Color.red, 0.5f);
+        // Debug visualization of the interaction area
+        Debug.DrawLine(transform.position, (Vector2)transform.position + facingDirection * interactDistance, Color.red, 0.5f);
 
         // Perform the overlap box check
         Collider2D[] results = Physics2D.OverlapBoxAll(interactPos, interactSize, 0f);
+
         foreach (var collider in results)
         {
             // Skip player's own collider
@@ -361,7 +377,7 @@ public class PlayerController : Singleton<PlayerController>
             if (interactable != null)
             {
                 interactable.Interact(this);
-                break; // Only interact with one object
+                break; // Only interact with one object at a time
             }
         }
     }
@@ -382,10 +398,45 @@ public class PlayerController : Singleton<PlayerController>
         return inventory.Contains(itemId);
     }
 
-    // Public method to control the shooting state externally
+    // Public method to control the shooting state
     public void SetShooting(bool shooting)
     {
         isShooting = shooting;
+    }
+
+    // Reset player to full health and initial state
+    public void ResetPlayer()
+    {
+        isDead = false;
+        canMove = true;
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        if (playerHealth != null)
+        {
+            playerHealth.Heal(9999); // Full heal
+        }
+    }
+
+    public void SetMoveSpeed(float speed)
+    {
+        moveSpeed = speed;
+        Debug.Log($"Player move speed set to: {moveSpeed}");
+    }
+
+
+    // Teleport player to new position
+    public void TeleportTo(Vector3 position)
+    {
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        transform.position = position;
     }
 }
 

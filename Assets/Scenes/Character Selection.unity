@@ -436,7 +436,7 @@ GameObject:
   - component: {fileID: 154754563}
   m_Layer: 0
   m_Name: Selected Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
   idleToggle: {fileID: 0}
   walkToggle: {fileID: 0}
   shootToggle: {fileID: 0}
-  nextSceneName: GlacierBiome
+  nextSceneName: ForestBiome
 --- !u!1 &246840521
 GameObject:
   m_ObjectHideFlags: 0

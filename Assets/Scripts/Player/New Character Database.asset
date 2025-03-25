@@ -20,6 +20,9 @@ MonoBehaviour:
     walkSprites: []
     shootSprites: []
     dieSprites: []
+    health: 100
+    moveSpeed: 5
+    damageMultiplier: 1
     isSelected: 0
   - characterName: Wizard
     characterSprite: {fileID: 2365076705713957727, guid: 6eb63ea736c96a34fac4ebf712d5da9b, type: 3}
@@ -28,6 +31,9 @@ MonoBehaviour:
     walkSprites: []
     shootSprites: []
     dieSprites: []
+    health: 100
+    moveSpeed: 5
+    damageMultiplier: 1
     isSelected: 0
   - characterName: Rogue
     characterSprite: {fileID: 2965599932687856292, guid: 1daee6204de93584da6c0be209db49b6, type: 3}
@@ -36,4 +42,7 @@ MonoBehaviour:
     walkSprites: []
     shootSprites: []
     dieSprites: []
+    health: 100
+    moveSpeed: 5
+    damageMultiplier: 1
     isSelected: 0

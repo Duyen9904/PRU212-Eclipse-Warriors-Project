@@ -18,6 +18,17 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private int startingLevelIndex = 0;
     private int currentLevelIndex = 0;
 
+    [Header("Player Lives Settings")]
+    [SerializeField] private int maxLives = 3;
+    private int currentLives;
+    [SerializeField] private float respawnDelay = 2f;
+    private bool isRespawning = false;
+
+    [Header("UI References")]
+    [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private UnityEngine.UI.Text livesText;
+    [SerializeField] private GameObject pauseMenuPanel;
+
     [Header("LDtk Settings")]
 #if LDTK_IMPORTER
     [SerializeField] private LDtkComponentProject ldtkProject;
@@ -75,12 +86,20 @@ public class LevelManager : MonoBehaviour
         // Initialize current level index
         currentLevelIndex = startingLevelIndex;
 
+        // Initialize lives
+        currentLives = maxLives;
+        UpdateLivesUI();
+
         // Hook into scene load event
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void Start()
     {
+        // Hide UI panels
+        if (gameOverPanel != null) gameOverPanel.SetActive(false);
+        if (pauseMenuPanel != null) pauseMenuPanel.SetActive(false);
+
         // Check if we're already in one of our levels
         string currentSceneName = SceneManager.GetActiveScene().name;
         bool alreadyInLevel = false;
@@ -101,6 +120,135 @@ public class LevelManager : MonoBehaviour
         if (!alreadyInLevel && levelSceneNames.Length > 0)
         {
             LoadLevel(currentLevelIndex);
+        }
+    }
+
+    private void Update()
+    {
+        // Handle pause menu
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            TogglePauseMenu();
+        }
+    }
+
+    /// <summary>
+    /// Called when the player dies
+    /// </summary>
+    public void PlayerDied()
+    {
+        // Don't process if we're already respawning
+        if (isRespawning) return;
+
+        isRespawning = true;
+
+        // Decrement lives
+        currentLives--;
+        UpdateLivesUI();
+
+        Debug.Log("Player died! Lives remaining: " + currentLives);
+
+        // Check if game over
+        if (currentLives <= 0)
+        {
+            // Game over - show panel after delay
+            StartCoroutine(ShowGameOverAfterDelay());
+        }
+        else
+        {
+            // Still have lives - respawn
+            StartCoroutine(RespawnPlayerAfterDelay());
+        }
+    }
+
+    private IEnumerator RespawnPlayerAfterDelay()
+    {
+        // Wait for animation/effects
+        yield return new WaitForSeconds(respawnDelay);
+
+        // Find the player spawn point
+        Transform spawnPoint = FindSpawnPoint();
+
+        if (currentPlayerInstance != null)
+        {
+            // Reset and reposition existing player
+            currentPlayerInstance.transform.position = spawnPoint != null ?
+                spawnPoint.position : Vector3.zero;
+
+            // Reset player state
+            PlayerController controller = currentPlayerInstance.GetComponent<PlayerController>();
+            if (controller != null)
+            {
+                controller.ResetPlayer();
+            }
+
+            // Apply saved player data
+            ApplyPlayerData();
+        }
+        else
+        {
+            // Recreate player if instance was destroyed
+            SetupPlayer();
+        }
+
+        // Reset the respawning flag
+        isRespawning = false;
+    }
+
+    private IEnumerator ShowGameOverAfterDelay()
+    {
+        yield return new WaitForSeconds(respawnDelay);
+
+        // Show game over panel
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(true);
+        }
+        else
+        {
+            // No game over panel - handle via GameSceneManager
+            HandleTriggerEvent("PlayerDied");
+        }
+    }
+
+    // Called by UI button
+    public void RestartFromCheckpoint()
+    {
+        // Hide game over panel
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(false);
+        }
+
+        // Reset lives and respawn
+        currentLives = maxLives;
+        UpdateLivesUI();
+        isRespawning = false;
+
+        // Reload current level
+        ReloadCurrentLevel();
+    }
+
+    public void TogglePauseMenu()
+    {
+        bool isPaused = Time.timeScale < 0.1f;
+
+        // Toggle pause state
+        Time.timeScale = isPaused ? 1f : 0f;
+
+        // Show/hide pause menu
+        if (pauseMenuPanel != null)
+        {
+            pauseMenuPanel.SetActive(!isPaused);
+        }
+    }
+
+    // Update the lives UI text
+    private void UpdateLivesUI()
+    {
+        if (livesText != null)
+        {
+            livesText.text = "Lives: " + currentLives;
         }
     }
 
@@ -564,6 +712,7 @@ public class LevelManager : MonoBehaviour
         PlayerPrefs.SetInt("PlayerHealth", playerData.health);
         PlayerPrefs.SetFloat("PlayerMana", playerData.mana);
         PlayerPrefs.SetInt("CollectedRelics", playerData.collectedRelics);
+        PlayerPrefs.SetInt("PlayerLives", currentLives);
         PlayerPrefs.SetString("PlayerInventory", string.Join(",", playerData.inventory));
         PlayerPrefs.Save();
 
@@ -581,6 +730,8 @@ public class LevelManager : MonoBehaviour
             playerData.health = PlayerPrefs.GetInt("PlayerHealth", 100);
             playerData.mana = PlayerPrefs.GetFloat("PlayerMana", 100);
             playerData.collectedRelics = PlayerPrefs.GetInt("CollectedRelics", 0);
+            currentLives = PlayerPrefs.GetInt("PlayerLives", maxLives);
+            UpdateLivesUI();
 
             string invString = PlayerPrefs.GetString("PlayerInventory", "");
             if (!string.IsNullOrEmpty(invString))
@@ -605,6 +756,10 @@ public class LevelManager : MonoBehaviour
     {
         // Reset player data
         playerData = new PlayerData();
+
+        // Reset lives
+        currentLives = maxLives;
+        UpdateLivesUI();
 
         // Reset to first level
         currentLevelIndex = startingLevelIndex;
