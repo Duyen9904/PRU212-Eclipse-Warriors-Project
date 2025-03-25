@@ -994,6 +994,39 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Handles level completion and transitions to the next level
+    /// </summary>
+    public void LevelComplete()
+    {
+        // Log the level completion
+        Debug.Log($"Level {currentLevelIndex + 1} completed!");
+
+        // Save player state before leaving
+        SavePlayerState();
+
+        // Optional: Play level complete sound
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySound("level_complete");
+        }
+
+        // Optional: Display a level complete UI element temporarily
+        // If you had a UI panel for level completion, you would show it here
+
+        // Progress to the next level after a short delay
+        StartCoroutine(LoadNextLevelAfterDelay(2f));
+    }
+
+    private IEnumerator LoadNextLevelAfterDelay(float delay)
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delay);
+
+        // Load the next level
+        LoadNextLevel();
+    }
+
     private void OnDestroy()
     {
         // Unsubscribe from events
