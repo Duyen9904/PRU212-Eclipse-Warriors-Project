@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 // Cinemachine namespace is needed if we reference Cinemachine classes
 using Unity.Cinemachine;
+using LDtkUnity;
 /// <summary>
 /// LDtkLevelManager: Manages level transitions, saving/loading, and Cinemachine camera for a top-down game.
 /// </summary>
@@ -30,6 +31,9 @@ public class LDtkLevelManager : MonoBehaviour
     [Header("Prefabs")]
     public GameObject[] enemyPrefabs;
     // You could use a Dictionary<string, GameObject> for mapping entity IDs to prefabs for flexibility.
+
+    [Header("Level Boundaries")]
+    [SerializeField] private Vector2 levelBoundsSize = new Vector2(100f, 100f); // Default size for fallback boundaries
 
     private void Awake()
     {
@@ -126,6 +130,7 @@ public class LDtkLevelManager : MonoBehaviour
                 cameraConfiner.InvalidateCache();  // Recalculate confiner with new shape
             }
         }
+        CreateLevelBoundaries();
 
         // Spawn enemies/objects for this level if not already present (for dynamic loading scenarios)
         SpawnLevelEntities();
@@ -242,6 +247,74 @@ public class LDtkLevelManager : MonoBehaviour
         Debug.Log("Progress saved.");
     }
 
+    // In your LDtkLevelManager.cs
+    public void CreateLevelBoundaries()
+    {
+        // Create empty GameObject for boundaries
+        GameObject boundaries = new GameObject("LevelBoundaries");
+        boundaries.tag = "LevelBounds";
+
+        // Get level dimensions - find the LDtkComponentLevel first
+        var ldtkLevel = FindObjectOfType<LDtkUnity.LDtkComponentLevel>();
+
+        // If LDtk level exists, use its dimensions
+        if (ldtkLevel != null)
+        {
+            var levelBounds = ldtkLevel.GetComponent<Renderer>()?.bounds;
+            if (levelBounds.HasValue)
+            {
+                float levelWidth = levelBounds.Value.size.x;
+                float levelHeight = levelBounds.Value.size.y;
+                Vector3 center = levelBounds.Value.center;
+
+                // Create colliders around level perimeter
+                CreateBoundaryCollider(boundaries,
+                    new Vector2(center.x, center.y - levelHeight / 2 - 1),
+                    new Vector2(levelWidth, 2));
+                CreateBoundaryCollider(boundaries,
+                    new Vector2(center.x, center.y + levelHeight / 2 + 1),
+                    new Vector2(levelWidth, 2));
+                CreateBoundaryCollider(boundaries,
+                    new Vector2(center.x - levelWidth / 2 - 1, center.y),
+                    new Vector2(2, levelHeight));
+                CreateBoundaryCollider(boundaries,
+                    new Vector2(center.x + levelWidth / 2 + 1, center.y),
+                    new Vector2(2, levelHeight));
+
+                // Create camera bounds collider
+                BoxCollider2D cameraBounds = boundaries.AddComponent<BoxCollider2D>();
+                cameraBounds.isTrigger = true;
+                cameraBounds.size = new Vector2(levelWidth, levelHeight);
+                cameraBounds.offset = center - boundaries.transform.position;
+            }
+        }
+        else
+        {
+            // Fallback to predefined size
+            CreateBoundaryCollider(boundaries, new Vector2(0, -levelBoundsSize.y / 2 - 1), new Vector2(levelBoundsSize.x, 2));
+            CreateBoundaryCollider(boundaries, new Vector2(0, levelBoundsSize.y / 2 + 1), new Vector2(levelBoundsSize.x, 2));
+            CreateBoundaryCollider(boundaries, new Vector2(-levelBoundsSize.x / 2 - 1, 0), new Vector2(2, levelBoundsSize.y));
+            CreateBoundaryCollider(boundaries, new Vector2(levelBoundsSize.x / 2 + 1, 0), new Vector2(2, levelBoundsSize.y));
+
+            // Add camera bounds
+            BoxCollider2D cameraBounds = boundaries.AddComponent<BoxCollider2D>();
+            cameraBounds.isTrigger = true;
+            cameraBounds.size = levelBoundsSize;
+        }
+
+        Debug.Log("Level boundaries created successfully");
+    }
+
+    private void CreateBoundaryCollider(GameObject parent, Vector2 position, Vector2 size)
+    {
+        GameObject colliderObj = new GameObject("BoundaryCollider");
+        colliderObj.transform.parent = parent.transform;
+        colliderObj.transform.position = position;
+
+        BoxCollider2D collider = colliderObj.AddComponent<BoxCollider2D>();
+        collider.size = size;
+        collider.isTrigger = false;
+    }
     /// <summary>
     /// Load game progress from persistent storage.
     /// </summary>

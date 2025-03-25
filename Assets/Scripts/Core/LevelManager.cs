@@ -358,6 +358,9 @@ public class LevelManager : MonoBehaviour
             // Load traditional Unity scene level
             LoadTraditionalLevel();
         }
+        FixColliders();
+
+        CreateLevelBoundaries();
 
         // Find or create player
         SetupPlayer();
@@ -372,6 +375,27 @@ public class LevelManager : MonoBehaviour
             levelEvents.OnLevelStart();
         }
     }
+
+    // Add this method to your LevelManager script
+    private void FixColliders()
+    {
+        // Find all box colliders in the scene
+        BoxCollider2D[] colliders = FindObjectsOfType<BoxCollider2D>();
+        int fixedCount = 0;
+
+        foreach (var collider in colliders)
+        {
+            // If it's set as a trigger, make it a solid collider
+            if (collider.isTrigger)
+            {
+                collider.isTrigger = false;
+                fixedCount++;
+            }
+        }
+
+        Debug.Log($"Fixed {fixedCount} trigger colliders to be solid colliders");
+    }
+
 
     /// <summary>
     /// Loads an LDtk-based level
@@ -489,6 +513,8 @@ public class LevelManager : MonoBehaviour
             Debug.LogError("Failed to spawn player character. Prefab or spawn point is missing.");
         }
     }
+
+
 
     /// <summary>
     /// Finds an appropriate spawn point in the level
@@ -717,6 +743,59 @@ public class LevelManager : MonoBehaviour
         PlayerPrefs.Save();
 
         Debug.Log("Game progress saved");
+    }
+
+
+    // Add this to your LevelManager.cs - within the class
+
+    [Header("Level Boundaries")]
+    [SerializeField] private bool useCustomBounds = true;
+    [SerializeField] private Vector2 levelBoundsSize = new Vector2(784f, 512f); // Default size based on 49x32 cells
+
+    public void CreateLevelBoundaries()
+    {
+        // Create empty GameObject for boundaries
+        GameObject boundaries = new GameObject("LevelBoundaries");
+        boundaries.tag = "LevelBounds";
+
+        // Add a composite collider for better performance (optional)
+        Rigidbody2D rb = boundaries.AddComponent<Rigidbody2D>();
+        rb.bodyType = RigidbodyType2D.Static;
+
+        // Create individual colliders
+        // Bottom boundary
+        CreateBoundaryCollider(boundaries, new Vector2(0, -levelBoundsSize.y / 2 - 1), new Vector2(levelBoundsSize.x, 2));
+
+        // Top boundary
+        CreateBoundaryCollider(boundaries, new Vector2(0, levelBoundsSize.y / 2 + 1), new Vector2(levelBoundsSize.x, 2));
+
+        // Left boundary
+        CreateBoundaryCollider(boundaries, new Vector2(-levelBoundsSize.x / 2 - 1, 0), new Vector2(2, levelBoundsSize.y));
+
+        // Right boundary
+        CreateBoundaryCollider(boundaries, new Vector2(levelBoundsSize.x / 2 + 1, 0), new Vector2(2, levelBoundsSize.y));
+
+        Debug.Log($"Created level boundaries: {levelBoundsSize.x}x{levelBoundsSize.y}");
+
+        // Setup camera bounds if camera manager exists
+        if (cameraManager != null)
+        {
+            BoxCollider2D boundsCollider = boundaries.AddComponent<BoxCollider2D>();
+            boundsCollider.isTrigger = true;
+            boundsCollider.size = levelBoundsSize;
+            cameraManager.UpdateCameraBounds(boundsCollider);
+        }
+    }
+
+    private void CreateBoundaryCollider(GameObject parent, Vector2 position, Vector2 size)
+    {
+        GameObject colliderObj = new GameObject("BoundaryCollider");
+        colliderObj.transform.parent = parent.transform;
+        colliderObj.transform.position = position;
+
+        BoxCollider2D collider = colliderObj.AddComponent<BoxCollider2D>();
+        collider.size = size;
+        collider.isTrigger = false;
     }
 
     /// <summary>
