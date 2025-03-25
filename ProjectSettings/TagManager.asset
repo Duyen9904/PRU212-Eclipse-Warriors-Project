@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerSpawn
   - Relic
+  - Boss
   layers:
   - Default
   - TransparentFX
