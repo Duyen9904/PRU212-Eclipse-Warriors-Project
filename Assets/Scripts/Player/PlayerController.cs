@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -48,6 +48,11 @@ public class PlayerController : Singleton<PlayerController>
     private bool isInitialized = false;
 
     private Vector2 lastMovementDirection = Vector2.down;
+
+    [Header("Attack")]
+    [SerializeField] private GameObject arrowPrefab;
+    [SerializeField] private float attackCooldown = 2f;
+    private float lastShootTime = 0f;
 
     protected override void Awake()
     {
@@ -350,8 +355,20 @@ public class PlayerController : Singleton<PlayerController>
 
     private void StartShooting()
     {
-        isShooting = true;
-        // Add any other shooting logic here
+        if (Time.time - lastShootTime < attackCooldown) return; 
+
+        lastShootTime = Time.time; 
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePosition.z = 0f; 
+
+        Vector2 playerPosition = transform.position;
+
+        GameObject arrowInstance = Instantiate(arrowPrefab, playerPosition, Quaternion.identity);
+        arrowInstance.SetActive(true);
+
+        ArrowAttack arrowAttack = arrowInstance.GetComponent<ArrowAttack>();
+
+        arrowAttack.Shoot(playerPosition, mousePosition);
     }
 
     private void StopShooting()
@@ -435,10 +452,10 @@ public class PlayerController : Singleton<PlayerController>
             rb.linearVelocity = Vector2.zero;
         }
 
-        if (playerHealth != null)
-        {
-            playerHealth.Heal(9999); // Full heal
-        }
+        //if (playerHealth != null)
+        //{
+        //    playerHealth.Heal(9999); // Full heal
+        //}
     }
 
     public void SetMoveSpeed(float speed)

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 102862003366701405}
   - component: {fileID: 2328661906189375725}
   - component: {fileID: 1324860330838347299}
+  - component: {fileID: 2860345442970364568}
   m_Layer: 0
   m_Name: PlayerBase
   m_TagString: Player
@@ -125,10 +126,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   sprintMultiplier: 1.5
-  diagonalMovementModifier: 0.7071
   animator: {fileID: 0}
   spriteRenderer: {fileID: 0}
   characterDatabase: {fileID: 11400000, guid: ff0b2c4a794c61843932b1555a664cc6, type: 2}
+  arrowPrefab: {fileID: 7649183042919131247, guid: cf223d95977ee6c46984a7d466feb785, type: 3}
+  attackCooldown: 2
 --- !u!114 &2114962003678780143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,3 +235,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2860345442970364568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9202704245750119747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622747cb2246e174bb05d25aa6109e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: 6a6073dd4808fb04fa841baa7a9f94e4, type: 2}
+  restoreDefaultMatTime: 0.2

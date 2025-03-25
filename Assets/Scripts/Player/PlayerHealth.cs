@@ -17,14 +17,20 @@ public class PlayerHealth : Singleton<PlayerHealth>
     public delegate void PlayerDamageHandler(int currentHealth, int maxHealth);
     public event PlayerDamageHandler OnPlayerDamage;
 
+    private Flash flash;
+
+
     protected override void Awake()
     {
         base.Awake();
+        flash = GetComponent<Flash>();
     }
 
     private void Start()
     {
+        
         currentHealth = maxHealth;
+        Debug.Log("Player health: " + currentHealth);
         isDead = false;
     }
 
@@ -34,7 +40,8 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
         // Apply damage
         currentHealth -= damageAmount;
-
+        Debug.Log("Player took " + damageAmount + " damage. Current health: " + currentHealth);
+        StartCoroutine(flash.FlashRoutine());
         // Notify subscribers about damage
         OnPlayerDamage?.Invoke(currentHealth, maxHealth);
 

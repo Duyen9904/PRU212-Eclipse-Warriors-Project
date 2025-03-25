@@ -69,7 +69,7 @@ public class BulletImpact : MonoBehaviour
 			PlayerHealth playerHealth = PlayerController.Instance.GetComponent<PlayerHealth>();
 			Instantiate(bulletImpactVFX, transform.position, Quaternion.identity);
 			playerHealth.TakeDamage(damage, this.transform);
-			Debug.Log("Damage the player");
+			//Debug.Log("Damage the player");
 			gameObject.SetActive(false);
 		}
 	}

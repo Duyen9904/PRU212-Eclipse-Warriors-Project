@@ -32275,8 +32275,8 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -35.951057, y: 12.309017}
-      - {x: -35.53048, y: -2.6245575}
-      - {x: -68.73296, y: -2.4299998}
+      - {x: -35.69, y: -5.17}
+      - {x: -68.73296, y: -4.65}
       - {x: -68.58778, y: -25.809017}
       - {x: 43.587784, y: -25.809017}
       - {x: 43.951057, y: 12.309017}
@@ -32549,7 +32549,7 @@ Transform:
   m_GameObject: {fileID: 766326309}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -58.290806, y: -8.783027, z: 39.807632}
+  m_LocalPosition: {x: -54.330807, y: -6.9830265, z: 39.807632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32594,12 +32594,12 @@ MonoBehaviour:
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
-    TrackingTarget: {fileID: 923899458}
+    TrackingTarget: {fileID: 832160056}
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 80
-    OrthographicSize: 10
+    OrthographicSize: 8
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -32706,21 +32706,29 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 149669067368106202, guid: 0ee2fbe08e6ab4b4a812199af158b7e2, type: 3}
+      propertyPath: arrowAttack
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2114962003678780143, guid: 0ee2fbe08e6ab4b4a812199af158b7e2, type: 3}
       propertyPath: maxHealth
       value: 10010
       objectReference: {fileID: 0}
+    - target: {fileID: 2328661906189375725, guid: 0ee2fbe08e6ab4b4a812199af158b7e2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9629bede0b4e5c94d9176eb59e147ab8, type: 2}
     - target: {fileID: 2328661906189375725, guid: 0ee2fbe08e6ab4b4a812199af158b7e2, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7203404441896010199, guid: 0ee2fbe08e6ab4b4a812199af158b7e2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.14
+      value: -62.14
       objectReference: {fileID: 0}
     - target: {fileID: 7203404441896010199, guid: 0ee2fbe08e6ab4b4a812199af158b7e2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 7203404441896010199, guid: 0ee2fbe08e6ab4b4a812199af158b7e2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32757,6 +32765,10 @@ PrefabInstance:
     - target: {fileID: 9202704245750119747, guid: 0ee2fbe08e6ab4b4a812199af158b7e2, type: 3}
       propertyPath: m_Name
       value: PlayerBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 9202704245750119747, guid: 0ee2fbe08e6ab4b4a812199af158b7e2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9206876133871607694, guid: 0ee2fbe08e6ab4b4a812199af158b7e2, type: 3}
       propertyPath: m_Simulated
@@ -32806,7 +32818,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &923899453
 Animator:
   serializedVersion: 7
@@ -32817,7 +32829,7 @@ Animator:
   m_GameObject: {fileID: 923899452}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4703b42f03d659949899c0b8df4793f1, type: 2}
+  m_Controller: {fileID: 9100000, guid: 903d68b7ac0d1124a9749ece9f7a7ef4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -32988,14 +33000,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79bfb95249a7c094f8e62da6a6935031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  sprintMultiplier: 1.5
-  diagonalMovementModifier: 0.7071
-  animator: {fileID: 0}
-  spriteRenderer: {fileID: 0}
-  maxHealth: 100
-  currentHealth: 100
-  bulletImpact: {fileID: 0}
 --- !u!114 &923899462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33010,11 +33014,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   sprintMultiplier: 1.5
-  diagonalMovementModifier: 0.7071
   animator: {fileID: 0}
   spriteRenderer: {fileID: 0}
-  maxHealth: 100
-  currentHealth: 100
+  characterDatabase: {fileID: 0}
+  arrowPrefab: {fileID: 0}
+  attackCooldown: 0.5
 --- !u!1001 &975660969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33435,6 +33439,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 19428766947092133, guid: d4ec0d8d4b7aff849bb1380bf98a89a7, type: 3}
+      propertyPath: m_TagString
+      value: Lizzer
+      objectReference: {fileID: 0}
     - target: {fileID: 3072889246197413232, guid: d4ec0d8d4b7aff849bb1380bf98a89a7, type: 3}
       propertyPath: moveSpeed
       value: 3
@@ -33543,7 +33551,7 @@ GameObject:
   - component: {fileID: 1340270373}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33557,7 +33565,7 @@ Transform:
   m_GameObject: {fileID: 1340270371}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.224827, y: -8.055176, z: 39.807632}
+  m_LocalPosition: {x: -44.61336, y: -6.9725065, z: 39.807632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33682,7 +33690,7 @@ Camera:
   far clip plane: 1000
   field of view: 80
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 8
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -40265,6 +40273,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 19428766947092133, guid: d4ec0d8d4b7aff849bb1380bf98a89a7, type: 3}
+      propertyPath: m_TagString
+      value: Lizzer
+      objectReference: {fileID: 0}
     - target: {fileID: 3072889246197413232, guid: d4ec0d8d4b7aff849bb1380bf98a89a7, type: 3}
       propertyPath: moveSpeed
       value: 3
@@ -40579,6 +40591,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 19428766947092133, guid: d4ec0d8d4b7aff849bb1380bf98a89a7, type: 3}
+      propertyPath: m_TagString
+      value: Lizzer
+      objectReference: {fileID: 0}
     - target: {fileID: 3072889246197413232, guid: d4ec0d8d4b7aff849bb1380bf98a89a7, type: 3}
       propertyPath: moveSpeed
       value: 3
@@ -40677,3 +40693,4 @@ SceneRoots:
   - {fileID: 533371956}
   - {fileID: 1062862459}
   - {fileID: 222152998}
+  - {fileID: 832160055}
