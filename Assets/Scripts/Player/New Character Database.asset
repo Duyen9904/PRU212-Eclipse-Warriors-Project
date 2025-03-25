@@ -14,8 +14,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - characterName: Knight
-    characterSprite: {fileID: -3296362929794034626, guid: ee91c7e1c328b1644a9e9368b93728e0, type: 3}
+    characterSprite: {fileID: 7029100385523618543, guid: ee91c7e1c328b1644a9e9368b93728e0, type: 3}
+    animatorController: {fileID: 9100000, guid: 903d68b7ac0d1124a9749ece9f7a7ef4, type: 2}
+    idleSprites: []
+    walkSprites: []
+    shootSprites:
+    - {fileID: -8888664799503410933, guid: 20687532a930f7448940cfdfecef843a, type: 3}
+    dieSprites: []
+    health: 100
+    moveSpeed: 5
+    damageMultiplier: 1
+    isSelected: 0
   - characterName: Wizard
     characterSprite: {fileID: 2365076705713957727, guid: 6eb63ea736c96a34fac4ebf712d5da9b, type: 3}
+    animatorController: {fileID: 9100000, guid: 83d05e4fe0048d0468f79eb93d40394d, type: 2}
+    idleSprites: []
+    walkSprites: []
+    shootSprites:
+    - {fileID: -6025730124729799805, guid: 39095421fe08af24788a579e07c1d6c4, type: 3}
+    dieSprites: []
+    health: 100
+    moveSpeed: 5
+    damageMultiplier: 1
+    isSelected: 0
   - characterName: Rogue
     characterSprite: {fileID: 2965599932687856292, guid: 1daee6204de93584da6c0be209db49b6, type: 3}
+    animatorController: {fileID: 9100000, guid: dce8fb12b6ff2804193c33bf0e0cebbc, type: 2}
+    idleSprites: []
+    walkSprites: []
+    shootSprites:
+    - {fileID: 21300000, guid: caabe5f357083914aabafd272654a299, type: 3}
+    dieSprites: []
+    health: 100
+    moveSpeed: 5
+    damageMultiplier: 1
+    isSelected: 0
