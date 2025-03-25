@@ -33,14 +33,19 @@ public class LizzerController : MonoBehaviour
 	public EnemyState currentState = EnemyState.Patrol;
 
 
+
 	[Header("Skill")]
 	[SerializeField] private BulletImpact bulletImpact;
 	private bool isAttacking = false;
+    public int health = 30; // Máu của Lizzer
 
 
-	private void Awake()
+    private Flash flash;
+
+    private void Awake()
 	{
-		rb = GetComponent<Rigidbody2D>();
+        flash = GetComponent<Flash>();
+        rb = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
 		spriteRenderer = GetComponent<SpriteRenderer>();
 		target = GameObject.FindGameObjectWithTag("Player").transform;
@@ -127,7 +132,7 @@ public class LizzerController : MonoBehaviour
 
 	private IEnumerator PerformAttack()
 	{
-		Debug.Log("Attacking");
+		//Debug.Log("Attacking");
 		canAttack = false;
 		animator.SetTrigger("Attack");
 		animator.SetBool("IsWalking", false);
@@ -159,8 +164,25 @@ public class LizzerController : MonoBehaviour
 		}
 	}
 
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        Debug.Log("Lizzer took " + damage + " damage! Current HP: " + health);
+		StartCoroutine(flash.FlashRoutine());
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
 
-	private void OnDrawGizmosSelected()
+    public void Die()
+    {
+        Debug.Log("Lizzer died!");
+        Destroy(gameObject); 
+    }
+
+
+    private void OnDrawGizmosSelected()
 	{
 		Gizmos.color = Color.yellow;
 		Gizmos.DrawWireSphere(transform.position, detectionRange);

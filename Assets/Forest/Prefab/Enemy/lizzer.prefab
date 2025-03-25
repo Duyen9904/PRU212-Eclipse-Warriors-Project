@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 1784365423332839816}
   - component: {fileID: 3830753758130831832}
   - component: {fileID: 3072889246197413232}
+  - component: {fileID: 1991761021913744336}
   m_Layer: 0
   m_Name: lizzer
-  m_TagString: Untagged
+  m_TagString: Lizzer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,11 +213,22 @@ MonoBehaviour:
   attackRange: 3
   stoppingDistance: 1
   moveRadius: 5
-  attackDamage: 10
-  attackCooldown: 1.5
   patrolPoints: []
   patrolWaitTime: 1
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 0
   currentState: 0
+  bulletImpact: {fileID: 0}
+  health: 30
+--- !u!114 &1991761021913744336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19428766947092133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622747cb2246e174bb05d25aa6109e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: 6a6073dd4808fb04fa841baa7a9f94e4, type: 2}
+  restoreDefaultMatTime: 0.2

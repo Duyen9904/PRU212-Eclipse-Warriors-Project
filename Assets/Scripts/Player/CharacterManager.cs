@@ -20,7 +20,7 @@ public class CharacterManager : MonoBehaviour
     private AnimationState currentPreviewState = AnimationState.Idle;
     private float animationTimer = 0f;
     private int currentFrameIndex = 0;
-    public string nextSceneName = "GlacierBiome";
+    public string nextSceneName;
     private enum AnimationState
     {
         Idle,
@@ -197,10 +197,10 @@ public class CharacterManager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    public void ChangeScene(string sceneName)
+    public void ChangeScene()
     {
         // Optional: Add debug logging to verify the method is called
-        Debug.Log("Loading scene: " + sceneName);
+        Debug.Log("Loading scene: " + nextSceneName);
 
         // Save character selection before changing scene
         Save();
