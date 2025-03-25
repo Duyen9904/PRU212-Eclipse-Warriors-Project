@@ -367,7 +367,7 @@ public class PlayerController : Singleton<PlayerController>
         arrowInstance.SetActive(true);
 
         ArrowAttack arrowAttack = arrowInstance.GetComponent<ArrowAttack>();
-
+        arrowAttack.UpdateArrowSprite(selectedCharacter.shootSprites[0]);
         arrowAttack.Shoot(playerPosition, mousePosition);
     }
 
