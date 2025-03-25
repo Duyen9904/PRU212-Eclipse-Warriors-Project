@@ -288,5 +288,276 @@ public class LevelManager : MonoBehaviour
     public void LoadLevelState()
     {
         // You can implement load state logic here
+        // Save current player before leaving
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            // Don't destroy, just make it persistent
+            DontDestroyOnLoad(player);
+        }
+
+        int nextIndex = currentLevelIndex + 1;
+        if (nextIndex < levelSceneNames.Length)
+        {
+            LoadLevel(nextIndex);
+        }
+        else
+        {
+            // All levels completed, load victory scene
+            SceneManager.LoadScene("WinningGame");
+        }
+    }
+    private void SetupGameplayScene(string sceneName)
+    {
+        // Find player spawn point
+        GameObject spawnObj = GameObject.FindWithTag("PlayerSpawn");
+        if (spawnObj == null)
+        {
+            Debug.LogError("No PlayerSpawn found in scene: " + sceneName);
+            return;
+        }
+
+        // Log player status for debugging
+        Debug.Log($"Player status: {(currentPlayerInstance != null ? (currentPlayerInstance.activeSelf ? "Active" : "Inactive") : "Null")}");
+
+        // Check if player exists but is inactive (from main menu)
+        if (currentPlayerInstance != null && !currentPlayerInstance.activeSelf)
+        {
+            currentPlayerInstance.SetActive(true);
+            currentPlayerInstance.transform.position = spawnObj.transform.position;
+        }
+        // Check if player exists and is active
+        else if (currentPlayerInstance != null && currentPlayerInstance.activeSelf)
+        {
+            currentPlayerInstance.transform.position = spawnObj.transform.position;
+        }
+        // No player exists, create new one
+        else
+        {
+            SpawnPlayer(spawnObj.transform.position);
+        }
+
+        // Set camera to follow player
+        if (CameraManager.Instance != null && currentPlayerInstance != null)
+        {
+            CameraManager.Instance.SetTarget(currentPlayerInstance.transform);
+        }
+    }
+    /// <summary>
+    /// Reload the current level (after death)
+    /// </summary>
+    public void ReloadCurrentLevel()
+    {
+        LoadLevel(currentLevelIndex);
+    }
+
+    /// <summary>
+    /// Save game progress to PlayerPrefs
+    /// </summary>
+    public void SaveProgress()
+    {
+        PlayerPrefs.SetInt("CurrentLevel", currentLevelIndex);
+        PlayerPrefs.SetInt("PlayerHealth", playerData.health);
+        PlayerPrefs.SetFloat("PlayerMana", playerData.mana);
+        PlayerPrefs.SetInt("CollectedRelics", playerData.collectedRelics);
+        PlayerPrefs.SetInt("PlayerLives", currentLives);
+        PlayerPrefs.SetString("PlayerInventory", string.Join(",", playerData.inventory));
+        PlayerPrefs.Save();
+
+        Debug.Log("Game progress saved");
+    }
+
+
+    // Add this to your LevelManager.cs - within the class
+
+    [Header("Level Boundaries")]
+    [SerializeField] private bool useCustomBounds = true;
+    [SerializeField] private Vector2 levelBoundsSize = new Vector2(784f, 512f); // Default size based on 49x32 cells
+
+    public void CreateLevelBoundaries()
+    {
+        // Create empty GameObject for boundaries
+        GameObject boundaries = new GameObject("LevelBoundaries");
+        boundaries.tag = "LevelBounds";
+
+        // Add a composite collider for better performance (optional)
+        Rigidbody2D rb = boundaries.AddComponent<Rigidbody2D>();
+        rb.bodyType = RigidbodyType2D.Static;
+
+        // Create individual colliders
+        // Bottom boundary
+        CreateBoundaryCollider(boundaries, new Vector2(0, -levelBoundsSize.y / 2 - 1), new Vector2(levelBoundsSize.x, 2));
+
+        // Top boundary
+        CreateBoundaryCollider(boundaries, new Vector2(0, levelBoundsSize.y / 2 + 1), new Vector2(levelBoundsSize.x, 2));
+
+        // Left boundary
+        CreateBoundaryCollider(boundaries, new Vector2(-levelBoundsSize.x / 2 - 1, 0), new Vector2(2, levelBoundsSize.y));
+
+        // Right boundary
+        CreateBoundaryCollider(boundaries, new Vector2(levelBoundsSize.x / 2 + 1, 0), new Vector2(2, levelBoundsSize.y));
+
+        Debug.Log($"Created level boundaries: {levelBoundsSize.x}x{levelBoundsSize.y}");
+
+        // Setup camera bounds if camera manager exists
+        if (cameraManager != null)
+        {
+            BoxCollider2D boundsCollider = boundaries.AddComponent<BoxCollider2D>();
+            boundsCollider.isTrigger = true;
+            boundsCollider.size = levelBoundsSize;
+            cameraManager.UpdateCameraBounds(boundsCollider);
+        }
+    }
+
+    private void CreateBoundaryCollider(GameObject parent, Vector2 position, Vector2 size)
+    {
+        GameObject colliderObj = new GameObject("BoundaryCollider");
+        colliderObj.transform.parent = parent.transform;
+        colliderObj.transform.position = position;
+
+        BoxCollider2D collider = colliderObj.AddComponent<BoxCollider2D>();
+        collider.size = size;
+        collider.isTrigger = false;
+    }
+
+    /// <summary>
+    /// Load game progress from PlayerPrefs
+    /// </summary>
+    public void LoadProgress()
+    {
+        if (PlayerPrefs.HasKey("CurrentLevel"))
+        {
+            currentLevelIndex = PlayerPrefs.GetInt("CurrentLevel");
+            playerData.health = PlayerPrefs.GetInt("PlayerHealth", 100);
+            playerData.mana = PlayerPrefs.GetFloat("PlayerMana", 100);
+            playerData.collectedRelics = PlayerPrefs.GetInt("CollectedRelics", 0);
+            currentLives = PlayerPrefs.GetInt("PlayerLives", maxLives);
+            UpdateLivesUI();
+
+            string invString = PlayerPrefs.GetString("PlayerInventory", "");
+            if (!string.IsNullOrEmpty(invString))
+            {
+                playerData.inventory = new List<string>(invString.Split(','));
+            }
+
+            // Load the saved level
+            LoadLevel(currentLevelIndex);
+        }
+        else
+        {
+            // No saved game, start a new game
+            LoadLevel(startingLevelIndex);
+        }
+    }
+
+    /// <summary>
+    /// Creates a new save game by resetting progress and starting from the beginning
+    /// </summary>
+    public void NewGame()
+    {
+        // Reset player data
+        playerData = new PlayerData();
+
+        // Reset lives
+        currentLives = maxLives;
+        UpdateLivesUI();
+
+        // Reset to first level
+        currentLevelIndex = startingLevelIndex;
+
+        // Start from the beginning
+        LoadLevel(startingLevelIndex);
+    }
+
+
+    /// <summary>
+    /// Handle trigger events in the level (level completion, checkpoints, etc.)
+    /// </summary>
+    public void HandleTriggerEvent(string triggerID)
+    {
+        switch (triggerID)
+        {
+            case "LevelEnd":
+                // Level completed, save state and proceed to next level
+                SavePlayerState();
+                SaveProgress();
+                LoadNextLevel();
+                break;
+
+            case "Checkpoint":
+                // Save at checkpoint
+                SavePlayerState();
+                SaveProgress();
+                break;
+
+            case "CollectRelic":
+                // Collect a relic
+                playerData.collectedRelics++;
+                SaveProgress();
+                break;
+
+            case "PlayerDied":
+                // Player died, show game over
+                if (GameSceneManager.Instance != null)
+                {
+                    GameSceneManager.Instance.LoadGameOver();
+                }
+                else
+                {
+                    // Fallback if scene manager not found
+                    ReloadCurrentLevel();
+                }
+                break;
+
+                // Add other trigger handlers as needed
+        }
+    }
+
+    /// <summary>
+    /// Handles level completion and transitions to the next level
+    /// </summary>
+    public void LevelComplete()
+    {
+        // Log the level completion
+        Debug.Log($"Level {currentLevelIndex + 1} completed!");
+
+        // Save player state before leaving
+        SavePlayerState();
+
+        // Optional: Play level complete sound
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySound("level_complete");
+        }
+
+        // Optional: Display a level complete UI element temporarily
+        // If you had a UI panel for level completion, you would show it here
+
+        // Progress to the next level after a short delay
+        StartCoroutine(LoadNextLevelAfterDelay(2f));
+    }
+
+    private IEnumerator LoadNextLevelAfterDelay(float delay)
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delay);
+
+        // Load the next level
+        LoadNextLevel();
+    }
+
+    private void OnDestroy()
+    {
+        // Unsubscribe from events
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+}
+
+// Extension method to safely check if a method exists
+public static class ComponentExtensions
+{
+    public static bool HasMethod(this Component component, string methodName)
+    {
+        return component.GetType().GetMethod(methodName) != null;
     }
 }
