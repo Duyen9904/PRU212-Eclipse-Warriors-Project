@@ -299,6 +299,36 @@ public class GameSceneManager : MonoBehaviour
         }
     }
 
+    public void CollectRelic(int relicIndex)
+    {
+        if (relicIndex >= 0 && relicIndex < CollectedRelics.Length)
+        {
+            CollectedRelics[relicIndex] = true;
+            Debug.Log($"Relic {relicIndex} collected!");
+
+            // Save the collection state (optional)
+            SaveRelicCollectionState();
+        }
+    }
+
+    private void SaveRelicCollectionState()
+    {
+        for (int i = 0; i < CollectedRelics.Length; i++)
+        {
+            PlayerPrefs.SetInt("Relic_" + i, CollectedRelics[i] ? 1 : 0);
+        }
+        PlayerPrefs.Save();
+    }
+
+    // Method to load relic collection state
+    private void LoadRelicCollectionState()
+    {
+        for (int i = 0; i < CollectedRelics.Length; i++)
+        {
+            CollectedRelics[i] = PlayerPrefs.GetInt("Relic_" + i, 0) == 1;
+        }
+    }
+
     // Method to check if all relics have been collected
     public bool HasAllRelics()
     {

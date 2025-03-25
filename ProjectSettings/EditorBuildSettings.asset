@@ -20,6 +20,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AbyssalGate.unity
     guid: 15691f774b6348441a7db85b7b51e09d
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 18ef364d395debf4d9d0b2f371bc1b20
+  - enabled: 1
+    path: Assets/Scenes/Resume.unity
+    guid: 38bde6665074c8d4298f0eb263d10171
+  - enabled: 1
+    path: Assets/Scenes/WiningGame.unity
+    guid: 34f7199507f72454d8d812bd9455d537
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: dcde157941f39754890c4d75d8c8da47
+  - enabled: 1
+    path: Assets/Scenes/Character Selection.unity
+    guid: 476c84e269b6c1c4792389c56d1ae659
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 5b1b9f87bf4f96f47a614b698c1a6852, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

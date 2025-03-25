@@ -168,6 +168,7 @@ public class PlayerController : Singleton<PlayerController>
         Vector2 movement = movementInput * currentMoveSpeed;
 
         // Apply movement
+        rb.linearVelocity = movement;  // Changed from rb.linearVelocity to rb.velocity
     }
     private void OnDestroy()
     {
@@ -175,6 +176,25 @@ public class PlayerController : Singleton<PlayerController>
         if (playerHealth != null)
         {
             playerHealth.OnPlayerDeath -= HandlePlayerDeath;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Relic"))
+        {
+            // Get the Relic component
+            Relic relic = other.GetComponent<Relic>();
+            if (relic != null)
+            {
+                // Tell the GameSceneManager that this relic was collected
+                GameSceneManager.Instance.CollectRelic(relic.relicIndex);
+
+                // Destroy the relic
+                Destroy(other.gameObject);
+
+                Debug.Log("Collected relic: " + relic.relicName);
+            }
         }
     }
 
