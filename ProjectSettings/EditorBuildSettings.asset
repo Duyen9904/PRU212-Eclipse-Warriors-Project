@@ -6,38 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GlacierBiome.unity
-    guid: ace61356c35ae104b87238defd2ef63a
-  - enabled: 1
-    path: Assets/Scenes/ForestBiome.unity
-    guid: 424e64cc2ac2f254ea4a309de441e7ae
-  - enabled: 1
     path: Assets/Scenes/VolcanoBiome.unity
     guid: 09fe76be166c88742955e4d9392e5dc8
   - enabled: 1
     path: Assets/Scenes/DungeonBiome.unity
     guid: 67998e331d5a21a4b9262d99a48d2fb1
   - enabled: 1
-    path: Assets/Scenes/OldGlacierBiome.unity
+    path: Assets/Scenes/ForestBiome.unity
+    guid: 424e64cc2ac2f254ea4a309de441e7ae
+  - enabled: 1
+    path: Assets/Scenes/GlacierBiome.unity
     guid: cfdcf1b1265c6684b90ed5bb06f96ffb
   - enabled: 1
     path: Assets/Scenes/AbyssalGate.unity
     guid: 15691f774b6348441a7db85b7b51e09d
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 18ef364d395debf4d9d0b2f371bc1b20
-  - enabled: 1
-    path: Assets/Scenes/Resume.unity
-    guid: 38bde6665074c8d4298f0eb263d10171
-  - enabled: 1
-    path: Assets/Scenes/WiningGame.unity
-    guid: 34f7199507f72454d8d812bd9455d537
-  - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: dcde157941f39754890c4d75d8c8da47
-  - enabled: 1
-    path: Assets/Scenes/Character Selection.unity
-    guid: 476c84e269b6c1c4792389c56d1ae659
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 5b1b9f87bf4f96f47a614b698c1a6852, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

@@ -1,3 +1,4 @@
+
 // PlayerStats.cs - Handles player health, stamina, and damage
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,12 +21,6 @@ public class PlayerStats : MonoBehaviour
     public float staminaRegenDelay = 1f;
     private float staminaRegenTimer;
 
-    [Header("Mana Settings")]
-    public int maxMana = 100;
-    private int currentMana;
-    public Image manaBar;
-    public float manaRegenRate = 5f;
-
     [Header("References")]
     private Animator animator;
     private SpriteRenderer spriteRenderer;
@@ -37,49 +32,19 @@ public class PlayerStats : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerController = GetComponent<PlayerController>();
 
-        // Initialize health, stamina and mana
+        // Initialize health and stamina
         currentHealth = maxHealth;
         currentStamina = maxStamina;
-        currentMana = maxMana;
 
         // Update UI
         UpdateHealthBar();
         UpdateStaminaBar();
-        UpdateManaBar();
     }
 
     private void Update()
     {
         // Handle stamina regeneration
         HandleStaminaRegen();
-        // Handle mana regeneration
-        HandleManaRegen();
-    }
-
-    // Get current health - used by UnifiedLevelManager.SavePlayerState()
-    public int GetCurrentHealth()
-    {
-        return currentHealth;
-    }
-
-    // Get current mana - used by UnifiedLevelManager.SavePlayerState()
-    public int GetCurrentMana()
-    {
-        return currentMana;
-    }
-
-    // Set health - used by UnifiedLevelManager.ApplyPlayerData()
-    public void SetHealth(int health)
-    {
-        currentHealth = Mathf.Clamp(health, 0, maxHealth);
-        UpdateHealthBar();
-    }
-
-    // Set mana - used by UnifiedLevelManager.ApplyPlayerData()
-    public void SetMana(int mana)
-    {
-        currentMana = Mathf.Clamp(mana, 0, maxMana);
-        UpdateManaBar();
     }
 
     public void TakeDamage(int damage)
@@ -96,8 +61,7 @@ public class PlayerStats : MonoBehaviour
         animator.SetTrigger("Hit");
 
         // Play sound
-        if (AudioManager.Instance != null)
-            AudioManager.Instance.PlaySound("hurt");
+        AudioManager.Instance.PlaySound("hurt");
 
         // Start invincibility
         StartCoroutine(InvincibilityFrames());
@@ -115,28 +79,17 @@ public class PlayerStats : MonoBehaviour
         animator.SetTrigger("Die");
 
         // Play sound
-        if (AudioManager.Instance != null)
-            AudioManager.Instance.PlaySound("death");
+        AudioManager.Instance.PlaySound("death");
 
         // Disable player controls
         playerController.enabled = false;
-
+      
         // Disable physics
         GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         GetComponent<Collider2D>().enabled = false;
 
-        // Notify level manager
-        if (LevelManager.Instance != null)
-        {
-            // Wait a moment before showing game over
-            StartCoroutine(DelayedGameOver());
-        }
-    }
-
-    private IEnumerator DelayedGameOver()
-    {
-        yield return new WaitForSeconds(2f);
-        LevelManager.Instance.HandleTriggerEvent("PlayerDied");
+        // Notify level controller
+        LevelController.Instance.PlayerDied();
     }
 
     public bool HasEnoughStamina(int amount)
@@ -144,22 +97,11 @@ public class PlayerStats : MonoBehaviour
         return currentStamina >= amount;
     }
 
-    public bool HasEnoughMana(int amount)
-    {
-        return currentMana >= amount;
-    }
-
     public void UseStamina(int amount)
     {
         currentStamina = Mathf.Max(0, currentStamina - amount);
         staminaRegenTimer = staminaRegenDelay;
         UpdateStaminaBar();
-    }
-
-    public void UseMana(int amount)
-    {
-        currentMana = Mathf.Max(0, currentMana - amount);
-        UpdateManaBar();
     }
 
     private void HandleStaminaRegen()
@@ -177,15 +119,6 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    private void HandleManaRegen()
-    {
-        if (currentMana < maxMana)
-        {
-            currentMana = Mathf.Min(maxMana, currentMana + (int)(manaRegenRate * Time.deltaTime));
-            UpdateManaBar();
-        }
-    }
-
     private void UpdateHealthBar()
     {
         if (healthBar != null)
@@ -199,14 +132,6 @@ public class PlayerStats : MonoBehaviour
         if (staminaBar != null)
         {
             staminaBar.fillAmount = (float)currentStamina / maxStamina;
-        }
-    }
-
-    private void UpdateManaBar()
-    {
-        if (manaBar != null)
-        {
-            manaBar.fillAmount = (float)currentMana / maxMana;
         }
     }
 
@@ -230,11 +155,5 @@ public class PlayerStats : MonoBehaviour
     {
         currentHealth = Mathf.Min(maxHealth, currentHealth + amount);
         UpdateHealthBar();
-    }
-
-    public void RestoreMana(int amount)
-    {
-        currentMana = Mathf.Min(maxMana, currentMana + amount);
-        UpdateManaBar();
     }
 }

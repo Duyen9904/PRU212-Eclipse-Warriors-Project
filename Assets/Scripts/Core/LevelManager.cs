@@ -1,77 +1,37 @@
+// LevelManager.cs - Native Unity approach for level management
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
-
-#if LDTK_IMPORTER
-using LDtkUnity;
-#endif
+using UnityEngine.Tilemaps;
 
 public class LevelManager : MonoBehaviour
 {
-    // Singleton instance
+    [Header("Scene References")]
     public static LevelManager Instance;
 
-    [Header("Level Configuration")]
-    [SerializeField] private string[] levelSceneNames; // Names of Unity scenes for each level
-    [SerializeField] private bool[] usesLDTK; // Which levels use LDtk vs. traditional Unity scenes
-    [SerializeField] private int startingLevelIndex = 0;
-    private int currentLevelIndex = 0;
+    [Header("Level Settings")]
+    public string[] levelScenes; // Array of scene names to load in sequence
+    public int currentLevelIndex = 0;
 
-    [Header("Player Lives Settings")]
-    [SerializeField] private int maxLives = 3;
-    private int currentLives;
-    [SerializeField] private float respawnDelay = 2f;
-    private bool isRespawning = false;
-
-    [Header("UI References")]
-    [SerializeField] private GameObject gameOverPanel;
-    [SerializeField] private UnityEngine.UI.Text livesText;
-    [SerializeField] private GameObject pauseMenuPanel;
-
-    [Header("LDtk Settings")]
-#if LDTK_IMPORTER
-    [SerializeField] private LDtkComponentProject ldtkProject;
-    [SerializeField] private TextAsset[] ldtkLevelFiles; // Array of LDtk level files
-#endif
-
-    [Header("Traditional Level Settings")]
-    [SerializeField] private Transform[] standardSpawnPoints;
-    [SerializeField] private GameObject[] levelEnvironments;
-
-    [Header("Player Prefabs")]
-    [SerializeField] private GameObject wizardPrefab;
-    [SerializeField] private GameObject roguePrefab;
-    [SerializeField] private GameObject knightPrefab;
+    [Header("Player Settings")]
+    public GameObject playerPrefab;
+    public string playerSpawnPointTag = "PlayerSpawn";
 
     [Header("Camera Settings")]
-    [SerializeField] private CameraManager cameraManager;
+    public CameraManager cameraManager;
 
     [Header("Loading Screen")]
-    [SerializeField] private GameObject loadingScreen;
-    [SerializeField] private UnityEngine.UI.Slider loadingBar;
+    public GameObject loadingScreen;
+    public UnityEngine.UI.Slider loadingBar;
 
-    // Runtime references
-    private GameObject currentLevelInstance;
-    private GameObject currentPlayerInstance;
-    private PlayerController playerController;
-
-    // Player persistent data
-    [System.Serializable]
-    public class PlayerData
-    {
-        public int health = 100;
-        public float mana = 100;
-        public int collectedRelics = 0;
-        public List<string> inventory = new List<string>();
-        public Vector3 lastPosition;
-    }
-
-    public PlayerData playerData = new PlayerData();
+    [Header("Runtime References")]
+    private GameObject currentPlayer;
+    private List<AsyncOperation> loadOperations = new List<AsyncOperation>();
 
     private void Awake()
     {
-        // Singleton setup
+        // Singleton pattern
         if (Instance == null)
         {
             Instance = this;
@@ -82,255 +42,66 @@ public class LevelManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
-        // Initialize current level index
-        currentLevelIndex = startingLevelIndex;
-
-        // Initialize lives
-        currentLives = maxLives;
-        UpdateLivesUI();
-
-        // Hook into scene load event
-        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void Start()
     {
-        // Hide UI panels
-        if (gameOverPanel != null) gameOverPanel.SetActive(false);
-        if (pauseMenuPanel != null) pauseMenuPanel.SetActive(false);
-
-        // Check if we're already in one of our levels
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        bool alreadyInLevel = false;
-
-        for (int i = 0; i < levelSceneNames.Length; i++)
-        {
-            if (currentSceneName == levelSceneNames[i])
-            {
-                currentLevelIndex = i;
-                alreadyInLevel = true;
-                // Initialize the current level
-                InitializeCurrentLevel();
-                break;
-            }
-        }
-
-        // If we're not in a game level, load the initial level
-        if (!alreadyInLevel && levelSceneNames.Length > 0)
+        // Start the game with the first level if we're not already in it
+        if (SceneManager.GetActiveScene().name != levelScenes[currentLevelIndex])
         {
             LoadLevel(currentLevelIndex);
         }
-    }
-
-    private void Update()
-    {
-        // Handle pause menu
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            TogglePauseMenu();
-        }
-    }
-
-    /// <summary>
-    /// Called when the player dies
-    /// </summary>
-    public void PlayerDied()
-    {
-        // Don't process if we're already respawning
-        if (isRespawning) return;
-
-        isRespawning = true;
-
-        // Decrement lives
-        currentLives--;
-        UpdateLivesUI();
-
-        Debug.Log("Player died! Lives remaining: " + currentLives);
-
-        // Check if game over
-        if (currentLives <= 0)
-        {
-            // Game over - show panel after delay
-            StartCoroutine(ShowGameOverAfterDelay());
-        }
         else
         {
-            // Still have lives - respawn
-            StartCoroutine(RespawnPlayerAfterDelay());
+            // We're already in the correct scene, just initialize
+            InitializeLevel();
         }
     }
 
-    private IEnumerator RespawnPlayerAfterDelay()
+    // Load a specific level by index
+    public void LoadLevel(int levelIndex)
     {
-        // Wait for animation/effects
-        yield return new WaitForSeconds(respawnDelay);
-
-        // Find the player spawn point
-        Transform spawnPoint = FindSpawnPoint();
-
-        if (currentPlayerInstance != null)
+        if (levelIndex < 0 || levelIndex >= levelScenes.Length)
         {
-            // Reset and reposition existing player
-            currentPlayerInstance.transform.position = spawnPoint != null ?
-                spawnPoint.position : Vector3.zero;
-
-            // Reset player state
-            PlayerController controller = currentPlayerInstance.GetComponent<PlayerController>();
-            if (controller != null)
-            {
-                controller.ResetPlayer();
-            }
-
-            // Apply saved player data
-            ApplyPlayerData();
-        }
-        else
-        {
-            // Recreate player if instance was destroyed
-            SetupPlayer();
-        }
-
-        // Reset the respawning flag
-        isRespawning = false;
-    }
-
-    private IEnumerator ShowGameOverAfterDelay()
-    {
-        yield return new WaitForSeconds(respawnDelay);
-
-        // Show game over panel
-        if (gameOverPanel != null)
-        {
-            gameOverPanel.SetActive(true);
-        }
-        else
-        {
-            // No game over panel - handle via GameSceneManager
-            HandleTriggerEvent("PlayerDied");
-        }
-    }
-
-    // Called by UI button
-    public void RestartFromCheckpoint()
-    {
-        // Hide game over panel
-        if (gameOverPanel != null)
-        {
-            gameOverPanel.SetActive(false);
-        }
-
-        // Reset lives and respawn
-        currentLives = maxLives;
-        UpdateLivesUI();
-        isRespawning = false;
-
-        // Reload current level
-        ReloadCurrentLevel();
-    }
-
-    public void TogglePauseMenu()
-    {
-        bool isPaused = Time.timeScale < 0.1f;
-
-        // Toggle pause state
-        Time.timeScale = isPaused ? 1f : 0f;
-
-        // Show/hide pause menu
-        if (pauseMenuPanel != null)
-        {
-            pauseMenuPanel.SetActive(!isPaused);
-        }
-    }
-
-    // Update the lives UI text
-    private void UpdateLivesUI()
-    {
-        if (livesText != null)
-        {
-            livesText.text = "Lives: " + currentLives;
-        }
-    }
-
-    /// <summary>
-    /// Loads a level by index with transition effects
-    /// </summary>
-    public void LoadLevel(int index)
-    {
-        // Save current player state before leaving
-        SavePlayerState();
-
-        // Bounds check
-        if (index < 0 || index >= levelSceneNames.Length)
-        {
-            Debug.LogError("Level index out of range: " + index);
+            Debug.LogError("Invalid level index: " + levelIndex);
             return;
         }
 
-        currentLevelIndex = index;
-        StartCoroutine(LoadLevelRoutine(levelSceneNames[index]));
+        currentLevelIndex = levelIndex;
+        StartCoroutine(LoadLevelAsync(levelScenes[levelIndex]));
     }
 
-    private void SpawnPlayer(Vector3 position)
+    // Load the next level in sequence
+    public void LoadNextLevel()
     {
-        // Get selected character from GameSceneManager
-        GameSceneManager.CharacterType selectedCharacter =
-            GameSceneManager.Instance != null ?
-            GameSceneManager.Instance.SelectedCharacter :
-            GameSceneManager.CharacterType.Knight; // Default
+        int nextLevel = currentLevelIndex + 1;
 
-        // Spawn the appropriate character prefab
-        GameObject prefabToSpawn = null;
-        switch (selectedCharacter)
+        // Check if we've reached the end of all levels
+        if (nextLevel >= levelScenes.Length)
         {
-            case GameSceneManager.CharacterType.Wizard:
-                prefabToSpawn = wizardPrefab;
-                break;
-            case GameSceneManager.CharacterType.Rogue:
-                prefabToSpawn = roguePrefab;
-                break;
-            case GameSceneManager.CharacterType.Knight:
-            default:
-                prefabToSpawn = knightPrefab;
-                break;
+            Debug.Log("All levels completed!");
+            // You could load a game completion scene or restart from level 0
+            LoadMainMenu();
+            return;
         }
 
-        if (prefabToSpawn != null)
-        {
-            currentPlayerInstance = Instantiate(prefabToSpawn, position, Quaternion.identity);
-            DontDestroyOnLoad(currentPlayerInstance);
-
-            // Get player controller reference
-            playerController = currentPlayerInstance.GetComponent<PlayerController>();
-
-            // Apply saved player data
-            ApplyPlayerData();
-        }
-        else
-        {
-            Debug.LogError("Failed to spawn player character. No prefab available.");
-        }
+        LoadLevel(nextLevel);
     }
 
-    public void LoadScene(string sceneName)
+    // Reload the current level (after death for example)
+    public void ReloadCurrentLevel()
     {
-        // Hide player in non-gameplay scenes
-        if (currentPlayerInstance != null)
-        {
-            bool isGameplayScene =
-                sceneName == "GlacierBiome" ||
-                sceneName == "VolcanoBiome" ||
-                sceneName == "ForestBiome" ||
-                sceneName == "DungeonBiome" ||
-                sceneName == "AbyssalGate";
-
-            currentPlayerInstance.SetActive(isGameplayScene);
-        }
-
-        SceneManager.LoadScene(sceneName);
+        LoadLevel(currentLevelIndex);
     }
 
-    private IEnumerator LoadLevelRoutine(string sceneName)
+    // Load the main menu
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    // Asynchronous level loading with loading screen
+    private IEnumerator LoadLevelAsync(string sceneName)
     {
         // Show loading screen
         if (loadingScreen != null)
@@ -364,8 +135,8 @@ public class LevelManager : MonoBehaviour
             loadingBar.value = 0.9f;
         }
 
-        // Small delay for visual polish
-        yield return new WaitForSeconds(0.5f);
+        // Do any additional loading work here if needed
+        yield return new WaitForSeconds(0.5f); // Small delay for visual polish
 
         // Finish loading
         asyncLoad.allowSceneActivation = true;
@@ -382,6 +153,9 @@ public class LevelManager : MonoBehaviour
             loadingBar.value = 1f;
         }
 
+        // Initialize level
+        InitializeLevel();
+
         // Hide loading screen
         if (loadingScreen != null)
         {
@@ -389,45 +163,34 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Called after a scene is loaded to set up the level
-    /// </summary>
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    // Initialize the current level, spawning player and setting up camera
+    private void InitializeLevel()
     {
-        if (currentLevelIndex >= 0 && currentLevelIndex < levelSceneNames.Length)
+        // Find the player spawn point
+        GameObject spawnPoint = GameObject.FindGameObjectWithTag(playerSpawnPointTag);
+        Vector3 spawnPosition = spawnPoint != null ? spawnPoint.transform.position : Vector3.zero;
+
+        // Spawn player
+        if (playerPrefab != null)
         {
-            // Initialize level after loading
-            InitializeCurrentLevel();
+            if (currentPlayer != null)
+            {
+                Destroy(currentPlayer);
+            }
+
+            currentPlayer = Instantiate(playerPrefab, spawnPosition, Quaternion.identity);
+
+            // Set up camera to follow player
+            if (cameraManager != null)
+            {
+                cameraManager.SetCameraTarget(currentPlayer.transform);
+            }
         }
-    }
 
-    /// <summary>
-    /// Initializes the current level based on its type (LDtk or traditional)
-    /// </summary>
-    private void InitializeCurrentLevel()
-    {
-        // Check if the current level uses LDtk
-        if (currentLevelIndex < usesLDTK.Length && usesLDTK[currentLevelIndex])
-        {
-            // Load LDtk level
-            LoadLDtkLevel();
-        }
-        else
-        {
-            // Load traditional Unity scene level
-            LoadTraditionalLevel();
-        }
-        FixColliders();
+        // Find and set up camera bounds
+        SetupCameraBounds();
 
-        CreateLevelBoundaries();
-
-        // Find or create player
-        SetupPlayer();
-
-        // Configure camera for this level
-        SetupCamera();
-
-        // Call level events
+        // Call level events (you can add your own level specific initialization here)
         LevelEvents levelEvents = FindFirstObjectByType<LevelEvents>();
         if (levelEvents != null)
         {
@@ -435,245 +198,46 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    // Add this method to your LevelManager script
-    private void FixColliders()
+    // Setup camera bounds based on the level colliders
+    private void SetupCameraBounds()
     {
-        // Find all box colliders in the scene
-        BoxCollider2D[] colliders = FindObjectsOfType<BoxCollider2D>();
-        int fixedCount = 0;
-
-        foreach (var collider in colliders)
+        if (cameraManager != null)
         {
-            // If it's set as a trigger, make it a solid collider
-            if (collider.isTrigger)
+            // Find the level bounds object
+            GameObject boundaryObject = GameObject.FindGameObjectWithTag("LevelBounds");
+
+            if (boundaryObject != null && boundaryObject.GetComponent<Collider2D>() != null)
             {
-                collider.isTrigger = false;
-                fixedCount++;
+                // Set camera bounds
+                cameraManager.UpdateCameraBounds(boundaryObject.GetComponent<Collider2D>());
             }
-        }
-
-        Debug.Log($"Fixed {fixedCount} trigger colliders to be solid colliders");
-    }
-
-
-    /// <summary>
-    /// Loads an LDtk-based level
-    /// </summary>
-    private void LoadLDtkLevel()
-    {
-#if LDTK_IMPORTER
-        if (ldtkProject != null && currentLevelIndex < ldtkLevelFiles.Length && ldtkLevelFiles[currentLevelIndex] != null)
-        {
-            // Clean up any existing level instance
-            if (currentLevelInstance != null)
+            else
             {
-                Destroy(currentLevelInstance);
-            }
+                Debug.LogWarning("No level bounds found! Creating automatic bounds from tilemaps.");
 
-            // Instantiate the LDtk level
-            TextAsset levelFile = ldtkLevelFiles[currentLevelIndex];
-            currentLevelInstance = ldtkProject.InstantiateLevel(levelFile.name);
-            
-            if (currentLevelInstance == null)
-            {
-                Debug.LogError("Failed to instantiate LDtk level: " + levelFile.name);
-            }
-        }
-        else
-        {
-            Debug.LogError("Missing LDtk configuration for level: " + currentLevelIndex);
-        }
-#else
-        Debug.LogError("Trying to load LDtk level but LDtk importer is not enabled. Add LDTK_IMPORTER to Script Define Symbols.");
-#endif
-    }
-
-    /// <summary>
-    /// Loads a traditional Unity scene-based level
-    /// </summary>
-    private void LoadTraditionalLevel()
-    {
-        if (currentLevelIndex < levelEnvironments.Length && levelEnvironments[currentLevelIndex] != null)
-        {
-            // Clean up any existing level instance
-            if (currentLevelInstance != null)
-            {
-                Destroy(currentLevelInstance);
-            }
-
-            // Activate the pre-configured environment
-            GameObject levelPrefab = levelEnvironments[currentLevelIndex];
-            currentLevelInstance = Instantiate(levelPrefab);
-        }
-        else
-        {
-            // In this case, the level is likely part of the scene itself
-            Debug.Log("Using scene-embedded level for index: " + currentLevelIndex);
-        }
-    }
-
-    /// <summary>
-    /// Sets up the player character in the level
-    /// </summary>
-    private void SetupPlayer()
-    {
-        Transform spawnPoint = FindSpawnPoint();
-
-        // First check if player instance already exists
-        if (currentPlayerInstance != null)
-        {
-            // Reposition existing player
-            currentPlayerInstance.transform.position = spawnPoint != null ?
-                spawnPoint.position : Vector3.zero;
-
-            // Get player controller reference
-            playerController = currentPlayerInstance.GetComponent<PlayerController>();
-
-            // Apply saved player data
-            ApplyPlayerData();
-            return;
-        }
-
-        // Get selected character from GameSceneManager
-        GameSceneManager.CharacterType selectedCharacter =
-            GameSceneManager.Instance != null ?
-            GameSceneManager.Instance.SelectedCharacter :
-            GameSceneManager.CharacterType.Knight; // Default
-
-        // Spawn the appropriate character prefab
-        GameObject prefabToSpawn = null;
-        switch (selectedCharacter)
-        {
-            case GameSceneManager.CharacterType.Wizard:
-                prefabToSpawn = wizardPrefab;
-                break;
-            case GameSceneManager.CharacterType.Rogue:
-                prefabToSpawn = roguePrefab;
-                break;
-            case GameSceneManager.CharacterType.Knight:
-            default:
-                prefabToSpawn = knightPrefab;
-                break;
-        }
-
-        if (prefabToSpawn != null && spawnPoint != null)
-        {
-            currentPlayerInstance = Instantiate(prefabToSpawn, spawnPoint.position, Quaternion.identity);
-            DontDestroyOnLoad(currentPlayerInstance);
-
-            // Get player controller reference
-            playerController = currentPlayerInstance.GetComponent<PlayerController>();
-
-            // Apply saved player data
-            ApplyPlayerData();
-        }
-        else
-        {
-            Debug.LogError("Failed to spawn player character. Prefab or spawn point is missing.");
-        }
-    }
-
-
-
-    /// <summary>
-    /// Finds an appropriate spawn point in the level
-    /// </summary>
-    private Transform FindSpawnPoint()
-    {
-        // First try to find a tagged spawn point in the scene
-        GameObject taggedSpawn = GameObject.FindGameObjectWithTag("PlayerSpawn");
-        if (taggedSpawn != null)
-        {
-            return taggedSpawn.transform;
-        }
-
-#if LDTK_IMPORTER
-        // Check for LDtk spawn point if using LDtk
-        if (currentLevelIndex < usesLDTK.Length && usesLDTK[currentLevelIndex] && currentLevelInstance != null)
-        {
-            // Look for LDtk entity with spawn point identifier
-            LDtkEntityInstance[] entities = currentLevelInstance.GetComponentsInChildren<LDtkEntityInstance>();
-            foreach (var entity in entities)
-            {
-                if (entity.EntityIdentifier == "PlayerSpawn" || entity.EntityIdentifier == "SpawnPoint")
-                {
-                    return entity.transform;
-                }
-            }
-        }
-#endif
-
-        // Use configured spawn point for this level
-        if (currentLevelIndex < standardSpawnPoints.Length && standardSpawnPoints[currentLevelIndex] != null)
-        {
-            return standardSpawnPoints[currentLevelIndex];
-        }
-
-        // Fallback: return origin
-        Debug.LogWarning("No spawn point found for level " + currentLevelIndex);
-        return null;
-    }
-
-    /// <summary>
-    /// Sets up the camera for the current level
-    /// </summary>
-    private void SetupCamera()
-    {
-        if (cameraManager != null && currentPlayerInstance != null)
-        {
-            // Set camera to follow player
-            cameraManager.SetTarget(currentPlayerInstance.transform);
-
-            // Configure camera bounds based on level
-            Collider2D levelBounds = FindLevelBounds();
-            if (levelBounds != null)
-            {
-                cameraManager.UpdateCameraBounds(levelBounds);
+                // Create bounds from the tilemap size if no explicit bounds are set
+                CreateBoundsFromTilemaps();
             }
         }
     }
 
-    /// <summary>
-    /// Finds the level boundary collider for camera confinement
-    /// </summary>
-    private Collider2D FindLevelBounds()
-    {
-        // First look for GameObject with LevelBounds tag
-        GameObject boundsObj = GameObject.FindGameObjectWithTag("LevelBounds");
-        if (boundsObj != null && boundsObj.GetComponent<Collider2D>() != null)
-        {
-            return boundsObj.GetComponent<Collider2D>();
-        }
-
-        // Create bounds from tilemaps if no explicit bounds are set
-        Collider2D generatedBounds = CreateBoundsFromTilemaps();
-        if (generatedBounds != null)
-        {
-            return generatedBounds;
-        }
-
-        Debug.LogWarning("No level bounds found for camera confinement");
-        return null;
-    }
-
-    /// <summary>
-    /// Creates camera bounds from tilemap extents if no explicit bounds exist
-    /// </summary>
-    private Collider2D CreateBoundsFromTilemaps()
+    // Create camera bounds automatically based on the tilemap extents
+    private void CreateBoundsFromTilemaps()
     {
         // Find all tilemaps in the scene
-        UnityEngine.Tilemaps.Tilemap[] tilemaps = FindObjectsOfType<UnityEngine.Tilemaps.Tilemap>();
+        Tilemap[] tilemaps = FindObjectsOfType<Tilemap>();
 
         if (tilemaps.Length == 0)
         {
-            return null;
+            Debug.LogError("No tilemaps found in the scene!");
+            return;
         }
 
         // Calculate the combined bounds of all tilemaps
         Bounds combinedBounds = new Bounds();
         bool firstBound = true;
 
-        foreach (var tilemap in tilemaps)
+        foreach (Tilemap tilemap in tilemaps)
         {
             // Skip empty tilemaps
             if (tilemap.cellBounds.size == Vector3Int.zero)
@@ -708,67 +272,22 @@ public class LevelManager : MonoBehaviour
             boxCollider.size = combinedBounds.size;
             boxCollider.isTrigger = true;
 
-            return boxCollider;
-        }
-
-        return null;
-    }
-
-    /// <summary>
-    /// Saves the current player state into persistent data
-    /// </summary>
-    private void SavePlayerState()
-    {
-        if (playerController == null) return;
-
-        // Save health and stats
-        PlayerStats stats = playerController.GetComponent<PlayerStats>();
-        if (stats != null)
-        {
-            playerData.health = stats.GetCurrentHealth();
-            playerData.mana = stats.GetCurrentMana();
-        }
-
-        // Save position
-        playerData.lastPosition = playerController.transform.position;
-
-        // Get inventory if available
-        if (playerController.HasMethod("GetInventoryItems"))
-        {
-            // This would need to be implemented in your PlayerController
-            // playerData.inventory = playerController.GetInventoryItems();
+            // Apply to camera
+            cameraManager.UpdateCameraBounds(boxCollider);
         }
     }
 
-    /// <summary>
-    /// Applies saved player data to the current player instance
-    /// </summary>
-    private void ApplyPlayerData()
+    // Save the current level state (for returning after a sub-area)
+    public void SaveLevelState()
     {
-        if (playerController == null) return;
-
-        // Apply health and mana
-        PlayerStats stats = playerController.GetComponent<PlayerStats>();
-        if (stats != null)
-        {
-            stats.SetHealth(playerData.health);
-            stats.SetMana((int)playerData.mana);
-        }
-
-        // Apply inventory if that method exists
-        if (playerController.HasMethod("SetInventoryItems"))
-        {
-            // This would need to be implemented in your PlayerController
-            // playerController.SetInventoryItems(playerData.inventory);
-        }
+        // You can implement save state logic here
+        // For example, record player health, inventory, position, etc.
     }
 
-    /// <summary>
-    /// Load the next level in sequence
-    /// </summary>
-    // In LevelManager.cs
-    public void LoadNextLevel()
+    // Load a saved level state
+    public void LoadLevelState()
     {
+        // You can implement load state logic here
         // Save current player before leaving
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)

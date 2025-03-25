@@ -6,11 +6,14 @@ public class LizzerController : MonoBehaviour
 {
 	[Header("Movement Settings")]
 	public float moveSpeed = 3f;
-	public float detectionRange = 15f;
-	public float attackRange = 10f;
+	public float detectionRange = 10f;
+	public float attackRange = 100f;
 	public float stoppingDistance = 1f;
 	public float moveRadius = 5f;
 
+	[Header("Attack Settings")]
+	public int attackDamage = 10;
+	public float attackCooldown = 1.5f;
 	private bool canAttack = true;
 
 	[Header("Patrol Settings")]
@@ -24,6 +27,8 @@ public class LizzerController : MonoBehaviour
 	private SpriteRenderer spriteRenderer;
 	private Transform target; // Thay vì player
 
+	public LayerMask playerLayer; // Thêm biến này
+
 
 	private Vector2 randomDestination;
 	private float changeDirectionTime = 2f;
@@ -33,19 +38,14 @@ public class LizzerController : MonoBehaviour
 	public EnemyState currentState = EnemyState.Patrol;
 
 
-
 	[Header("Skill")]
 	[SerializeField] private BulletImpact bulletImpact;
 	private bool isAttacking = false;
-    public int health = 30; // Máu của Lizzer
 
 
-    private Flash flash;
-
-    private void Awake()
+	private void Awake()
 	{
-        flash = GetComponent<Flash>();
-        rb = GetComponent<Rigidbody2D>();
+		rb = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
 		spriteRenderer = GetComponent<SpriteRenderer>();
 		target = GameObject.FindGameObjectWithTag("Player").transform;
@@ -61,10 +61,12 @@ public class LizzerController : MonoBehaviour
 		}
 		else if (distanceToTarget <= detectionRange)
 		{
+			// Nếu trong tầm phát hiện, đuổi theo người chơi
 			ChasePlayer();
 		}
 		else
 		{
+			// Nếu không phát hiện người chơi, di chuyển ngẫu nhiên
 			WanderRandomly();
 		}
 	}
@@ -84,7 +86,6 @@ public class LizzerController : MonoBehaviour
 
 	private void ChasePlayer()
 	{
-		animator.SetBool("IsWalking", true);
 		Vector2 direction = (target.position - transform.position).normalized;
 		rb.linearVelocity = direction * moveSpeed;
 		UpdateSpriteDirection(direction.x);
@@ -92,7 +93,6 @@ public class LizzerController : MonoBehaviour
 
 	private void WanderRandomly()
 	{
-		animator.SetBool("IsWalking", true);
 		timer -= Time.deltaTime;
 
 		if (Vector2.Distance(transform.position, randomDestination) < 0.5f || timer <= 0f)
@@ -132,14 +132,10 @@ public class LizzerController : MonoBehaviour
 
 	private IEnumerator PerformAttack()
 	{
-		//Debug.Log("Attacking");
 		canAttack = false;
 		animator.SetTrigger("Attack");
-		animator.SetBool("IsWalking", false);
+
 		yield return new WaitForSeconds(0.5f);
-
-		animator.SetTrigger("Idle");
-
 		if (!bulletImpact.gameObject.activeInHierarchy)
 		{
 			bulletImpact.gameObject.SetActive(true);
@@ -148,7 +144,6 @@ public class LizzerController : MonoBehaviour
 		yield return StartCoroutine(bulletImpact.Impact());
 		canAttack = true;
 		isAttacking = false;
-		animator.SetBool("IsWalking", true);
 	}
 
 	private void UpdateSpriteDirection(float directionX)
@@ -164,26 +159,13 @@ public class LizzerController : MonoBehaviour
 		}
 	}
 
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
-        Debug.Log("Lizzer took " + damage + " damage! Current HP: " + health);
-		StartCoroutine(flash.FlashRoutine());
-        if (health <= 0)
-        {
-            Die();
-        }
-    }
+	//private void DealDamageToPlayer()
+	//{
 
-    public void Die()
-    {
-        Debug.Log("Lizzer died!");
-        Destroy(gameObject); 
-        EnemyManager.instance.EnemyKilled();
-    }
+	//}
 
 
-    private void OnDrawGizmosSelected()
+	private void OnDrawGizmosSelected()
 	{
 		Gizmos.color = Color.yellow;
 		Gizmos.DrawWireSphere(transform.position, detectionRange);
