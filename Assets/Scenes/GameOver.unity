@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 396567577}
   - component: {fileID: 396567576}
   m_Layer: 0
-  m_Name: Button
+  m_Name: GoToMainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -765,7 +765,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6207187721495992165, guid: 2cd13e515232f0e41b6c3059ea1770f9, type: 3}
+  m_Sprite: {fileID: 317010468468323505, guid: 03a1207fa1616fa4d94301ad4f2353ef, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -977,7 +977,7 @@ GameObject:
   - component: {fileID: 1503886254}
   - component: {fileID: 1503886253}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: RetryButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

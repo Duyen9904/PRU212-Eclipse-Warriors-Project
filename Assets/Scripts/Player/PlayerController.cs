@@ -458,6 +458,18 @@ public class PlayerController : Singleton<PlayerController>
         //}
     }
 
+    public float MoveSpeed
+    {
+        get { return moveSpeed; }
+        set { moveSpeed = value; }
+    }
+
+    public float SprintMultiplier
+    {
+        get { return sprintMultiplier; }
+        set { sprintMultiplier = value; }
+    }
+
     public void SetMoveSpeed(float speed)
     {
         moveSpeed = speed;
@@ -484,3 +496,4 @@ public interface IInteractable
 {
     void Interact(PlayerController player);
 }
+
