@@ -47,5 +47,20 @@ TagManager:
   - name: Player
     uniqueID: 1484975769
     locked: 0
+  - name: Ground
+    uniqueID: 1125273915
+    locked: 0
+  - name: Mountain
+    uniqueID: 3654634605
+    locked: 0
+  - name: House
+    uniqueID: 2209443993
+    locked: 0
+  - name: Rock
+    uniqueID: 3098812689
+    locked: 0
+  - name: Way
+    uniqueID: 4170915713
+    locked: 0
   m_RenderingLayers:
   - Default

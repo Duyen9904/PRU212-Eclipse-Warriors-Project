@@ -151,6 +151,8 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    // In EnemyAI.cs, update the PerformAttack method:
+
     private IEnumerator PerformAttack()
     {
         canAttack = false;
@@ -165,8 +167,24 @@ public class EnemyAI : MonoBehaviour
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
         if (distanceToPlayer <= attackRange)
         {
-            // Damage player
-            player.GetComponent<PlayerStats>()?.TakeDamage(attackDamage);
+            // Get player component that handles damage
+            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(attackDamage, transform);
+            }
+            else
+            {
+                // Fallback to PlayerStats if using that system
+                PlayerStats playerStats = player.GetComponent<PlayerStats>();
+                if (playerStats != null)
+                {
+                    playerStats.TakeDamage(attackDamage);
+                }
+            }
+
+            // Visual feedback
+            // You can add hit effects here if desired
         }
 
         // Wait for cooldown
