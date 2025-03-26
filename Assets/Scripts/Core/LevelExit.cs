@@ -114,6 +114,9 @@ public class LevelExit : MonoBehaviour
             {
                 Debug.Log(lockedMessage);
             }
+
+            GameSceneManager.Instance.LoadNextLevel();
+
         }
     }
 
